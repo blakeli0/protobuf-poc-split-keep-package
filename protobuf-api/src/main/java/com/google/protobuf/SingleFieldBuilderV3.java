@@ -30,7 +30,7 @@ import static com.google.protobuf.Internal.checkNotNull;
  * @author jonp@google.com (Jon Perlow)
  */
 public class SingleFieldBuilderV3<
-        MType extends AbstractMessage,
+        MType extends Message,
         BType extends AbstractMessage.Builder,
         IType extends MessageOrBuilder>
     implements AbstractMessage.BuilderParent {
@@ -105,7 +105,7 @@ public class SingleFieldBuilderV3<
       // does not create any sub-objects with independent clean/dirty states,
       // therefore setting the builder itself to clean without actually calling
       // build() cannot break any invariants.
-      builder = (BType) message.newBuilderForType(this);
+      builder = (BType) message.newBuilderForType();
       builder.mergeFrom(message); // no-op if message is the default message
       builder.markClean();
     }
