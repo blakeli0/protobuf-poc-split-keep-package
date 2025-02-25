@@ -4,6 +4,13 @@
 // Protobuf Java Version: 3.25.5
 package com.google.protobuf;
 
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
 public final class DescriptorProtos {
   private DescriptorProtos() {}
   public static void registerAllExtensions(
@@ -14428,14 +14435,182 @@ public final class DescriptorProtos {
    *
    * Protobuf type {@code google.protobuf.FieldDescriptorProto}
    */
-  public static final class FieldDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+  public static final class FieldDescriptorProto
+//          extends AbstractMessage
       // @@protoc_insertion_point(message_implements:google.protobuf.FieldDescriptorProto)
-      FieldDescriptorProtoOrBuilder {
+      implements Message, FieldDescriptorProtoOrBuilder {
+
+      protected UnknownFieldSet unknownFields = UnknownFieldSet.getDefaultInstance();
+
+      protected int memoizedHashCode = 0;
+
+      @Override
+      public UnknownFieldSet getUnknownFields() {
+          return unknownFields;
+      }
+
+      @Override
+      public int getRepeatedFieldCount(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).getRepeatedCount(this);
+      }
+
+      @Override
+      public Object getRepeatedField(final Descriptors.FieldDescriptor field, final int index) {
+          return internalGetFieldAccessorTable().getField(field).getRepeated(this, index);
+      }
+
+      @Override
+      public boolean hasOneof(final Descriptors.OneofDescriptor oneof) {
+          return internalGetFieldAccessorTable().getOneof(oneof).has(this);
+      }
+
+      @Override
+      public Descriptors.FieldDescriptor getOneofFieldDescriptor(final Descriptors.OneofDescriptor oneof) {
+          return internalGetFieldAccessorTable().getOneof(oneof).get(this);
+      }
+
+      @Override
+      public boolean hasField(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).has(this);
+      }
+
+      @Override
+      public Object getField(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).get(this);
+      }
+
+      @Override
+      public Map<Descriptors.FieldDescriptor, Object> getAllFields() {
+          return Collections.unmodifiableMap(getAllFieldsMutable(/* getBytesForString= */ false));
+      }
+
+      private Map<Descriptors.FieldDescriptor, Object> getAllFieldsMutable(boolean getBytesForString) {
+          final TreeMap<Descriptors.FieldDescriptor, Object> result = new TreeMap<>();
+          final Descriptors.Descriptor descriptor = internalGetFieldAccessorTable().descriptor;
+          final List<Descriptors.FieldDescriptor> fields = descriptor.getFields();
+
+          for (int i = 0; i < fields.size(); i++) {
+              Descriptors.FieldDescriptor field = fields.get(i);
+              final Descriptors.OneofDescriptor oneofDescriptor = field.getContainingOneof();
+
+              /*
+               * If the field is part of a Oneof, then at maximum one field in the Oneof is set
+               * and it is not repeated. There is no need to iterate through the others.
+               */
+              if (oneofDescriptor != null) {
+                  // Skip other fields in the Oneof we know are not set
+                  i += oneofDescriptor.getFieldCount() - 1;
+                  if (!hasOneof(oneofDescriptor)) {
+                      // If no field is set in the Oneof, skip all the fields in the Oneof
+                      continue;
+                  }
+                  // Get the pointer to the only field which is set in the Oneof
+                  field = getOneofFieldDescriptor(oneofDescriptor);
+              } else {
+                  // If we are not in a Oneof, we need to check if the field is set and if it is repeated
+                  if (field.isRepeated()) {
+                      final List<?> value = (List<?>) getField(field);
+                      if (!value.isEmpty()) {
+                          result.put(field, value);
+                      }
+                      continue;
+                  }
+                  if (!hasField(field)) {
+                      continue;
+                  }
+              }
+              // Add the field to the map
+              if (getBytesForString && field.getJavaType() == Descriptors.FieldDescriptor.JavaType.STRING) {
+                  result.put(field, getFieldRaw(field));
+              } else {
+                  result.put(field, getField(field));
+              }
+          }
+          return result;
+      }
+
+      Object getFieldRaw(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).getRaw(this);
+      }
+
+      @Override
+      public Descriptors.Descriptor getDescriptorForType() {
+          return internalGetFieldAccessorTable().descriptor;
+      }
+
+      @Override
+      public ByteString toByteString() {
+          try {
+              final ByteString.CodedBuilder out = ByteString.newCodedBuilder(getSerializedSize());
+              writeTo(out.getCodedOutput());
+              return out.build();
+          } catch (IOException e) {
+              throw new RuntimeException(getSerializingExceptionMessage("ByteString"), e);
+          }
+      }
+
+      @Override
+      public byte[] toByteArray() {
+          try {
+              final byte[] result = new byte[getSerializedSize()];
+              final CodedOutputStream output = CodedOutputStream.newInstance(result);
+              writeTo(output);
+              output.checkNoSpaceLeft();
+              return result;
+          } catch (IOException e) {
+              throw new RuntimeException(getSerializingExceptionMessage("byte array"), e);
+          }
+      }
+
+      @Override
+      public void writeTo(final OutputStream output) throws IOException {
+          final int bufferSize = CodedOutputStream.computePreferredBufferSize(getSerializedSize());
+          final CodedOutputStream codedOutput = CodedOutputStream.newInstance(output, bufferSize);
+          writeTo(codedOutput);
+          codedOutput.flush();
+      }
+
+      @Override
+      public void writeDelimitedTo(final OutputStream output) throws IOException {
+          final int serialized = getSerializedSize();
+          final int bufferSize =
+                  CodedOutputStream.computePreferredBufferSize(
+                          CodedOutputStream.computeUInt32SizeNoTag(serialized) + serialized);
+          final CodedOutputStream codedOutput = CodedOutputStream.newInstance(output, bufferSize);
+          codedOutput.writeUInt32NoTag(serialized);
+          writeTo(codedOutput);
+          codedOutput.flush();
+      }
+
+      private String getSerializingExceptionMessage(String target) {
+          return "Serializing "
+                  + getClass().getName()
+                  + " to a "
+                  + target
+                  + " threw an IOException (should never happen).";
+      }
+
+      protected int memoizedSize = -1;
+
+      @Override
+      public List<String> findInitializationErrors() {
+          return MessageReflection.findMissingFields(this);
+      }
+
+      @Override
+      public String getInitializationErrorString() {
+          return MessageReflection.delimitWithCommas(findInitializationErrors());
+      }
+
+      @Override
+      public final String toString() {
+          return TextFormat.printer().printToString(this);
+      }
+
   private static final long serialVersionUID = 0L;
     // Use FieldDescriptorProto.newBuilder() to construct.
     private FieldDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
+//      super(builder);
     }
     private FieldDescriptorProto() {
       name_ = "";
@@ -14447,10 +14622,10 @@ public final class DescriptorProtos {
       jsonName_ = "";
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
+        GeneratedMessageV3.UnusedPrivateParameter unused) {
       return new FieldDescriptorProto();
     }
 
@@ -14459,7 +14634,7 @@ public final class DescriptorProtos {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldDescriptorProto_descriptor;
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldDescriptorProto_fieldAccessorTable
@@ -15740,7 +15915,7 @@ public final class DescriptorProtos {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
