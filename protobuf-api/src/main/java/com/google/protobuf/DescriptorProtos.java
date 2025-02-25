@@ -14436,7 +14436,6 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FieldDescriptorProto}
    */
   public static final class FieldDescriptorProto
-//          extends AbstractMessage
       // @@protoc_insertion_point(message_implements:google.protobuf.FieldDescriptorProto)
       implements Message, FieldDescriptorProtoOrBuilder {
 
