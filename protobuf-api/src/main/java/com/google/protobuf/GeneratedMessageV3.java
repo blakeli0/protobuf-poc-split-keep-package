@@ -969,7 +969,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
   // Extensions-related stuff
 
   /** Extends {@link MessageOrBuilder} with extension-related functions. */
-  public interface ExtendableMessageOrBuilder<MessageT extends ExtendableMessage<MessageT>>
+  public interface ExtendableMessageOrBuilder<MessageT extends Message>
       extends MessageOrBuilder {
     // Re-define for return type covariance.
     @Override
@@ -1466,7 +1466,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
    */
   @SuppressWarnings("unchecked")
   public abstract static class ExtendableBuilder<
-          MessageT extends ExtendableMessage<MessageT>,
+          MessageT extends Message,
           BuilderT extends ExtendableBuilder<MessageT, BuilderT>>
       extends Builder<BuilderT> implements ExtendableMessageOrBuilder<MessageT> {
 
@@ -3257,7 +3257,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
   /**
    * Checks that the {@link Extension} is non-Lite and returns it as a {@link GeneratedExtension}.
    */
-  private static <MessageT extends ExtendableMessage<MessageT>, T>
+  private static <MessageT extends Message, T>
       Extension<MessageT, T> checkNotLite(ExtensionLite<MessageT, T> extension) {
     if (extension.isLite()) {
       throw new IllegalArgumentException("Expected non-lite extension.");
