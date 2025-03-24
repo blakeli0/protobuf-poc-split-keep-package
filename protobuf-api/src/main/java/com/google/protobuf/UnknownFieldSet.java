@@ -100,7 +100,7 @@ public final class UnknownFieldSet implements MessageLite {
   }
 
   /** Serializes the set and writes it to {@code output}. */
-  @Override
+//  @Override
   public void writeTo(CodedOutputStream output) throws IOException {
     for (Map.Entry<Integer, Field> entry : fields.entrySet()) {
       Field field = entry.getValue();

@@ -38,12 +38,12 @@ import java.io.OutputStream;
  */
 @CheckReturnValue
 public interface MessageLite extends MessageLiteOrBuilder {
-
-  /**
-   * Serializes the message and writes it to {@code output}. This does not flush or close the
-   * stream.
-   */
-  void writeTo(CodedOutputStream output) throws IOException;
+//
+//  /**
+//   * Serializes the message and writes it to {@code output}. This does not flush or close the
+//   * stream.
+//   */
+//  void writeTo(CodedOutputStream output) throws IOException;
 
   /**
    * Get the number of bytes required to encode this message. The result is only computed on the

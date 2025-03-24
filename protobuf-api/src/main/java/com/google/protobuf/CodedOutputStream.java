@@ -1010,7 +1010,7 @@ public abstract class CodedOutputStream extends ByteOutput {
    */
   @Deprecated
   public final void writeGroupNoTag(final MessageLite value) throws IOException {
-    value.writeTo(this);
+    ((AbstractMessageLite) value).writeTo(this);
   }
 
   /**
@@ -1289,7 +1289,7 @@ public abstract class CodedOutputStream extends ByteOutput {
     @Override
     public final void writeMessageNoTag(final MessageLite value) throws IOException {
       writeUInt32NoTag(value.getSerializedSize());
-      value.writeTo(this);
+      ((AbstractMessageLite) value).writeTo(this);
     }
 
     @Override
@@ -1625,7 +1625,7 @@ public abstract class CodedOutputStream extends ByteOutput {
     @Override
     public void writeMessageNoTag(final MessageLite value) throws IOException {
       writeUInt32NoTag(value.getSerializedSize());
-      value.writeTo(this);
+      ((AbstractMessageLite) value).writeTo(this);
     }
 
     @Override
@@ -1955,7 +1955,7 @@ public abstract class CodedOutputStream extends ByteOutput {
     @Override
     public void writeMessageNoTag(MessageLite value) throws IOException {
       writeUInt32NoTag(value.getSerializedSize());
-      value.writeTo(this);
+      ((AbstractMessageLite) value).writeTo(this);
     }
 
     @Override
@@ -2494,7 +2494,7 @@ public abstract class CodedOutputStream extends ByteOutput {
     @Override
     public void writeMessageNoTag(final MessageLite value) throws IOException {
       writeUInt32NoTag(value.getSerializedSize());
-      value.writeTo(this);
+      ((AbstractMessageLite) value).writeTo(this);
     }
 
     @Override
@@ -2808,7 +2808,7 @@ public abstract class CodedOutputStream extends ByteOutput {
     @Override
     public void writeMessageNoTag(final MessageLite value) throws IOException {
       writeUInt32NoTag(value.getSerializedSize());
-      value.writeTo(this);
+      ((AbstractMessageLite) value).writeTo(this);
     }
 
     @Override

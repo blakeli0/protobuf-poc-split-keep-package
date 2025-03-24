@@ -29,6 +29,12 @@ public abstract class AbstractMessageLite<
     implements MessageLite {
   protected int memoizedHashCode = 0;
 
+  /**
+   * Serializes the message and writes it to {@code output}. This does not flush or close the
+   * stream.
+   */
+  abstract void writeTo(CodedOutputStream output) throws IOException;
+
   @Override
   public ByteString toByteString() {
     try {
