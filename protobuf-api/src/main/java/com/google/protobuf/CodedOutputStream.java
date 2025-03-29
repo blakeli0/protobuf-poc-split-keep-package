@@ -7,11 +7,6 @@
 
 package com.google.protobuf;
 
-import static com.google.protobuf.WireFormat.FIXED32_SIZE;
-import static com.google.protobuf.WireFormat.FIXED64_SIZE;
-import static com.google.protobuf.WireFormat.MAX_VARINT_SIZE;
-import static java.lang.Math.max;
-
 import com.google.protobuf.Utf8.UnpairedSurrogateException;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -43,6 +38,21 @@ public abstract class CodedOutputStream extends ByteOutput {
   private static final Class<?> UNSAFE_DIRECT_NIO_ENCODER = getClassForName("com.google.protobuf.UnsafeDirectNioEncoder");
   /** Used to adapt to the experimental {@link Writer} interface. */
   CodedOutputStreamWriter wrapper;
+
+  // Field numbers for fields in MessageSet wire format.
+  static final int MESSAGE_SET_ITEM = 1;
+  static final int MESSAGE_SET_TYPE_ID = 2;
+  static final int MESSAGE_SET_MESSAGE = 3;
+
+  static final int TAG_TYPE_BITS = 3;
+
+  static final int FIXED32_SIZE = 4;
+  static final int FIXED64_SIZE = 8;
+  static final int MAX_VARINT_SIZE = 10;
+
+  public static final int WIRETYPE_START_GROUP = 3;
+  public static final int WIRETYPE_END_GROUP = 4;
+
 
   /** @deprecated Use {@link #computeFixed32SizeNoTag(int)} instead. */
   @Deprecated public static final int LITTLE_ENDIAN_32_SIZE = FIXED32_SIZE;
@@ -716,9 +726,9 @@ public abstract class CodedOutputStream extends ByteOutput {
    * stream. For historical reasons, the wire format differs from normal fields.
    */
   public static int computeMessageSetExtensionSize(final int fieldNumber, final MessageLite value) {
-    return computeTagSize(WireFormat.MESSAGE_SET_ITEM) * 2
-        + computeUInt32Size(WireFormat.MESSAGE_SET_TYPE_ID, fieldNumber)
-        + computeMessageSize(WireFormat.MESSAGE_SET_MESSAGE, value);
+    return computeTagSize(MESSAGE_SET_ITEM) * 2
+        + computeUInt32Size(MESSAGE_SET_TYPE_ID, fieldNumber)
+        + computeMessageSize(MESSAGE_SET_MESSAGE, value);
   }
 
   /**
@@ -727,9 +737,9 @@ public abstract class CodedOutputStream extends ByteOutput {
    */
   public static int computeRawMessageSetExtensionSize(
       final int fieldNumber, final ByteString value) {
-    return computeTagSize(WireFormat.MESSAGE_SET_ITEM) * 2
-        + computeUInt32Size(WireFormat.MESSAGE_SET_TYPE_ID, fieldNumber)
-        + computeBytesSize(WireFormat.MESSAGE_SET_MESSAGE, value);
+    return computeTagSize(MESSAGE_SET_ITEM) * 2
+        + computeUInt32Size(MESSAGE_SET_TYPE_ID, fieldNumber)
+        + computeBytesSize(MESSAGE_SET_MESSAGE, value);
   }
 
   /**
@@ -739,16 +749,20 @@ public abstract class CodedOutputStream extends ByteOutput {
    */
   public static int computeLazyFieldMessageSetExtensionSize(
       final int fieldNumber, final LazyFieldLite value) {
-    return computeTagSize(WireFormat.MESSAGE_SET_ITEM) * 2
-        + computeUInt32Size(WireFormat.MESSAGE_SET_TYPE_ID, fieldNumber)
-        + computeLazyFieldSize(WireFormat.MESSAGE_SET_MESSAGE, value);
+    return computeTagSize(MESSAGE_SET_ITEM) * 2
+        + computeUInt32Size(MESSAGE_SET_TYPE_ID, fieldNumber)
+        + computeLazyFieldSize(MESSAGE_SET_MESSAGE, value);
   }
 
   // -----------------------------------------------------------------
 
   /** Compute the number of bytes that would be needed to encode a tag. */
   public static int computeTagSize(final int fieldNumber) {
-    return computeUInt32SizeNoTag(WireFormat.makeTag(fieldNumber, 0));
+    return computeUInt32SizeNoTag(makeTag(fieldNumber, 0));
+  }
+
+  static int makeTag(final int fieldNumber, final int wireType) {
+    return (fieldNumber << TAG_TYPE_BITS) | wireType;
   }
 
   /**
@@ -1049,9 +1063,9 @@ public abstract class CodedOutputStream extends ByteOutput {
    */
   @Deprecated
   public final void writeGroup(final int fieldNumber, final MessageLite value) throws IOException {
-    writeTag(fieldNumber, WireFormat.WIRETYPE_START_GROUP);
+    writeTag(fieldNumber, WIRETYPE_START_GROUP);
     writeGroupNoTag(value);
-    writeTag(fieldNumber, WireFormat.WIRETYPE_END_GROUP);
+    writeTag(fieldNumber, WIRETYPE_END_GROUP);
   }
 
   /**
@@ -1062,9 +1076,9 @@ public abstract class CodedOutputStream extends ByteOutput {
   @Deprecated
   final void writeGroup(final int fieldNumber, final MessageLite value, Schema schema)
       throws IOException {
-    writeTag(fieldNumber, WireFormat.WIRETYPE_START_GROUP);
+    writeTag(fieldNumber, WIRETYPE_START_GROUP);
     writeGroupNoTag(value, schema);
-    writeTag(fieldNumber, WireFormat.WIRETYPE_END_GROUP);
+    writeTag(fieldNumber, WIRETYPE_END_GROUP);
   }
 
   /**
