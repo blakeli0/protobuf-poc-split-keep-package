@@ -89,12 +89,12 @@ public final class JavaFeaturesProto {
    * Protobuf type {@code pb.JavaFeatures}
    */
   public static final class JavaFeatures extends
-      com.google.protobuf.FlattenedGeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:pb.JavaFeatures)
       JavaFeaturesOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use JavaFeatures.newBuilder() to construct.
-    private JavaFeatures(com.google.protobuf.FlattenedGeneratedMessageV3.Builder<?> builder) {
+    private JavaFeatures(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
     private JavaFeatures() {
@@ -114,7 +114,7 @@ public final class JavaFeaturesProto {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.JavaFeaturesProto.internal_static_pb_JavaFeatures_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -485,42 +485,36 @@ public final class JavaFeaturesProto {
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.FlattenedGeneratedMessageV3
-          .parseWithIOException(PARSER, input);
+      return parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.FlattenedGeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+      return parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.FlattenedGeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
+      return parseDelimitedWithIOException(PARSER, input);
     }
 
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.FlattenedGeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      return parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.FlattenedGeneratedMessageV3
-          .parseWithIOException(PARSER, input);
+      return parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.FlattenedGeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+      return parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
@@ -539,7 +533,7 @@ public final class JavaFeaturesProto {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -547,7 +541,7 @@ public final class JavaFeaturesProto {
      * Protobuf type {@code pb.JavaFeatures}
      */
     public static final class Builder extends
-        com.google.protobuf.FlattenedGeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:pb.JavaFeatures)
         com.google.protobuf.JavaFeaturesProto.JavaFeaturesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -556,7 +550,7 @@ public final class JavaFeaturesProto {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.JavaFeaturesProto.internal_static_pb_JavaFeatures_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -569,7 +563,7 @@ public final class JavaFeaturesProto {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
 
       }
@@ -1010,7 +1004,7 @@ public final class JavaFeaturesProto {
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_pb_JavaFeatures_descriptor;
   private static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_pb_JavaFeatures_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -1053,7 +1047,7 @@ public final class JavaFeaturesProto {
     internal_static_pb_JavaFeatures_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_pb_JavaFeatures_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_pb_JavaFeatures_descriptor,
         new java.lang.String[] { "LegacyClosedEnum", "Utf8Validation", "UseOldOuterClassnameDefault", });
     java.internalInit(descriptor.getExtensions().get(0));
