@@ -39,7 +39,7 @@ public abstract class AbstractMessage
    * Interface for the parent of a Builder that allows the builder to communicate invalidations back
    * to the parent for use when using nested builders.
    */
-  protected interface BuilderParent {
+  protected interface BuilderParent extends Message.BuilderParent{
 
     /**
      * A builder becomes dirty whenever a field is modified -- including fields in nested builders
