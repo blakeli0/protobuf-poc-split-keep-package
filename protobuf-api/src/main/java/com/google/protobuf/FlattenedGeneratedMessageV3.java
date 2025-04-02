@@ -47,7 +47,7 @@ import static com.google.protobuf.Internal.checkNotNull;
  *
  * @author kenton@google.com Kenton Varda
  */
-abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
+abstract class FlattenedGeneratedMessageV3 extends AbstractMessage implements Serializable {
   private static final long serialVersionUID = 1L;
 
   /**
