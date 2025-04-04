@@ -623,7 +623,7 @@ public abstract class GeneratedMessageLite<
       // TODO: How much bytecode would be saved by not requiring the generated code to
       //     provide the default instance?
       GeneratedExtension<MessageType, ?> extension =
-          extensionRegistry.findLiteExtensionByNumber(defaultInstance, fieldNumber);
+              (GeneratedExtension<MessageType, ?>) extensionRegistry.findLiteExtensionByNumber(defaultInstance, fieldNumber);
 
       return parseExtension(input, extensionRegistry, extension, tag, fieldNumber);
     }
@@ -808,7 +808,7 @@ public abstract class GeneratedMessageLite<
         if (tag == WireFormat.MESSAGE_SET_TYPE_ID_TAG) {
           typeId = input.readUInt32();
           if (typeId != 0) {
-            extension = extensionRegistry.findLiteExtensionByNumber(defaultInstance, typeId);
+            extension = (GeneratedExtension<MessageType, ?>) extensionRegistry.findLiteExtensionByNumber(defaultInstance, typeId);
           }
 
         } else if (tag == WireFormat.MESSAGE_SET_MESSAGE_TAG) {
