@@ -934,7 +934,7 @@ public abstract class CodedOutputStream extends ByteOutput {
 
   /** Compute the number of bytes that would be needed to encode an embedded message field. */
   static int computeMessageSizeNoTag(final MessageLite value, final Schema schema) {
-    return computeLengthDelimitedFieldSize(((AbstractMessageLite) value).getSerializedSize(schema));
+    return computeLengthDelimitedFieldSize(getSerializedSize(value, schema));
   }
 
   static int computeLengthDelimitedFieldSize(int fieldLength) {
@@ -1130,10 +1130,24 @@ public abstract class CodedOutputStream extends ByteOutput {
     return value.getSerializedSize();
   }
 
+  private static final Class<?> ABSTRACT_MESSAGE_LITE = getClassForName("com.google.protobuf.AbstractMessageLite");
+
   /** Compute the number of bytes that would be needed to encode a {@code group} field. */
   @Deprecated
   static int computeGroupSizeNoTag(final MessageLite value, Schema schema) {
-    return ((AbstractMessageLite) value).getSerializedSize(schema);
+    return getSerializedSize(value, schema);
+  }
+
+  private static int getSerializedSize(MessageLite value, Schema schema) {
+    try {
+      return (int) ABSTRACT_MESSAGE_LITE.getMethod("getSerializedSize", Schema.class).invoke(value, schema);
+    } catch (IllegalAccessException e) {
+        throw new RuntimeException(e);
+    } catch (InvocationTargetException e) {
+        throw new RuntimeException(e);
+    } catch (NoSuchMethodException e) {
+        throw new RuntimeException(e);
+    }
   }
 
   /**
