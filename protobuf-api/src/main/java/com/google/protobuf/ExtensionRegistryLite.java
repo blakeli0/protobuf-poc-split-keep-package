@@ -7,6 +7,7 @@
 
 package com.google.protobuf;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -70,6 +71,19 @@ public class ExtensionRegistryLite {
         // See comment in ExtensionRegistryFactory on the potential expense of this.
         return null;
       }
+    }
+  }
+  private static final Class<?> GENERATED_EXTENSION = getGeneratedExtensionClass();
+
+  private static Class<?> getGeneratedExtensionClass() {
+    try {
+      Class<?> generatedMessageLiteClass = Class.forName("com.google.protobuf.GeneratedMessageLite");
+      return Arrays.stream(generatedMessageLiteClass.getClasses())
+              .filter(innerClass -> innerClass.getName().equals("com.google.protobuf.GeneratedMessageLite$GeneratedExtension"))
+              .findFirst()
+              .get();
+    } catch (Throwable e) {
+      return null;
     }
   }
 
@@ -145,12 +159,11 @@ public class ExtensionRegistryLite {
    * i.e. {@link GeneratedMessageLite.GeneratedExtension}.
    */
   public final void add(ExtensionLite<?, ?> extension) {
-    extensionsByNumber.put(
-            new ObjectIntPair(extension, extension.getNumber()),
-            extension);
-//    if (GeneratedMessageLite.GeneratedExtension.class.isAssignableFrom(extension.getClass())) {
-//      add((GeneratedMessageLite.GeneratedExtension<?, ?>) extension);
-//    }
+    if (GENERATED_EXTENSION.isAssignableFrom(extension.getClass())) {
+      extensionsByNumber.put(
+              new ObjectIntPair(extension, extension.getNumber()),
+              extension);
+    }
     if (doFullRuntimeInheritanceCheck && ExtensionRegistryFactory.isFullRegistry(this)) {
       try {
         this.getClass().getMethod("add", ExtensionClassHolder.INSTANCE).invoke(this, extension);
