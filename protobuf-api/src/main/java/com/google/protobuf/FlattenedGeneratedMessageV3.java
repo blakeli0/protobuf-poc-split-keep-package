@@ -901,7 +901,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
         return false;
       }
       final int size = CodedInputStream.readRawVarint32(firstByte, input);
-      final InputStream limitedInput = new AbstractMessageLite.Builder.LimitedInputStream(input, size);
+      final InputStream limitedInput = new LimitedInputStream(input, size);
       mergeFrom(limitedInput, extensionRegistry);
       return true;
     }
@@ -4128,7 +4128,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
    * @return a SerializedForm of this message
    */
   protected Object writeReplace() throws ObjectStreamException {
-    return new GeneratedMessageLite.SerializedForm(this);
+    return new SerializedForm(this);
   }
 
   /**

@@ -441,7 +441,7 @@ public abstract class FlattenedAbstractMessage
         return false;
       }
       final int size = CodedInputStream.readRawVarint32(firstByte, input);
-      final InputStream limitedInput = new AbstractMessageLite.Builder.LimitedInputStream(input, size);
+      final InputStream limitedInput = new LimitedInputStream(input, size);
       mergeFrom(limitedInput, extensionRegistry);
       return true;
     }

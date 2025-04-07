@@ -2925,7 +2925,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
    * @return a SerializedForm of this message
    */
   protected Object writeReplace() throws ObjectStreamException {
-    return new GeneratedMessageLite.SerializedForm(this);
+    return new SerializedForm(this);
   }
 
   /**
