@@ -11,6 +11,7 @@ import com.google.protobuf.Descriptors.Descriptor;
 import com.google.protobuf.Descriptors.FieldDescriptor;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -638,7 +639,7 @@ class MessageReflection {
         return WireFormat.Utf8Validation.STRICT;
       }
       // TODO: support lazy strings for repeated fields.
-      if (!descriptor.isRepeated() && builder instanceof GeneratedMessage.Builder) {
+      if (!descriptor.isRepeated() && GENERATED_MESSAGE_BUILDER.isInstance(builder)) {
         return WireFormat.Utf8Validation.LAZY;
       }
       return WireFormat.Utf8Validation.LOOSE;
@@ -647,6 +648,20 @@ class MessageReflection {
     @Override
     public Object finish() {
       return builder;
+    }
+  }
+
+  private static final Class<?> GENERATED_MESSAGE_BUILDER = getGeneratedMessageBuilder();
+
+  private static Class<?> getGeneratedMessageBuilder() {
+    try {
+      Class<?> generatedMessageLiteClass = Class.forName("com.google.protobuf.GeneratedMessage");
+      return Arrays.stream(generatedMessageLiteClass.getClasses())
+              .filter(innerClass -> innerClass.getName().equals("com.google.protobuf.GeneratedMessage$Builder"))
+              .findFirst()
+              .get();
+    } catch (Throwable e) {
+      return null;
     }
   }
 
