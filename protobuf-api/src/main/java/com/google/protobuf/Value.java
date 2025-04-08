@@ -53,7 +53,7 @@ private static final long serialVersionUID = 0L;
   private java.lang.Object kind_;
   public enum KindCase
       implements com.google.protobuf.Internal.EnumLite,
-          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+          com.google.protobuf.FlattenedGeneratedMessageV3.InternalOneOfEnum {
     NULL_VALUE(1),
     NUMBER_VALUE(2),
     STRING_VALUE(3),
