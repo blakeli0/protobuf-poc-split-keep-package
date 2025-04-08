@@ -594,7 +594,7 @@ public abstract class GeneratedMessageLite<
       implements ExtendableMessageOrBuilder<MessageType, BuilderType> {
 
     /** Represents the set of extensions on this message. For use by generated code only. */
-    protected FieldSet<ExtensionDescriptor> extensions = FieldSet.emptySet();
+    protected FieldSet<? extends FieldSet.FieldDescriptorLite> extensions = FieldSet.emptySet();
 
     @SuppressWarnings("unchecked")
     protected final void mergeExtensionFields(final MessageType other) {
@@ -1327,6 +1327,11 @@ public abstract class GeneratedMessageLite<
     @Override
     public MessageLite getMessageDefaultInstance() {
       return messageDefaultInstance;
+    }
+
+    @Override
+    public FieldSet.FieldDescriptorLite getDescriptor() {
+      return descriptor;
     }
 
     @SuppressWarnings("unchecked")

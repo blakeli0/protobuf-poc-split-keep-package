@@ -30,6 +30,8 @@ public abstract class ExtensionLite<ContainingType extends MessageLite, Type> {
   /** Returns the default instance of the extension field, if it's a message extension. */
   public abstract MessageLite getMessageDefaultInstance();
 
+  public abstract FieldSet.FieldDescriptorLite getDescriptor();
+
   /** Returns whether or not this extension is a Lite Extension. */
   boolean isLite() {
     return true;

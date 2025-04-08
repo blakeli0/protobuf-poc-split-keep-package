@@ -764,8 +764,8 @@ final class ArrayDecoders {
       Registers registers)
       throws IOException {
     final int number = tag >>> 3;
-    GeneratedMessageLite.GeneratedExtension extension =
-            (GeneratedMessageLite.GeneratedExtension) registers.extensionRegistry.findLiteExtensionByNumber(defaultInstance, number);
+    ExtensionLite extension =
+             registers.extensionRegistry.findLiteExtensionByNumber(defaultInstance, number);
     if (extension == null) {
       return decodeUnknownField(
           tag, data, position, limit, getMutableUnknownFields(message), registers);
@@ -785,26 +785,27 @@ final class ArrayDecoders {
       int position,
       int limit,
       GeneratedMessageLite.ExtendableMessage<?, ?> message,
-      GeneratedMessageLite.GeneratedExtension<?, ?> extension,
+      ExtensionLite<?, ?> extension,
       UnknownFieldSchema<UnknownFieldSetLite, UnknownFieldSetLite> unknownFieldSchema,
       Registers registers)
       throws IOException {
-    final FieldSet<GeneratedMessageLite.ExtensionDescriptor> extensions = message.extensions;
+    final FieldSet<FieldSet.FieldDescriptorLite> extensions = message.extensions;
     final int fieldNumber = tag >>> 3;
-    if (extension.descriptor.isRepeated() && extension.descriptor.isPacked()) {
+    FieldSet.FieldDescriptorLite descriptor = extension.getDescriptor();
+    if (descriptor.isRepeated() && descriptor.isPacked()) {
       switch (extension.getLiteType()) {
         case DOUBLE:
         {
           DoubleArrayList list = new DoubleArrayList();
           position = decodePackedDoubleList(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case FLOAT:
         {
           FloatArrayList list = new FloatArrayList();
           position = decodePackedFloatList(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case INT64:
@@ -812,7 +813,7 @@ final class ArrayDecoders {
         {
           LongArrayList list = new LongArrayList();
           position = decodePackedVarint64List(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case INT32:
@@ -820,7 +821,7 @@ final class ArrayDecoders {
         {
           IntArrayList list = new IntArrayList();
           position = decodePackedVarint32List(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case FIXED64:
@@ -828,7 +829,7 @@ final class ArrayDecoders {
         {
           LongArrayList list = new LongArrayList();
           position = decodePackedFixed64List(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case FIXED32:
@@ -836,28 +837,28 @@ final class ArrayDecoders {
         {
           IntArrayList list = new IntArrayList();
           position = decodePackedFixed32List(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case BOOL:
         {
           BooleanArrayList list = new BooleanArrayList();
           position = decodePackedBoolList(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case SINT32:
         {
           IntArrayList list = new IntArrayList();
           position = decodePackedSInt32List(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case SINT64:
         {
           LongArrayList list = new LongArrayList();
           position = decodePackedSInt64List(data, position, list, registers);
-          extensions.setField(extension.descriptor, list);
+          extensions.setField(descriptor, list);
           break;
         }
         case ENUM:
@@ -868,22 +869,22 @@ final class ArrayDecoders {
                 message,
                 fieldNumber,
                 list,
-                extension.descriptor.getEnumType(),
+                descriptor.getEnumType(),
                 null,
                 unknownFieldSchema);
-            extensions.setField(extension.descriptor, list);
+            extensions.setField(descriptor, list);
             break;
           }
         default:
           throw new IllegalStateException(
-              "Type cannot be packed: " + extension.descriptor.getLiteType());
+              "Type cannot be packed: " + descriptor.getLiteType());
       }
     } else {
       Object value = null;
       // Enum is a special case because unknown enum values will be put into UnknownFieldSetLite.
       if (extension.getLiteType() == WireFormat.FieldType.ENUM) {
         position = decodeVarint32(data, position, registers);
-        Object enumValue = extension.descriptor.getEnumType().findValueByNumber(registers.int1);
+        Object enumValue = descriptor.getEnumType().findValueByNumber(registers.int1);
         if (enumValue == null) {
           SchemaUtil.storeUnknownEnum(
               message, fieldNumber, registers.int1, null, unknownFieldSchema);
@@ -950,12 +951,12 @@ final class ArrayDecoders {
                       .schemaFor(extension.getMessageDefaultInstance().getClass());
               if (extension.isRepeated()) {
                 position = decodeGroupField(fieldSchema, data, position, limit, endTag, registers);
-                extensions.addRepeatedField(extension.descriptor, registers.object1);
+                extensions.addRepeatedField(descriptor, registers.object1);
               } else {
-                Object oldValue = extensions.getField(extension.descriptor);
+                Object oldValue = extensions.getField(descriptor);
                 if (oldValue == null) {
                   oldValue = fieldSchema.newInstance();
-                  extensions.setField(extension.descriptor, oldValue);
+                  extensions.setField(descriptor, oldValue);
                 }
                 position =
                     mergeGroupField(
@@ -970,12 +971,12 @@ final class ArrayDecoders {
                       .schemaFor(extension.getMessageDefaultInstance().getClass());
               if (extension.isRepeated()) {
                 position = decodeMessageField(fieldSchema, data, position, limit, registers);
-                extensions.addRepeatedField(extension.descriptor, registers.object1);
+                extensions.addRepeatedField(descriptor, registers.object1);
               } else {
-                Object oldValue = extensions.getField(extension.descriptor);
+                Object oldValue = extensions.getField(descriptor);
                 if (oldValue == null) {
                   oldValue = fieldSchema.newInstance();
-                  extensions.setField(extension.descriptor, oldValue);
+                  extensions.setField(descriptor, oldValue);
                 }
                 position =
                     mergeMessageField(oldValue, fieldSchema, data, position, limit, registers);
@@ -987,9 +988,9 @@ final class ArrayDecoders {
         }
       }
       if (extension.isRepeated()) {
-        extensions.addRepeatedField(extension.descriptor, value);
+        extensions.addRepeatedField(descriptor, value);
       } else {
-        extensions.setField(extension.descriptor, value);
+        extensions.setField(descriptor, value);
       }
     }
     return position;
