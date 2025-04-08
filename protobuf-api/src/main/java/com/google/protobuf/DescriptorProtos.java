@@ -958,7 +958,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FileDescriptorProto> values) {
         if (fileBuilder_ == null) {
           ensureFileIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, file_);
           onChanged();
         } else {
@@ -3516,7 +3516,7 @@ public final class DescriptorProtos {
       public Builder addAllDependency(
           java.lang.Iterable<java.lang.String> values) {
         ensureDependencyIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
             values, dependency_);
         bitField0_ |= 0x00000004;
         onChanged();
@@ -3647,7 +3647,7 @@ public final class DescriptorProtos {
       public Builder addAllPublicDependency(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensurePublicDependencyIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
             values, publicDependency_);
         bitField0_ |= 0x00000008;
         onChanged();
@@ -3765,7 +3765,7 @@ public final class DescriptorProtos {
       public Builder addAllWeakDependency(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureWeakDependencyIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
             values, weakDependency_);
         bitField0_ |= 0x00000010;
         onChanged();
@@ -3968,7 +3968,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto> values) {
         if (messageTypeBuilder_ == null) {
           ensureMessageTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, messageType_);
           onChanged();
         } else {
@@ -4240,7 +4240,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumDescriptorProto> values) {
         if (enumTypeBuilder_ == null) {
           ensureEnumTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, enumType_);
           onChanged();
         } else {
@@ -4480,7 +4480,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.ServiceDescriptorProto> values) {
         if (serviceBuilder_ == null) {
           ensureServiceIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, service_);
           onChanged();
         } else {
@@ -4720,7 +4720,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldDescriptorProto> values) {
         if (extensionBuilder_ == null) {
           ensureExtensionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, extension_);
           onChanged();
         } else {
@@ -8886,7 +8886,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldDescriptorProto> values) {
         if (fieldBuilder_ == null) {
           ensureFieldIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, field_);
           onChanged();
         } else {
@@ -9126,7 +9126,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldDescriptorProto> values) {
         if (extensionBuilder_ == null) {
           ensureExtensionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, extension_);
           onChanged();
         } else {
@@ -9366,7 +9366,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto> values) {
         if (nestedTypeBuilder_ == null) {
           ensureNestedTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, nestedType_);
           onChanged();
         } else {
@@ -9606,7 +9606,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumDescriptorProto> values) {
         if (enumTypeBuilder_ == null) {
           ensureEnumTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, enumType_);
           onChanged();
         } else {
@@ -9846,7 +9846,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange> values) {
         if (extensionRangeBuilder_ == null) {
           ensureExtensionRangeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, extensionRange_);
           onChanged();
         } else {
@@ -10086,7 +10086,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.OneofDescriptorProto> values) {
         if (oneofDeclBuilder_ == null) {
           ensureOneofDeclIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, oneofDecl_);
           onChanged();
         } else {
@@ -10447,7 +10447,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange> values) {
         if (reservedRangeBuilder_ == null) {
           ensureReservedRangeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, reservedRange_);
           onChanged();
         } else {
@@ -10659,7 +10659,7 @@ public final class DescriptorProtos {
       public Builder addAllReservedName(
           java.lang.Iterable<java.lang.String> values) {
         ensureReservedNameIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
             values, reservedName_);
         bitField0_ |= 0x00000200;
         onChanged();
@@ -13348,7 +13348,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -13680,7 +13680,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration> values) {
         if (declarationBuilder_ == null) {
           ensureDeclarationIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, declaration_);
           onChanged();
         } else {
@@ -19928,7 +19928,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto> values) {
         if (valueBuilder_ == null) {
           ensureValueIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, value_);
           onChanged();
         } else {
@@ -20349,7 +20349,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange> values) {
         if (reservedRangeBuilder_ == null) {
           ensureReservedRangeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, reservedRange_);
           onChanged();
         } else {
@@ -20609,7 +20609,7 @@ public final class DescriptorProtos {
       public Builder addAllReservedName(
           java.lang.Iterable<java.lang.String> values) {
         ensureReservedNameIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
             values, reservedName_);
         bitField0_ |= 0x00000010;
         onChanged();
@@ -22536,7 +22536,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.MethodDescriptorProto> values) {
         if (methodBuilder_ == null) {
           ensureMethodIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, method_);
           onChanged();
         } else {
@@ -29386,7 +29386,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -31754,7 +31754,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -37186,7 +37186,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault> values) {
         if (editionDefaultsBuilder_ == null) {
           ensureEditionDefaultsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, editionDefaults_);
           onChanged();
         } else {
@@ -37771,7 +37771,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -39047,7 +39047,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -40807,7 +40807,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -42647,7 +42647,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -44079,7 +44079,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -45745,7 +45745,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -47770,7 +47770,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart> values) {
         if (nameBuilder_ == null) {
           ensureNameIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, name_);
           onChanged();
         } else {
@@ -51927,7 +51927,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault> values) {
         if (defaultsBuilder_ == null) {
           ensureDefaultsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, defaults_);
           onChanged();
         } else {
@@ -54097,7 +54097,7 @@ public final class DescriptorProtos {
         public Builder addAllPath(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensurePathIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, path_);
           bitField0_ |= 0x00000001;
           onChanged();
@@ -54255,7 +54255,7 @@ public final class DescriptorProtos {
         public Builder addAllSpan(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensureSpanIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, span_);
           bitField0_ |= 0x00000002;
           onChanged();
@@ -54818,7 +54818,7 @@ public final class DescriptorProtos {
         public Builder addAllLeadingDetachedComments(
             java.lang.Iterable<java.lang.String> values) {
           ensureLeadingDetachedCommentsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, leadingDetachedComments_);
           bitField0_ |= 0x00000010;
           onChanged();
@@ -56208,7 +56208,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location> values) {
         if (locationBuilder_ == null) {
           ensureLocationIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, location_);
           onChanged();
         } else {
@@ -57894,7 +57894,7 @@ public final class DescriptorProtos {
         public Builder addAllPath(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensurePathIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, path_);
           bitField0_ |= 0x00000001;
           onChanged();
@@ -58886,7 +58886,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation> values) {
         if (annotationBuilder_ == null) {
           ensureAnnotationIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.FlattenedGeneratedMessageV3.Builder.addAll(
               values, annotation_);
           onChanged();
         } else {
