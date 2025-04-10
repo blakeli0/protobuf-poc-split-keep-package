@@ -30,13 +30,13 @@ import static com.google.protobuf.Internal.checkNotNull;
  * @author jonp@google.com (Jon Perlow)
  */
 public class SingleFieldBuilderV3<
-        MType extends AbstractMessage,
-        BType extends AbstractMessage.Builder,
+        MType extends Message,
+        BType extends Message.Builder,
         IType extends MessageOrBuilder>
-    implements AbstractMessage.BuilderParent {
+    implements Message.BuilderParent {
 
   // Parent to send changes to.
-  private AbstractMessage.BuilderParent parent;
+  private Message.BuilderParent parent;
 
   // Invariant: one of builder or message fields must be non-null.
 
@@ -53,7 +53,7 @@ public class SingleFieldBuilderV3<
   // to dispatch dirty invalidations. See AbstractMessage.BuilderListener.
   private boolean isClean;
 
-  public SingleFieldBuilderV3(MType message, AbstractMessage.BuilderParent parent, boolean isClean) {
+  public SingleFieldBuilderV3(MType message, Message.BuilderParent parent, boolean isClean) {
     this.message = checkNotNull(message);
     this.parent = parent;
     this.isClean = isClean;
@@ -105,9 +105,9 @@ public class SingleFieldBuilderV3<
       // does not create any sub-objects with independent clean/dirty states,
       // therefore setting the builder itself to clean without actually calling
       // build() cannot break any invariants.
-      builder = (BType) message.newBuilderForType(this);
+      builder = (BType) message.newBuilderForType();
       builder.mergeFrom(message); // no-op if message is the default message
-      builder.markClean();
+//      builder.markClean();
     }
     return builder;
   }
@@ -137,7 +137,7 @@ public class SingleFieldBuilderV3<
   public SingleFieldBuilderV3<MType, BType, IType> setMessage(MType message) {
     this.message = checkNotNull(message);
     if (builder != null) {
-      builder.dispose();
+//      builder.dispose();
       builder = null;
     }
     onChanged();
@@ -175,7 +175,7 @@ public class SingleFieldBuilderV3<
                 ? message.getDefaultInstanceForType()
                 : builder.getDefaultInstanceForType());
     if (builder != null) {
-      builder.dispose();
+//      builder.dispose();
       builder = null;
     }
     onChanged();
