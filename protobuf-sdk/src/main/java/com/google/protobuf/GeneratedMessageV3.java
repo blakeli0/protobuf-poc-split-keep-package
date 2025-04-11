@@ -71,11 +71,11 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
   protected UnknownFieldSet unknownFields;
 
   protected GeneratedMessageV3() {
-    unknownFields = UnknownFieldSet.getDefaultInstance();
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   protected GeneratedMessageV3(Builder<?> builder) {
-    unknownFields = builder.getUnknownFields();
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   /** TODO: Remove this unnecessary intermediate implementation of this method. */
@@ -113,7 +113,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
   @Override
   public Descriptor getDescriptorForType() {
-    return internalGetFieldAccessorTable().descriptor;
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   /**
@@ -192,32 +192,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
   // TODO: compute this at {@code build()} time in the Builder class.
   @Override
   public boolean isInitialized() {
-    for (final FieldDescriptor field : getDescriptorForType().getFields()) {
-      // Check that all required fields are present.
-      if (field.isRequired()) {
-        if (!hasField(field)) {
-          return false;
-        }
-      }
-      // Check that embedded messages are initialized.
-      if (field.getJavaType() == FieldDescriptor.JavaType.MESSAGE) {
-        if (field.isRepeated()) {
-          @SuppressWarnings("unchecked")
-          final List<Message> messageList = (List<Message>) getField(field);
-          for (final Message element : messageList) {
-            if (!element.isInitialized()) {
-              return false;
-            }
-          }
-        } else {
-          if (hasField(field) && !((Message) getField(field)).isInitialized()) {
-            return false;
-          }
-        }
-      }
-    }
-
-    return true;
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   @Override
@@ -239,22 +214,22 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
   @Override
   public boolean hasOneof(final OneofDescriptor oneof) {
-    return internalGetFieldAccessorTable().getOneof(oneof).has(this);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   @Override
   public FieldDescriptor getOneofFieldDescriptor(final OneofDescriptor oneof) {
-    return internalGetFieldAccessorTable().getOneof(oneof).get(this);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   @Override
   public boolean hasField(final FieldDescriptor field) {
-    return internalGetFieldAccessorTable().getField(field).has(this);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   @Override
   public Object getField(final FieldDescriptor field) {
-    return internalGetFieldAccessorTable().getField(field).get(this);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   /**
@@ -270,18 +245,18 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
   @Override
   public int getRepeatedFieldCount(final FieldDescriptor field) {
-    return internalGetFieldAccessorTable().getField(field).getRepeatedCount(this);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   @Override
   public Object getRepeatedField(final FieldDescriptor field, final int index) {
-    return internalGetFieldAccessorTable().getField(field).getRepeated(this, index);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   // TODO: This method should be final.
   @Override
   public UnknownFieldSet getUnknownFields() {
-    return unknownFields;
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   // TODO: This should go away when Schema classes cannot modify immutable
@@ -487,19 +462,12 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
   @Override
   public void writeTo(final CodedOutputStream output) throws IOException {
-    MessageReflection.writeMessageTo(this, getAllFieldsRaw(), output, false);
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   @Override
   public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) {
-      return size;
-    }
-
-    memoizedSize = MessageReflection.getSerializedSize(
-        this, getAllFieldsRaw());
-    return memoizedSize;
+    throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
 
   /**
@@ -620,9 +588,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     @Override
     public BuilderT clone() {
-      BuilderT builder = (BuilderT) getDefaultInstanceForType().newBuilderForType();
-      builder.mergeFrom(buildPartial());
-      return builder;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /**
@@ -631,9 +597,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
      */
     @Override
     public BuilderT clear() {
-      unknownFieldsOrBuilder = UnknownFieldSet.getDefaultInstance();
-      onChanged();
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /**
@@ -644,12 +608,12 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     @Override
     public Descriptor getDescriptorForType() {
-      return internalGetFieldAccessorTable().descriptor;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Map<FieldDescriptor, Object> getAllFields() {
-      return Collections.unmodifiableMap(getAllFieldsMutable());
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /** Internal helper which returns a mutable map. */
@@ -696,85 +660,73 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     @Override
     public Message.Builder newBuilderForField(final FieldDescriptor field) {
-      return internalGetFieldAccessorTable().getField(field).newBuilder();
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Message.Builder getFieldBuilder(final FieldDescriptor field) {
-      return internalGetFieldAccessorTable().getField(field).getBuilder(this);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Message.Builder getRepeatedFieldBuilder(final FieldDescriptor field, int index) {
-      return internalGetFieldAccessorTable().getField(field).getRepeatedBuilder(this, index);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public boolean hasOneof(final OneofDescriptor oneof) {
-      return internalGetFieldAccessorTable().getOneof(oneof).has(this);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public FieldDescriptor getOneofFieldDescriptor(final OneofDescriptor oneof) {
-      return internalGetFieldAccessorTable().getOneof(oneof).get(this);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public boolean hasField(final FieldDescriptor field) {
-      return internalGetFieldAccessorTable().getField(field).has(this);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Object getField(final FieldDescriptor field) {
-      Object object = internalGetFieldAccessorTable().getField(field).get(this);
-      if (field.isRepeated()) {
-        // The underlying list object is still modifiable at this point.
-        // Make sure not to expose the modifiable list to the caller.
-        return Collections.unmodifiableList((List<?>) object);
-      } else {
-        return object;
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public BuilderT setField(final FieldDescriptor field, final Object value) {
-      internalGetFieldAccessorTable().getField(field).set(this, value);
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public BuilderT clearField(final FieldDescriptor field) {
-      internalGetFieldAccessorTable().getField(field).clear(this);
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public BuilderT clearOneof(final OneofDescriptor oneof) {
-      internalGetFieldAccessorTable().getOneof(oneof).clear(this);
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public int getRepeatedFieldCount(final FieldDescriptor field) {
-      return internalGetFieldAccessorTable().getField(field).getRepeatedCount(this);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Object getRepeatedField(final FieldDescriptor field, final int index) {
-      return internalGetFieldAccessorTable().getField(field).getRepeated(this, index);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public BuilderT setRepeatedField(
         final FieldDescriptor field, final int index, final Object value) {
-      internalGetFieldAccessorTable().getField(field).setRepeated(this, index, value);
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public BuilderT addRepeatedField(final FieldDescriptor field, final Object value) {
-      internalGetFieldAccessorTable().getField(field).addRepeated(this, value);
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     private BuilderT setUnknownFieldsInternal(final UnknownFieldSet unknownFields) {
@@ -785,7 +737,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     @Override
     public BuilderT setUnknownFields(final UnknownFieldSet unknownFields) {
-      return setUnknownFieldsInternal(unknownFields);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /**
@@ -797,57 +749,17 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     @Override
     public BuilderT mergeUnknownFields(final UnknownFieldSet unknownFields) {
-      if (UnknownFieldSet.getDefaultInstance().equals(unknownFields)) {
-        return (BuilderT) this;
-      }
-
-      if (UnknownFieldSet.getDefaultInstance().equals(unknownFieldsOrBuilder)) {
-        unknownFieldsOrBuilder = unknownFields;
-        onChanged();
-        return (BuilderT) this;
-      }
-
-      getUnknownFieldSetBuilder().mergeFrom(unknownFields);
-      onChanged();
-      return (BuilderT) this;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public boolean isInitialized() {
-      for (final FieldDescriptor field : getDescriptorForType().getFields()) {
-        // Check that all required fields are present.
-        if (field.isRequired()) {
-          if (!hasField(field)) {
-            return false;
-          }
-        }
-        // Check that embedded messages are initialized.
-        if (field.getJavaType() == FieldDescriptor.JavaType.MESSAGE) {
-          if (field.isRepeated()) {
-            @SuppressWarnings("unchecked")
-            final List<Message> messageList = (List<Message>) getField(field);
-            for (final Message element : messageList) {
-              if (!element.isInitialized()) {
-                return false;
-              }
-            }
-          } else {
-            if (hasField(field) && !((Message) getField(field)).isInitialized()) {
-              return false;
-            }
-          }
-        }
-      }
-      return true;
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public final UnknownFieldSet getUnknownFields() {
-      if (unknownFieldsOrBuilder instanceof UnknownFieldSet) {
-        return (UnknownFieldSet) unknownFieldsOrBuilder;
-      } else {
-        return ((UnknownFieldSet.Builder) unknownFieldsOrBuilder).buildPartial();
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /**
@@ -1102,42 +1014,20 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     /** Check if a singular extension is present. */
     @Override
     public final <T> boolean hasExtension(final ExtensionLite<MessageT, T> extensionLite) {
-      Extension<MessageT, T> extension = checkNotLite(extensionLite);
-
-      verifyExtensionContainingType(extension);
-      return extensions.hasField(extension.getDescriptor());
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /** Get the number of elements in a repeated extension. */
     @Override
     public final <T> int getExtensionCount(final ExtensionLite<MessageT, List<T>> extensionLite) {
-      Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
-
-      verifyExtensionContainingType(extension);
-      final FieldDescriptor descriptor = extension.getDescriptor();
-      return extensions.getRepeatedFieldCount(descriptor);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /** Get the value of an extension. */
     @Override
     @SuppressWarnings("unchecked")
     public final <T> T getExtension(final ExtensionLite<MessageT, T> extensionLite) {
-      Extension<MessageT, T> extension = checkNotLite(extensionLite);
-
-      verifyExtensionContainingType(extension);
-      FieldDescriptor descriptor = extension.getDescriptor();
-      final Object value = extensions.getField(descriptor);
-      if (value == null) {
-        if (descriptor.isRepeated()) {
-          return (T) Collections.emptyList();
-        } else if (descriptor.getJavaType() == FieldDescriptor.JavaType.MESSAGE) {
-          return (T) extension.getMessageDefaultInstance();
-        } else {
-          return (T) extension.fromReflectionType(descriptor.getDefaultValue());
-        }
-      } else {
-        return (T) extension.fromReflectionType(value);
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /** Get one element of a repeated extension. */
@@ -1145,12 +1035,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @SuppressWarnings("unchecked")
     public final <T> T getExtension(
         final ExtensionLite<MessageT, List<T>> extensionLite, final int index) {
-      Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
-
-      verifyExtensionContainingType(extension);
-      FieldDescriptor descriptor = extension.getDescriptor();
-      return (T)
-          extension.singularFromReflectionType(extensions.getRepeatedField(descriptor, index));
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /**
@@ -1159,7 +1044,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
      */
     @Override
     public final <T> boolean hasExtension(final Extension<MessageT, T> extension) {
-      return hasExtension((ExtensionLite<MessageT, T>) extension);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Check if a singular extension is present.
@@ -1168,7 +1053,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @Override
     public final <T> boolean hasExtension(
         final GeneratedExtension<MessageT, T> extension) {
-      return hasExtension((ExtensionLite<MessageT, T>) extension);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Get the number of elements in a repeated extension.
@@ -1177,7 +1062,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @Override
     public final <T> int getExtensionCount(
         final Extension<MessageT, List<T>> extension) {
-      return getExtensionCount((ExtensionLite<MessageT, List<T>>) extension);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Get the number of elements in a repeated extension.
@@ -1186,7 +1071,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @Override
     public final <T> int getExtensionCount(
         final GeneratedExtension<MessageT, List<T>> extension) {
-      return getExtensionCount((ExtensionLite<MessageT, List<T>>) extension);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Get the value of an extension.
@@ -1194,7 +1079,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
      */
     @Override
     public final <T> T getExtension(final Extension<MessageT, T> extension) {
-      return getExtension((ExtensionLite<MessageT, T>) extension);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Get the value of an extension.
@@ -1203,7 +1088,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @Override
     public final <T> T getExtension(
         final GeneratedExtension<MessageT, T> extension) {
-      return getExtension((ExtensionLite<MessageT, T>) extension);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Get one element of a repeated extension.
@@ -1212,7 +1097,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @Override
     public final <T> T getExtension(
         final Extension<MessageT, List<T>> extension, final int index) {
-      return getExtension((ExtensionLite<MessageT, List<T>>) extension, index);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
     /**
      * Get one element of a repeated extension.
@@ -1221,7 +1106,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     @Override
     public final <T> T getExtension(
         final GeneratedExtension<MessageT, List<T>> extension, final int index) {
-      return getExtension((ExtensionLite<MessageT, List<T>>) extension, index);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     /** Called by subclasses to check if all extensions are initialized. */
@@ -1232,7 +1117,7 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     // TODO: compute this in the builder at {@code build()} time.
     @Override
     public boolean isInitialized() {
-      return super.isInitialized() && extensionsAreInitialized();
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     // TODO: remove mutating method from immutable type
@@ -1356,71 +1241,32 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     @Override
     public Map<FieldDescriptor, Object> getAllFields() {
-      final Map<FieldDescriptor, Object> result =
-          super.getAllFieldsMutable(/* getBytesForString= */ false);
-      result.putAll(getExtensionFields());
-      return Collections.unmodifiableMap(result);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Map<FieldDescriptor, Object> getAllFieldsRaw() {
-      final Map<FieldDescriptor, Object> result =
-          super.getAllFieldsMutable(/* getBytesForString= */ false);
-      result.putAll(getExtensionFields());
-      return Collections.unmodifiableMap(result);
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public boolean hasField(final FieldDescriptor field) {
-      if (field.isExtension()) {
-        verifyContainingType(field);
-        return extensions.hasField(field);
-      } else {
-        return super.hasField(field);
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Object getField(final FieldDescriptor field) {
-      if (field.isExtension()) {
-        verifyContainingType(field);
-        final Object value = extensions.getField(field);
-        if (value == null) {
-          if (field.isRepeated()) {
-            return Collections.emptyList();
-          } else if (field.getJavaType() == FieldDescriptor.JavaType.MESSAGE) {
-            // Lacking an ExtensionRegistry, we have no way to determine the
-            // extension's real type, so we return a DynamicMessage.
-            return DynamicMessage.getDefaultInstance(field.getMessageType());
-          } else {
-            return field.getDefaultValue();
-          }
-        } else {
-          return value;
-        }
-      } else {
-        return super.getField(field);
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public int getRepeatedFieldCount(final FieldDescriptor field) {
-      if (field.isExtension()) {
-        verifyContainingType(field);
-        return extensions.getRepeatedFieldCount(field);
-      } else {
-        return super.getRepeatedFieldCount(field);
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     @Override
     public Object getRepeatedField(final FieldDescriptor field, final int index) {
-      if (field.isExtension()) {
-        verifyContainingType(field);
-        return extensions.getRepeatedField(field, index);
-      } else {
-        return super.getRepeatedField(field, index);
-      }
+      throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
     }
 
     private void verifyContainingType(final FieldDescriptor field) {
