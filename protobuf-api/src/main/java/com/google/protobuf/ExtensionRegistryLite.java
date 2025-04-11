@@ -7,6 +7,7 @@
 
 package com.google.protobuf;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -72,6 +73,19 @@ public class ExtensionRegistryLite {
       }
     }
   }
+  private static final Class<?> GENERATED_EXTENSION = getGeneratedExtensionClass();
+
+  private static Class<?> getGeneratedExtensionClass() {
+    try {
+      Class<?> generatedMessageLiteClass = Class.forName("com.google.protobuf.GeneratedMessageLite");
+      return Arrays.stream(generatedMessageLiteClass.getClasses())
+              .filter(innerClass -> innerClass.getName().equals("com.google.protobuf.GeneratedMessageLite$GeneratedExtension"))
+              .findFirst()
+              .get();
+    } catch (Throwable e) {
+      return null;
+    }
+  }
 
   public static boolean isEagerlyParseMessageSets() {
     return eagerlyParseMessageSets;
@@ -127,26 +141,28 @@ public class ExtensionRegistryLite {
    */
   @SuppressWarnings("unchecked")
   public <ContainingType extends MessageLite>
-      GeneratedMessageLite.GeneratedExtension<ContainingType, ?> findLiteExtensionByNumber(
+      ExtensionLite<ContainingType, ?> findLiteExtensionByNumber(
           final ContainingType containingTypeDefaultInstance, final int fieldNumber) {
-    return (GeneratedMessageLite.GeneratedExtension<ContainingType, ?>)
+    return (ExtensionLite<ContainingType, ?>)
         extensionsByNumber.get(new ObjectIntPair(containingTypeDefaultInstance, fieldNumber));
   }
 
   /** Add an extension from a lite generated file to the registry. */
-  public final void add(final GeneratedMessageLite.GeneratedExtension<?, ?> extension) {
-    extensionsByNumber.put(
-        new ObjectIntPair(extension.getContainingTypeDefaultInstance(), extension.getNumber()),
-        extension);
-  }
+//  public final void add(final ExtensionLite<?, ?> extension) {
+//    extensionsByNumber.put(
+//        new ObjectIntPair(extension, extension.getNumber()),
+//        extension);
+//  }
 
   /**
    * Add an extension from a lite generated file to the registry only if it is a non-lite extension
    * i.e. {@link GeneratedMessageLite.GeneratedExtension}.
    */
   public final void add(ExtensionLite<?, ?> extension) {
-    if (GeneratedMessageLite.GeneratedExtension.class.isAssignableFrom(extension.getClass())) {
-      add((GeneratedMessageLite.GeneratedExtension<?, ?>) extension);
+    if (GENERATED_EXTENSION.isAssignableFrom(extension.getClass())) {
+      extensionsByNumber.put(
+              new ObjectIntPair(extension, extension.getNumber()),
+              extension);
     }
     if (doFullRuntimeInheritanceCheck && ExtensionRegistryFactory.isFullRegistry(this)) {
       try {
@@ -166,7 +182,7 @@ public class ExtensionRegistryLite {
 
   ExtensionRegistryLite() {
     this.extensionsByNumber =
-        new HashMap<ObjectIntPair, GeneratedMessageLite.GeneratedExtension<?, ?>>();
+        new HashMap<ObjectIntPair, ExtensionLite<?, ?>>();
   }
 
   static final ExtensionRegistryLite EMPTY_REGISTRY_LITE = new ExtensionRegistryLite(true);
@@ -179,7 +195,7 @@ public class ExtensionRegistryLite {
     }
   }
 
-  private final Map<ObjectIntPair, GeneratedMessageLite.GeneratedExtension<?, ?>>
+  private final Map<ObjectIntPair, ExtensionLite<?, ?>>
       extensionsByNumber;
 
   ExtensionRegistryLite(boolean empty) {

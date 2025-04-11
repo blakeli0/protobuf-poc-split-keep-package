@@ -26,7 +26,7 @@ import java.util.Map;
  *
  * @author kenton@google.com Kenton Varda
  */
-public final class DynamicMessage extends AbstractMessage {
+public final class DynamicMessage extends FlattenedAbstractMessage {
   private final Descriptor type;
   private final FieldSet<FieldDescriptor> fields;
   private final FieldDescriptor[] oneofCases;
@@ -293,7 +293,7 @@ public final class DynamicMessage extends AbstractMessage {
   // =================================================================
 
   /** Builder for {@link DynamicMessage}s. */
-  public static final class Builder extends AbstractMessage.Builder<Builder> {
+  public static final class Builder extends FlattenedAbstractMessage.Builder<Builder> {
     private final Descriptor type;
     private FieldSet.Builder<FieldDescriptor> fields;
     private final FieldDescriptor[] oneofCases;
