@@ -2392,7 +2392,7 @@ public final class PluginProtos {
       public Builder addAllFileToGenerate(
           java.lang.Iterable<java.lang.String> values) {
         ensureFileToGenerateIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.Internal.addAll(
             values, fileToGenerate_);
         bitField0_ |= 0x00000001;
         onChanged();
@@ -2901,7 +2901,7 @@ public final class PluginProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FileDescriptorProto> values) {
         if (protoFileBuilder_ == null) {
           ensureProtoFileIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.Internal.addAll(
               values, protoFile_);
           onChanged();
         } else {
@@ -3377,7 +3377,7 @@ public final class PluginProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FileDescriptorProto> values) {
         if (sourceFileDescriptorsBuilder_ == null) {
           ensureSourceFileDescriptorsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.Internal.addAll(
               values, sourceFileDescriptors_);
           onChanged();
         } else {
@@ -7180,7 +7180,7 @@ public final class PluginProtos {
           java.lang.Iterable<? extends com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File> values) {
         if (fileBuilder_ == null) {
           ensureFileIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.Internal.addAll(
               values, file_);
           onChanged();
         } else {
