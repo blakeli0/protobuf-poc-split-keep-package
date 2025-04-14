@@ -23,7 +23,7 @@ import java.util.List;
  *
  * @author kenton@google.com Kenton Varda
  */
-public abstract class AbstractMessageLite<
+abstract class AbstractMessageLite<
         MessageType extends AbstractMessageLite<MessageType, BuilderType>,
         BuilderType extends AbstractMessageLite.Builder<MessageType, BuilderType>>
     implements MessageLite {
