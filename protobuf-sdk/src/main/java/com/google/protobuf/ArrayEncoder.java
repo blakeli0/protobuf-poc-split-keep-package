@@ -163,7 +163,7 @@ class ArrayEncoder extends CodedOutputStream {
     @Override
     public final void writeMessageNoTag(final MessageLite value) throws IOException {
         writeUInt32NoTag(value.getSerializedSize());
-        ((AbstractMessageLite) value).writeTo(this);
+        value.writeTo(this);
     }
 
     @Override
