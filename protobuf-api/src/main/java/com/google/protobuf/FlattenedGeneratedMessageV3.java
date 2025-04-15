@@ -1085,7 +1085,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
 
     @Override
     public String toString() {
-      return TextFormat.printer().printToString(this);
+      return TextFormatInternal.printer().printToString(this);
     }
 
     /** Construct an UninitializedMessageException reporting missing fields in the given message. */

@@ -357,7 +357,7 @@ public final class MapEntry<K, V> implements Message {
 
   @Override
   public final String toString() {
-    return TextFormat.printer().printToString(this);
+    return TextFormatInternal.printer().printToString(this);
   }
 
   protected int memoizedSize = -1;
@@ -989,7 +989,7 @@ public final class MapEntry<K, V> implements Message {
 
     @Override
     public String toString() {
-      return TextFormat.printer().printToString(this);
+      return TextFormatInternal.printer().printToString(this);
     }
 
     /** Construct an UninitializedMessageException reporting missing fields in the given message. */

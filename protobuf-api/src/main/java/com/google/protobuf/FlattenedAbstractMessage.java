@@ -171,7 +171,7 @@ public abstract class FlattenedAbstractMessage
 
   @Override
   public final String toString() {
-    return TextFormat.printer().printToString(this);
+    return TextFormatInternal.printer().printToString(this);
   }
 
   @Override
@@ -686,7 +686,7 @@ public abstract class FlattenedAbstractMessage
 
     @Override
     public String toString() {
-      return TextFormat.printer().printToString(this);
+      return TextFormatInternal.printer().printToString(this);
     }
 
     /** Construct an UninitializedMessageException reporting missing fields in the given message. */
