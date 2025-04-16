@@ -485,42 +485,36 @@ public final class JavaFeaturesProto {
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
+      return parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+      return parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
+      return parseDelimitedWithIOException(PARSER, input);
     }
 
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      return parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
+      return parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.JavaFeaturesProto.JavaFeatures parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+      return parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override

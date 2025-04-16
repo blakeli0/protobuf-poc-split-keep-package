@@ -37,13 +37,13 @@ import java.util.RandomAccess;
  * @author jonp@google.com (Jon Perlow)
  */
 public class RepeatedFieldBuilderV3<
-        MType extends AbstractMessage,
-        BType extends AbstractMessage.Builder,
+        MType extends Message,
+        BType extends Message.Builder,
         IType extends MessageOrBuilder>
-    implements AbstractMessage.BuilderParent {
+    implements Message.BuilderParent {
 
   // Parent to send changes to.
-  private AbstractMessage.BuilderParent parent;
+  private Message.BuilderParent parent;
 
   // List of messages. Never null. It may be immutable, in which case
   // isMessagesListMutable will be false. See note below.
@@ -104,7 +104,7 @@ public class RepeatedFieldBuilderV3<
   public RepeatedFieldBuilderV3(
       List<MType> messages,
       boolean isMessagesListMutable,
-      AbstractMessage.BuilderParent parent,
+      Message.BuilderParent parent,
       boolean isClean) {
     this.messages = messages;
     this.isMessagesListMutable = isMessagesListMutable;
@@ -551,8 +551,8 @@ public class RepeatedFieldBuilderV3<
    * @param <IType> the common interface for the message and the builder
    */
   private static class MessageExternalList<
-          MType extends AbstractMessage,
-          BType extends AbstractMessage.Builder,
+          MType extends Message,
+          BType extends Message.Builder,
           IType extends MessageOrBuilder>
       extends AbstractList<MType> implements List<MType>, RandomAccess {
 
@@ -585,8 +585,8 @@ public class RepeatedFieldBuilderV3<
    * @param <IType> the common interface for the message and the builder
    */
   private static class BuilderExternalList<
-          MType extends AbstractMessage,
-          BType extends AbstractMessage.Builder,
+          MType extends Message,
+          BType extends Message.Builder,
           IType extends MessageOrBuilder>
       extends AbstractList<BType> implements List<BType>, RandomAccess {
 
@@ -619,8 +619,8 @@ public class RepeatedFieldBuilderV3<
    * @param <IType> the common interface for the message and the builder
    */
   private static class MessageOrBuilderExternalList<
-          MType extends AbstractMessage,
-          BType extends AbstractMessage.Builder,
+          MType extends Message,
+          BType extends Message.Builder,
           IType extends MessageOrBuilder>
       extends AbstractList<IType> implements List<IType>, RandomAccess {
 
