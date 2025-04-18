@@ -102,7 +102,7 @@ public abstract class CodedOutputStream extends ByteOutput {
    */
   public static CodedOutputStream newInstance(final OutputStream output, final int bufferSize) {
     try {
-      Constructor<?> constructor = OUTPUT_STREAM_ENCODER.getDeclaredConstructors()[0];
+      Constructor<?> constructor = OUTPUT_STREAM_ENCODER.getConstructors()[0];
       return (CodedOutputStream)constructor.newInstance(output, bufferSize);
     } catch (InstantiationException e) {
       throw new RuntimeException(e);
@@ -132,7 +132,7 @@ public abstract class CodedOutputStream extends ByteOutput {
   public static CodedOutputStream newInstance(
       final byte[] flatArray, final int offset, final int length) {
       try {
-          Constructor<?> constructor = ARRAY_ENCODER.getDeclaredConstructors()[0];
+          Constructor<?> constructor = ARRAY_ENCODER.getConstructors()[0];
           return (CodedOutputStream)constructor.newInstance(flatArray, offset, length);
       } catch (InstantiationException e) {
           throw new RuntimeException(e);
@@ -147,7 +147,7 @@ public abstract class CodedOutputStream extends ByteOutput {
   public static CodedOutputStream newInstance(ByteBuffer buffer) {
     if (buffer.hasArray()) {
       try {
-        Constructor<?> constructor = HEAP_NIO_ENCODER.getDeclaredConstructors()[0];
+        Constructor<?> constructor = HEAP_NIO_ENCODER.getConstructors()[0];
         return (CodedOutputStream)constructor.newInstance(buffer);
       } catch (InstantiationException e) {
         throw new RuntimeException(e);
@@ -168,7 +168,7 @@ public abstract class CodedOutputStream extends ByteOutput {
   /** For testing purposes only. */
   static CodedOutputStream newUnsafeInstance(ByteBuffer buffer) {
     try {
-      Constructor<?> constructor = UNSAFE_DIRECT_NIO_ENCODER.getDeclaredConstructors()[0];
+      Constructor<?> constructor = UNSAFE_DIRECT_NIO_ENCODER.getConstructors()[0];
       return (CodedOutputStream)constructor.newInstance(buffer);
     } catch (InstantiationException e) {
       throw new RuntimeException(e);
@@ -182,7 +182,7 @@ public abstract class CodedOutputStream extends ByteOutput {
   /** For testing purposes only. */
   static CodedOutputStream newSafeInstance(ByteBuffer buffer) {
     try {
-      Constructor<?> constructor = SAFE_DIRECT_NIO_ENCODER.getDeclaredConstructors()[0];
+      Constructor<?> constructor = SAFE_DIRECT_NIO_ENCODER.getConstructors()[0];
       return (CodedOutputStream)constructor.newInstance(buffer);
     } catch (InstantiationException e) {
       throw new RuntimeException(e);
@@ -261,7 +261,7 @@ public abstract class CodedOutputStream extends ByteOutput {
       throw new IllegalArgumentException("bufferSize must be positive");
     }
     try {
-      Constructor<?> constructor = BYTE_OUTPUT_ENCODER.getDeclaredConstructors()[0];
+      Constructor<?> constructor = BYTE_OUTPUT_ENCODER.getConstructors()[0];
       return (CodedOutputStream)constructor.newInstance(byteOutput, bufferSize);
     } catch (InstantiationException e) {
       throw new RuntimeException(e);
