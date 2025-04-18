@@ -30,7 +30,7 @@ import java.io.IOException;
  *
  * @author xiangl@google.com (Xiang Li)
  */
-class LazyFieldLite {
+public class LazyFieldLite {
   private static final ExtensionRegistryLite EMPTY_REGISTRY =
       ExtensionRegistryLite.getEmptyRegistry();
 
