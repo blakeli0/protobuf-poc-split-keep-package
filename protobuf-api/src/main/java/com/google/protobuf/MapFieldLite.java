@@ -21,7 +21,7 @@ import java.util.Set;
  *
  * <p>This class is a protobuf implementation detail. Users shouldn't use this class directly.
  */
-public final class MapFieldLite<K, V> extends LinkedHashMap<K, V> {
+final class MapFieldLite<K, V> extends LinkedHashMap<K, V> {
 
   private boolean isMutable;
 

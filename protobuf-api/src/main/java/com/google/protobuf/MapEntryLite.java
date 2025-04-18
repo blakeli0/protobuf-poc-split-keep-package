@@ -19,7 +19,7 @@ import java.util.Map;
  *
  * <p>Protobuf internal. Users shouldn't use.
  */
-public class MapEntryLite<K, V> {
+class MapEntryLite<K, V> {
 
   static class Metadata<K, V> {
     public final WireFormat.FieldType keyType;
