@@ -22,7 +22,7 @@ import java.util.Collections;
 import java.util.List;
 
 /** A {@link ByteString} that wraps around a {@link ByteBuffer}. */
-final class NioByteString extends LeafByteString {
+final class NioByteString extends ByteString.LeafByteString {
   private final ByteBuffer buffer;
 
   NioByteString(ByteBuffer buffer) {

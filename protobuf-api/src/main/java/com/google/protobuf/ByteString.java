@@ -11,21 +11,22 @@ import static com.google.protobuf.TextFormatEscaper.escapeBytes;
 import static java.lang.Integer.toHexString;
 import static java.lang.System.identityHashCode;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
@@ -68,22 +69,8 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
 
   static final int MAX_READ_FROM_CHUNK_SIZE = 0x2000; // 8k
 
-  private static final Class<?> LITERAL_BYTE_STRING = getClassForName("com.google.protobuf.LiteralByteString");
-  private static final Class<?> LEAF_BYTE_STRING = getClassForName("com.google.protobuf.LeafByteString");
-  private static final Class<?> NIO_BYTE_STRING = getClassForName("com.google.protobuf.NioByteString");
-  private static final Class<?> ROPE_BYTE_STRING = getClassForName("com.google.protobuf.RopeByteString");
-  private static final Class<?> BOUNDED_BYTE_STRING = getClassForName("com.google.protobuf.BoundedByteString");
-
-  private static <T> Class<T> getClassForName(String name) {
-    try {
-      return (Class<T>) Class.forName(name);
-    } catch (Throwable e) {
-      return null;
-    }
-  }
-
   /** Empty {@code ByteString}. */
-  public static final ByteString EMPTY = newLiteralByteString(Internal.EMPTY_BYTE_ARRAY);
+  public static final ByteString EMPTY = new LiteralByteString(Internal.EMPTY_BYTE_ARRAY);
 
   /**
    * An interface to efficiently copy {@code byte[]}.
@@ -392,21 +379,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
       int d2 = extractHexDigit(hexString, 2 * i + 1);
       bytes[i] = (byte) (d1 << 4 | d2);
     }
-
-    return newLiteralByteString(bytes);
-  }
-
-  private static ByteString newLiteralByteString(byte[] bytes) {
-    try {
-      Constructor<?> constructor = LITERAL_BYTE_STRING.getDeclaredConstructors()[0];
-      return (ByteString) constructor.newInstance(bytes);
-    } catch (InstantiationException e) {
-      throw new RuntimeException(e);
-    } catch (IllegalAccessException e) {
-      throw new RuntimeException(e);
-    } catch (InvocationTargetException e) {
-      throw new RuntimeException(e);
-    }
+    return new LiteralByteString(bytes);
   }
 
   // =================================================================
@@ -423,7 +396,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
    */
   public static ByteString copyFrom(byte[] bytes, int offset, int size) {
     checkRange(offset, offset + size, bytes.length);
-    return newLiteralByteString(byteArrayCopier.copyFrom(bytes, offset, size));
+    return new LiteralByteString(byteArrayCopier.copyFrom(bytes, offset, size));
   }
 
   /**
@@ -445,16 +418,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
       final int offset = buffer.arrayOffset();
       return ByteString.wrap(buffer.array(), offset + buffer.position(), buffer.remaining());
     } else {
-      try {
-        Constructor<?> constructor = NIO_BYTE_STRING.getDeclaredConstructors()[0];
-        return (ByteString) constructor.newInstance(buffer);
-      } catch (InstantiationException e) {
-        throw new RuntimeException(e);
-      } catch (IllegalAccessException e) {
-        throw new RuntimeException(e);
-      } catch (InvocationTargetException e) {
-        throw new RuntimeException(e);
-      }
+      return new NioByteString(buffer);
     }
   }
 
@@ -464,7 +428,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
    */
   static ByteString wrap(byte[] bytes) {
     // TODO: Return EMPTY when bytes are empty to reduce allocations?
-    return newLiteralByteString(bytes);
+    return new LiteralByteString(bytes);
   }
 
   /**
@@ -472,16 +436,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
    * to force a classload of ByteString before BoundedByteString and LiteralByteString.
    */
   static ByteString wrap(byte[] bytes, int offset, int length) {
-    try {
-      Constructor<?> constructor = BOUNDED_BYTE_STRING.getDeclaredConstructors()[0];
-      return (ByteString) constructor.newInstance(bytes, offset, length);
-    } catch (InstantiationException e) {
-      throw new RuntimeException(e);
-    } catch (IllegalAccessException e) {
-      throw new RuntimeException(e);
-    } catch (InvocationTargetException e) {
-      throw new RuntimeException(e);
-    }
+    return new BoundedByteString(bytes, offset, length);
   }
 
   /**
@@ -497,8 +452,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
     checkRange(0, size, bytes.remaining());
     byte[] copy = new byte[size];
     bytes.get(copy);
-    return newLiteralByteString(copy);
-
+    return new LiteralByteString(copy);
   }
 
   /**
@@ -522,7 +476,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
    */
   public static ByteString copyFrom(String text, String charsetName)
       throws UnsupportedEncodingException {
-    return newLiteralByteString(text.getBytes(charsetName));
+    return new LiteralByteString(text.getBytes(charsetName));
   }
 
   /**
@@ -534,7 +488,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
    * @return new {@code ByteString}
    */
   public static ByteString copyFrom(String text, Charset charset) {
-    return newLiteralByteString(text.getBytes(charset));
+    return new LiteralByteString(text.getBytes(charset));
   }
 
   /**
@@ -545,7 +499,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
    * @return new {@code ByteString}
    */
   public static ByteString copyFromUtf8(String text) {
-    return newLiteralByteString(text.getBytes(Internal.UTF_8));
+    return new LiteralByteString(text.getBytes(Internal.UTF_8));
   }
 
   // =================================================================
@@ -669,16 +623,8 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
       throw new IllegalArgumentException(
           "ByteString would be too long: " + size() + "+" + other.size());
     }
-      try {
-          Method concatenateMethod = ROPE_BYTE_STRING.getMethod("concatenate", ByteString.class, ByteString.class);
-          return (ByteString) concatenateMethod.invoke(null, this, other);
-      } catch (NoSuchMethodException e) {
-          throw new RuntimeException(e);
-      } catch (InvocationTargetException e) {
-          throw new RuntimeException(e);
-      } catch (IllegalAccessException e) {
-          throw new RuntimeException(e);
-      }
+
+    return RopeByteString.concatenate(this, other);
   }
 
   /**
@@ -978,6 +924,37 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
   @Override
   public abstract boolean equals(Object o);
 
+  /** Base class for leaf {@link ByteString}s (i.e. non-ropes). */
+  abstract static class LeafByteString extends ByteString {
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected final int getTreeDepth() {
+      return 0;
+    }
+
+    @Override
+    protected final boolean isBalanced() {
+      return true;
+    }
+
+    @Override
+    void writeToReverse(ByteOutput byteOutput) throws IOException {
+      writeTo(byteOutput);
+    }
+
+    /**
+     * Check equality of the substring of given length of this object starting at zero with another
+     * {@code ByteString} substring starting at offset.
+     *
+     * @param other what to compare a substring in
+     * @param offset offset into other
+     * @param length number of bytes to compare
+     * @return true for equality of substrings, else false.
+     */
+    abstract boolean equalsRange(ByteString other, int offset, int length);
+  }
+
   /**
    * Compute the hashCode using the traditional algorithm from {@link ByteString}.
    *
@@ -1191,7 +1168,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
      * buffer whose size is at least the specified minimum size.
      */
     private void flushFullBuffer(int minSize) {
-      flushedBuffers.add(newLiteralByteString(buffer));
+      flushedBuffers.add(new LiteralByteString(buffer));
       flushedBuffersTotalBytes += buffer.length;
       // We want to increase our total capacity by 50%, but as a minimum,
       // the new buffer should also at least be >= minSize and
@@ -1209,12 +1186,12 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
       if (bufferPos < buffer.length) {
         if (bufferPos > 0) {
           byte[] bufferCopy = Arrays.copyOf(buffer, bufferPos);
-          flushedBuffers.add(newLiteralByteString(bufferCopy));
+          flushedBuffers.add(new LiteralByteString(bufferCopy));
         }
         // We reuse this buffer for further writes.
       } else {
         // Buffer is completely full.  Huzzah.
-        flushedBuffers.add(newLiteralByteString(buffer));
+        flushedBuffers.add(new LiteralByteString(buffer));
         // 99% of the time, we're not going to use this OutputStream again.
         // We set buffer to an empty byte stream so that we're handling this
         // case without wasting space.  In the rare case that more writes
@@ -1259,7 +1236,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
       // We can be confident that the CodedOutputStream will not modify the
       // underlying bytes anymore because it already wrote all of them.  So,
       // no need to make a copy.
-      return newLiteralByteString(buffer);
+      return new LiteralByteString(buffer);
     }
 
     public CodedOutputStream getCodedOutput() {
@@ -1366,7 +1343,323 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
     return size() <= limit ? escapeBytes(this) : escapeBytes(substring(0, limit - 3)) + "...";
   }
 
+  /**
+   * This class implements a {@link com.google.protobuf.ByteString} backed by a single array of
+   * bytes, contiguous in memory. It supports substring by pointing to only a sub-range of the
+   * underlying byte array, meaning that a substring will reference the full byte-array of the
+   * string it's made from, exactly as with {@link String}.
+   *
+   * @author carlanton@google.com (Carl Haverl)
+   */
+  // Keep this class private to avoid deadlocks in classloading across threads as ByteString's
+  // static initializer loads LiteralByteString and another thread loads LiteralByteString.
+  private static class LiteralByteString extends ByteString.LeafByteString {
+    private static final long serialVersionUID = 1L;
 
+    protected final byte[] bytes;
 
+    /**
+     * Creates a {@code LiteralByteString} backed by the given array, without copying.
+     *
+     * @param bytes array to wrap
+     */
+    LiteralByteString(byte[] bytes) {
+      if (bytes == null) {
+        throw new NullPointerException();
+      }
+      this.bytes = bytes;
+    }
 
+    @Override
+    public byte byteAt(int index) {
+      // Unlike most methods in this class, this one is a direct implementation
+      // ignoring the potential offset because we need to do range-checking in the
+      // substring case anyway.
+      return bytes[index];
+    }
+
+    @Override
+    byte internalByteAt(int index) {
+      return bytes[index];
+    }
+
+    @Override
+    public int size() {
+      return bytes.length;
+    }
+
+    // =================================================================
+    // ByteString -> substring
+
+    @Override
+    public final ByteString substring(int beginIndex, int endIndex) {
+      final int length = checkRange(beginIndex, endIndex, size());
+
+      if (length == 0) {
+        return ByteString.EMPTY;
+      }
+
+      return new BoundedByteString(bytes, getOffsetIntoBytes() + beginIndex, length);
+    }
+
+    // =================================================================
+    // ByteString -> byte[]
+
+    @Override
+    protected void copyToInternal(
+        byte[] target, int sourceOffset, int targetOffset, int numberToCopy) {
+      // Optimized form, not for subclasses, since we don't call
+      // getOffsetIntoBytes() or check the 'numberToCopy' parameter.
+      // TODO: Is not calling getOffsetIntoBytes really saving that much?
+      System.arraycopy(bytes, sourceOffset, target, targetOffset, numberToCopy);
+    }
+
+    @Override
+    public final void copyTo(ByteBuffer target) {
+      target.put(bytes, getOffsetIntoBytes(), size()); // Copies bytes
+    }
+
+    @Override
+    public final ByteBuffer asReadOnlyByteBuffer() {
+      return ByteBuffer.wrap(bytes, getOffsetIntoBytes(), size()).asReadOnlyBuffer();
+    }
+
+    @Override
+    public final List<ByteBuffer> asReadOnlyByteBufferList() {
+      return Collections.singletonList(asReadOnlyByteBuffer());
+    }
+
+    @Override
+    public final void writeTo(OutputStream outputStream) throws IOException {
+      outputStream.write(toByteArray());
+    }
+
+    @Override
+    final void writeToInternal(OutputStream outputStream, int sourceOffset, int numberToWrite)
+        throws IOException {
+      outputStream.write(bytes, getOffsetIntoBytes() + sourceOffset, numberToWrite);
+    }
+
+    @Override
+    final void writeTo(ByteOutput output) throws IOException {
+      output.writeLazy(bytes, getOffsetIntoBytes(), size());
+    }
+
+    @Override
+    protected final String toStringInternal(Charset charset) {
+      return new String(bytes, getOffsetIntoBytes(), size(), charset);
+    }
+
+    // =================================================================
+    // UTF-8 decoding
+
+    @Override
+    public final boolean isValidUtf8() {
+      int offset = getOffsetIntoBytes();
+      return Utf8.isValidUtf8(bytes, offset, offset + size());
+    }
+
+    @Override
+    protected final int partialIsValidUtf8(int state, int offset, int length) {
+      int index = getOffsetIntoBytes() + offset;
+      return Utf8.partialIsValidUtf8(state, bytes, index, index + length);
+    }
+
+    // =================================================================
+    // equals() and hashCode()
+
+    @Override
+    public final boolean equals(Object other) {
+      if (other == this) {
+        return true;
+      }
+      if (!(other instanceof ByteString)) {
+        return false;
+      }
+
+      if (size() != ((ByteString) other).size()) {
+        return false;
+      }
+      if (size() == 0) {
+        return true;
+      }
+
+      if (other instanceof LiteralByteString) {
+        LiteralByteString otherAsLiteral = (LiteralByteString) other;
+        // If we know the hash codes and they are not equal, we know the byte
+        // strings are not equal.
+        int thisHash = peekCachedHashCode();
+        int thatHash = otherAsLiteral.peekCachedHashCode();
+        if (thisHash != 0 && thatHash != 0 && thisHash != thatHash) {
+          return false;
+        }
+
+        return equalsRange((LiteralByteString) other, 0, size());
+      } else {
+        // RopeByteString and NioByteString.
+        return other.equals(this);
+      }
+    }
+
+    /**
+     * Check equality of the substring of given length of this object starting at zero with another
+     * {@code LiteralByteString} substring starting at offset.
+     *
+     * @param other what to compare a substring in
+     * @param offset offset into other
+     * @param length number of bytes to compare
+     * @return true for equality of substrings, else false.
+     */
+    @Override
+    final boolean equalsRange(ByteString other, int offset, int length) {
+      if (length > other.size()) {
+        throw new IllegalArgumentException("Length too large: " + length + size());
+      }
+      if (offset + length > other.size()) {
+        throw new IllegalArgumentException(
+            "Ran off end of other: " + offset + ", " + length + ", " + other.size());
+      }
+
+      if (other instanceof LiteralByteString) {
+        LiteralByteString lbsOther = (LiteralByteString) other;
+        byte[] thisBytes = bytes;
+        byte[] otherBytes = lbsOther.bytes;
+        int thisLimit = getOffsetIntoBytes() + length;
+        for (int thisIndex = getOffsetIntoBytes(),
+                otherIndex = lbsOther.getOffsetIntoBytes() + offset;
+            (thisIndex < thisLimit);
+            ++thisIndex, ++otherIndex) {
+          if (thisBytes[thisIndex] != otherBytes[otherIndex]) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      return other.substring(offset, offset + length).equals(substring(0, length));
+    }
+
+    @Override
+    protected final int partialHash(int h, int offset, int length) {
+      return Internal.partialHash(h, bytes, getOffsetIntoBytes() + offset, length);
+    }
+
+    // =================================================================
+    // Input stream
+
+    @Override
+    public final InputStream newInput() {
+      return new ByteArrayInputStream(bytes, getOffsetIntoBytes(), size()); // No copy
+    }
+
+    @Override
+    public final CodedInputStream newCodedInput() {
+      // We trust CodedInputStream not to modify the bytes, or to give anyone
+      // else access to them.
+      return CodedInputStream.newInstance(
+          bytes, getOffsetIntoBytes(), size(), /* bufferIsImmutable= */ true);
+    }
+
+    // =================================================================
+    // Internal methods
+
+    /**
+     * Offset into {@code bytes[]} to use, non-zero for substrings.
+     *
+     * @return always 0 for this class
+     */
+    protected int getOffsetIntoBytes() {
+      return 0;
+    }
+  }
+
+  /**
+   * This class is used to represent the substring of a {@link ByteString} over a single byte array.
+   * In terms of the public API of {@link ByteString}, you end up here by calling {@link
+   * ByteString#copyFrom(byte[])} followed by {@link ByteString#substring(int, int)}.
+   *
+   * <p>This class contains most of the overhead involved in creating a substring from a {@link
+   * LiteralByteString}. The overhead involves some range-checking and two extra fields.
+   *
+   * @author carlanton@google.com (Carl Haverl)
+   */
+  // Keep this class private to avoid deadlocks in classloading across threads as ByteString's
+  // static initializer loads LiteralByteString and another thread loads BoundedByteString.
+  private static final class BoundedByteString extends LiteralByteString {
+    private final int bytesOffset;
+    private final int bytesLength;
+
+    /**
+     * Creates a {@code BoundedByteString} backed by the sub-range of given array, without copying.
+     *
+     * @param bytes array to wrap
+     * @param offset index to first byte to use in bytes
+     * @param length number of bytes to use from bytes
+     * @throws IllegalArgumentException if {@code offset < 0}, {@code length < 0}, or if {@code
+     *     offset + length > bytes.length}.
+     */
+    BoundedByteString(byte[] bytes, int offset, int length) {
+      super(bytes);
+      checkRange(offset, offset + length, bytes.length);
+
+      this.bytesOffset = offset;
+      this.bytesLength = length;
+    }
+
+    /**
+     * Gets the byte at the given index. Throws {@link ArrayIndexOutOfBoundsException} for
+     * backwards-compatibility reasons although it would more properly be {@link
+     * IndexOutOfBoundsException}.
+     *
+     * @param index index of byte
+     * @return the value
+     * @throws ArrayIndexOutOfBoundsException {@code index} is < 0 or >= size
+     */
+    @Override
+    public byte byteAt(int index) {
+      // We must check the index ourselves as we cannot rely on Java array index
+      // checking for substrings.
+      checkIndex(index, size());
+      return bytes[bytesOffset + index];
+    }
+
+    @Override
+    byte internalByteAt(int index) {
+      return bytes[bytesOffset + index];
+    }
+
+    @Override
+    public int size() {
+      return bytesLength;
+    }
+
+    @Override
+    protected int getOffsetIntoBytes() {
+      return bytesOffset;
+    }
+
+    // =================================================================
+    // ByteString -> byte[]
+
+    @Override
+    protected void copyToInternal(
+        byte[] target, int sourceOffset, int targetOffset, int numberToCopy) {
+      System.arraycopy(
+          bytes, getOffsetIntoBytes() + sourceOffset, target, targetOffset, numberToCopy);
+    }
+
+    // =================================================================
+    // Serializable
+
+    private static final long serialVersionUID = 1L;
+
+    Object writeReplace() {
+      return ByteString.wrap(toByteArray());
+    }
+
+    private void readObject(@SuppressWarnings("unused") ObjectInputStream in) throws IOException {
+      throw new InvalidObjectException(
+          "BoundedByteStream instances are not to be serialized directly");
+    }
+  }
 }
