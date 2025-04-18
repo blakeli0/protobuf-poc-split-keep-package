@@ -31,6 +31,7 @@ public abstract class CodedOutputStream extends ByteOutput {
   private static final Logger logger = Logger.getLogger(CodedOutputStream.class.getName());
   static final boolean HAS_UNSAFE_ARRAY_OPERATIONS = UnsafeUtil.hasUnsafeArrayOperations();
   private static final Class<?> ARRAY_ENCODER = getClassForName("com.google.protobuf.ArrayEncoder");
+  private static final Class<?> ABSTRACT_BUFFERED_ENCODER = getClassForName("com.google.protobuf.AbstractBufferedEncoder");
   private static final Class<?> BYTE_OUTPUT_ENCODER = getClassForName("com.google.protobuf.ByteOutputEncoder");
   private static final Class<?> HEAP_NIO_ENCODER = getClassForName("com.google.protobuf.HeapNioEncoder");
   private static final Class<?> OUTPUT_STREAM_ENCODER = getClassForName("com.google.protobuf.OutputStreamEncoder");
