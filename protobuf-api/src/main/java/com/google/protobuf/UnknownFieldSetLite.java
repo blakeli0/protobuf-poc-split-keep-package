@@ -20,7 +20,7 @@ import java.util.Arrays;
  *
  * @author dweis@google.com (Daniel Weis)
  */
-public final class UnknownFieldSetLite {
+final class UnknownFieldSetLite {
 
   // Arbitrarily chosen.
   // TODO: Tune this number?
