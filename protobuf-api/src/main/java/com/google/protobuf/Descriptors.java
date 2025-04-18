@@ -401,7 +401,7 @@ public final class Descriptors {
             "Invalid embedded descriptor for \"" + proto.getName() + "\".", e);
       }
 
-      final ExtensionRegistry registry = descriptorAssigner.assignDescriptors(result);
+      final ExtensionRegistryLite registry = descriptorAssigner.assignDescriptors(result);
 
       if (registry != null) {
         // We must re-parse the proto using the registry.
@@ -478,7 +478,7 @@ public final class Descriptors {
      * needed to recognize custom options.
      */
     public static void internalUpdateFileDescriptor(
-        FileDescriptor descriptor, ExtensionRegistry registry) {
+        FileDescriptor descriptor, ExtensionRegistryLite registry) {
       ByteString bytes = descriptor.proto.toByteString();
       try {
         FileDescriptorProto proto = FileDescriptorProto.parseFrom(bytes, registry);
@@ -504,7 +504,7 @@ public final class Descriptors {
      */
     @Deprecated
     public interface InternalDescriptorAssigner {
-      ExtensionRegistry assignDescriptors(FileDescriptor root);
+      ExtensionRegistryLite assignDescriptors(FileDescriptor root);
     }
 
     private FileDescriptorProto proto;

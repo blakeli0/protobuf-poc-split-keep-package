@@ -943,7 +943,7 @@ public final class MapEntry<K, V> implements Message {
 
     @Override
     public MapEntry.Builder<K,V> mergeFrom(final CodedInputStream input) throws IOException {
-      return mergeFrom(input, ExtensionRegistry.getEmptyRegistry());
+      return mergeFrom(input, ExtensionRegistryLite.getEmptyRegistry());
     }
 
     @Override
