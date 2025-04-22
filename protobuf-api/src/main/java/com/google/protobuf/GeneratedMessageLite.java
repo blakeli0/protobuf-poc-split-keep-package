@@ -34,7 +34,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * @author kenton@google.com Kenton Varda
  */
-public abstract class GeneratedMessageLite<
+abstract class GeneratedMessageLite<
         MessageType extends GeneratedMessageLite<MessageType, BuilderType>,
         BuilderType extends GeneratedMessageLite.Builder<MessageType, BuilderType>>
     extends AbstractMessageLite<MessageType, BuilderType> {
