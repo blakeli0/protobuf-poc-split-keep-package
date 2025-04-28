@@ -1066,7 +1066,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
 
     @Override
     public BuilderT mergeFrom(final CodedInputStream input) throws IOException {
-      return mergeFrom(input, ExtensionRegistry.getEmptyRegistry());
+      return mergeFrom(input, ExtensionRegistryLite.getEmptyRegistry());
     }
 
     @Override
