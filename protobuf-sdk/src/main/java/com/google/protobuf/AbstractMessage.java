@@ -84,7 +84,7 @@ public abstract class AbstractMessage
 
   @Override
   public final String toString() {
-    return TextFormatInternal.printer().printToString(this);
+    return TextFormat.printer().printToString(this);
   }
 
   @Override
@@ -437,7 +437,7 @@ public abstract class AbstractMessage
 
     @Override
     public String toString() {
-      return TextFormatInternal.printer().printToString(this);
+      return TextFormat.printer().printToString(this);
     }
 
     /** Construct an UninitializedMessageException reporting missing fields in the given message. */
