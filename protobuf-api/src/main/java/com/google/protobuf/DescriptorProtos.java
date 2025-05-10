@@ -4,6 +4,16 @@
 // Protobuf Java Version: 3.25.5
 package com.google.protobuf;
 
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
 public final class DescriptorProtos {
   private DescriptorProtos() {}
   public static void registerAllExtensions(
@@ -315,7 +325,7 @@ public final class DescriptorProtos {
       FileDescriptorSetOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FileDescriptorSet.newBuilder() to construct.
-    private FileDescriptorSet(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FileDescriptorSet, ?> builder) {
+    private FileDescriptorSet(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<FileDescriptorSet, ?> builder) {
       super(builder);
     }
     private FileDescriptorSet() {
@@ -570,7 +580,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.FileDescriptorSet, Builder> implements
+          FileDescriptorSet, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FileDescriptorSet)
         com.google.protobuf.DescriptorProtos.FileDescriptorSetOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -10927,7 +10937,7 @@ public final class DescriptorProtos {
       ExtensionRangeOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ExtensionRangeOptions.newBuilder() to construct.
-    private ExtensionRangeOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, ?> builder) {
+    private ExtensionRangeOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<ExtensionRangeOptions, ?> builder) {
       super(builder);
     }
     private ExtensionRangeOptions() {
@@ -12809,7 +12819,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, Builder> implements
+          ExtensionRangeOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.ExtensionRangeOptions)
         com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -14428,14 +14438,181 @@ public final class DescriptorProtos {
    *
    * Protobuf type {@code google.protobuf.FieldDescriptorProto}
    */
-  public static final class FieldDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+  public static final class FieldDescriptorProto
       // @@protoc_insertion_point(message_implements:google.protobuf.FieldDescriptorProto)
-      FieldDescriptorProtoOrBuilder {
+      implements Message, FieldDescriptorProtoOrBuilder, Serializable {
+
+      protected UnknownFieldSet unknownFields = UnknownFieldSet.getDefaultInstance();
+
+      protected int memoizedHashCode = 0;
+
+      @Override
+      public UnknownFieldSet getUnknownFields() {
+          return unknownFields;
+      }
+
+      @Override
+      public int getRepeatedFieldCount(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).getRepeatedCount(this);
+      }
+
+      @Override
+      public Object getRepeatedField(final Descriptors.FieldDescriptor field, final int index) {
+          return internalGetFieldAccessorTable().getField(field).getRepeated(this, index);
+      }
+
+      @Override
+      public boolean hasOneof(final Descriptors.OneofDescriptor oneof) {
+          return internalGetFieldAccessorTable().getOneof(oneof).has(this);
+      }
+
+      @Override
+      public Descriptors.FieldDescriptor getOneofFieldDescriptor(final Descriptors.OneofDescriptor oneof) {
+          return internalGetFieldAccessorTable().getOneof(oneof).get(this);
+      }
+
+      @Override
+      public boolean hasField(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).has(this);
+      }
+
+      @Override
+      public Object getField(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).get(this);
+      }
+
+      @Override
+      public Map<Descriptors.FieldDescriptor, Object> getAllFields() {
+          return Collections.unmodifiableMap(getAllFieldsMutable(/* getBytesForString= */ false));
+      }
+
+      private Map<Descriptors.FieldDescriptor, Object> getAllFieldsMutable(boolean getBytesForString) {
+          final TreeMap<Descriptors.FieldDescriptor, Object> result = new TreeMap<>();
+          final Descriptors.Descriptor descriptor = internalGetFieldAccessorTable().descriptor;
+          final List<Descriptors.FieldDescriptor> fields = descriptor.getFields();
+
+          for (int i = 0; i < fields.size(); i++) {
+              Descriptors.FieldDescriptor field = fields.get(i);
+              final Descriptors.OneofDescriptor oneofDescriptor = field.getContainingOneof();
+
+              /*
+               * If the field is part of a Oneof, then at maximum one field in the Oneof is set
+               * and it is not repeated. There is no need to iterate through the others.
+               */
+              if (oneofDescriptor != null) {
+                  // Skip other fields in the Oneof we know are not set
+                  i += oneofDescriptor.getFieldCount() - 1;
+                  if (!hasOneof(oneofDescriptor)) {
+                      // If no field is set in the Oneof, skip all the fields in the Oneof
+                      continue;
+                  }
+                  // Get the pointer to the only field which is set in the Oneof
+                  field = getOneofFieldDescriptor(oneofDescriptor);
+              } else {
+                  // If we are not in a Oneof, we need to check if the field is set and if it is repeated
+                  if (field.isRepeated()) {
+                      final List<?> value = (List<?>) getField(field);
+                      if (!value.isEmpty()) {
+                          result.put(field, value);
+                      }
+                      continue;
+                  }
+                  if (!hasField(field)) {
+                      continue;
+                  }
+              }
+              // Add the field to the map
+              if (getBytesForString && field.getJavaType() == Descriptors.FieldDescriptor.JavaType.STRING) {
+                  result.put(field, getFieldRaw(field));
+              } else {
+                  result.put(field, getField(field));
+              }
+          }
+          return result;
+      }
+
+      Object getFieldRaw(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).getRaw(this);
+      }
+
+      @Override
+      public Descriptors.Descriptor getDescriptorForType() {
+          return internalGetFieldAccessorTable().descriptor;
+      }
+
+      @Override
+      public ByteString toByteString() {
+          try {
+              final ByteString.CodedBuilder out = ByteString.newCodedBuilder(getSerializedSize());
+              writeTo(out.getCodedOutput());
+              return out.build();
+          } catch (IOException e) {
+              throw new RuntimeException(getSerializingExceptionMessage("ByteString"), e);
+          }
+      }
+
+      @Override
+      public byte[] toByteArray() {
+          try {
+              final byte[] result = new byte[getSerializedSize()];
+              final CodedOutputStream output = CodedOutputStream.newInstance(result);
+              writeTo(output);
+              output.checkNoSpaceLeft();
+              return result;
+          } catch (IOException e) {
+              throw new RuntimeException(getSerializingExceptionMessage("byte array"), e);
+          }
+      }
+
+      @Override
+      public void writeTo(final OutputStream output) throws IOException {
+          final int bufferSize = CodedOutputStream.computePreferredBufferSize(getSerializedSize());
+          final CodedOutputStream codedOutput = CodedOutputStream.newInstance(output, bufferSize);
+          writeTo(codedOutput);
+          codedOutput.flush();
+      }
+
+      @Override
+      public void writeDelimitedTo(final OutputStream output) throws IOException {
+          final int serialized = getSerializedSize();
+          final int bufferSize =
+                  CodedOutputStream.computePreferredBufferSize(
+                          CodedOutputStream.computeUInt32SizeNoTag(serialized) + serialized);
+          final CodedOutputStream codedOutput = CodedOutputStream.newInstance(output, bufferSize);
+          codedOutput.writeUInt32NoTag(serialized);
+          writeTo(codedOutput);
+          codedOutput.flush();
+      }
+
+      private String getSerializingExceptionMessage(String target) {
+          return "Serializing "
+                  + getClass().getName()
+                  + " to a "
+                  + target
+                  + " threw an IOException (should never happen).";
+      }
+
+      protected int memoizedSize = -1;
+
+      @Override
+      public List<String> findInitializationErrors() {
+          return MessageReflection.findMissingFields(this);
+      }
+
+      @Override
+      public String getInitializationErrorString() {
+          return MessageReflection.delimitWithCommas(findInitializationErrors());
+      }
+
+      @Override
+      public final String toString() {
+          return TextFormat.printer().printToString(this);
+      }
+
   private static final long serialVersionUID = 0L;
     // Use FieldDescriptorProto.newBuilder() to construct.
     private FieldDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
+//      super(builder);
     }
     private FieldDescriptorProto() {
       name_ = "";
@@ -14447,10 +14624,10 @@ public final class DescriptorProtos {
       jsonName_ = "";
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
+        GeneratedMessageV3.UnusedPrivateParameter unused) {
       return new FieldDescriptorProto();
     }
 
@@ -14459,7 +14636,7 @@ public final class DescriptorProtos {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldDescriptorProto_descriptor;
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldDescriptorProto_fieldAccessorTable
@@ -15740,7 +15917,7 @@ public final class DescriptorProtos {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -24966,7 +25143,7 @@ public final class DescriptorProtos {
       FileOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FileOptions.newBuilder() to construct.
-    private FileOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FileOptions, ?> builder) {
+    private FileOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<FileOptions, ?> builder) {
       super(builder);
     }
     private FileOptions() {
@@ -26709,7 +26886,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.FileOptions, Builder> implements
+          FileOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FileOptions)
         com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -29884,7 +30061,7 @@ public final class DescriptorProtos {
       MessageOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MessageOptions.newBuilder() to construct.
-    private MessageOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.MessageOptions, ?> builder) {
+    private MessageOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<MessageOptions, ?> builder) {
       super(builder);
     }
     private MessageOptions() {
@@ -30550,7 +30727,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.MessageOptions, Builder> implements
+          MessageOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.MessageOptions)
         com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -31950,7 +32127,7 @@ public final class DescriptorProtos {
 
   public interface FieldOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.FieldOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.DescriptorProtos.
           ExtendableMessageOrBuilder<FieldOptions> {
 
     /**
@@ -32350,18 +32527,1284 @@ public final class DescriptorProtos {
     com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder getUninterpretedOptionOrBuilder(
         int index);
   }
+
+    /**
+     * Checks that the {@link Extension} is non-Lite and returns it as a {@link GeneratedMessage.GeneratedExtension}.
+     */
+    private static <MessageT extends ExtendableMessage<MessageT>, T>
+    Extension<MessageT, T> checkNotLite(ExtensionLite<MessageT, T> extension) {
+        if (extension.isLite()) {
+            throw new IllegalArgumentException("Expected non-lite extension.");
+        }
+
+        return (Extension<MessageT, T>) extension;
+    }
+
+    /** Extends {@link MessageOrBuilder} with extension-related functions. */
+    public interface ExtendableMessageOrBuilder<MessageT extends ExtendableMessage<MessageT>>
+            extends MessageOrBuilder {
+        // Re-define for return type covariance.
+        @Override
+        Message getDefaultInstanceForType();
+
+        /** Check if a singular extension is present. */
+        <T> boolean hasExtension(ExtensionLite<MessageT, T> extension);
+
+        /** Get the number of elements in a repeated extension. */
+        <T> int getExtensionCount(ExtensionLite<MessageT, List<T>> extension);
+
+        /** Get the value of an extension. */
+        <T> T getExtension(ExtensionLite<MessageT, T> extension);
+
+        /** Get one element of a repeated extension. */
+        <T> T getExtension(ExtensionLite<MessageT, List<T>> extension, int index);
+
+        /**
+         * Check if a singular extension is present.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> boolean hasExtension(
+                Extension<MessageT, T> extension);
+        /**
+         * Check if a singular extension is present.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> boolean hasExtension(
+                GeneratedMessage.GeneratedExtension<MessageT, T> extension);
+        /**
+         * Get the number of elements in a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> int getExtensionCount(
+                Extension<MessageT, List<T>> extension);
+        /**
+         * Get the number of elements in a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> int getExtensionCount(
+                GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension);
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> T getExtension(
+                Extension<MessageT, T> extension);
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> T getExtension(
+                GeneratedMessage.GeneratedExtension<MessageT, T> extension);
+        /**
+         * Get one element of a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> T getExtension(
+                Extension<MessageT, List<T>> extension,
+                int index);
+        /**
+         * Get one element of a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        <T> T getExtension(
+                GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension,
+                int index);
+    }
+
+    protected interface BuilderParent {
+        void markDirty();
+    }
+
+    /**
+     * Generated message builders for message types that contain extension ranges subclass this.
+     *
+     * <p>This class implements type-safe accessors for extensions. They implement all the same
+     * operations that you can do with normal fields -- e.g. "get", "set", and "add" -- but for
+     * extensions. The extensions are identified using instances of the class {@link
+     * GeneratedMessage.GeneratedExtension}; the protocol compiler generates a static instance of this class for every
+     * extension in its input. Through the magic of generics, all is made type-safe.
+     *
+     * <p>For example, imagine you have the {@code .proto} file:
+     *
+     * <pre>
+     * option java_class = "MyProto";
+     *
+     * message Foo {
+     *   extensions 1000 to max;
+     * }
+     *
+     * extend Foo {
+     *   optional int32 bar;
+     * }
+     * </pre>
+     *
+     * <p>Then you might write code like:
+     *
+     * <pre>
+     * MyProto.Foo foo =
+     *   MyProto.Foo.newBuilder()
+     *     .setExtension(MyProto.bar, 123)
+     *     .build();
+     * </pre>
+     *
+     * <p>See also {@link GeneratedMessageV3.ExtendableMessage}.
+     */
+    @SuppressWarnings("unchecked")
+    public abstract static class ExtendableBuilder<
+            MessageT extends ExtendableMessage<MessageT>,
+            BuilderT extends ExtendableBuilder<MessageT, BuilderT>>
+//            extends Builder<BuilderT>
+            implements ExtendableMessageOrBuilder<MessageT> {
+
+        private FieldSet.Builder<Descriptors.FieldDescriptor> extensions;
+
+        private BuilderParent builderParent;
+
+        // Indicates that we've built a message and so we are now obligated
+        // to dispatch dirty invalidations. See GeneratedMessageV3.BuilderListener.
+        private boolean isClean;
+
+        /**
+         * Implementation of {@link GeneratedMessageV3.BuilderParent} for giving to our children. This small inner class
+         * makes it so we don't publicly expose the BuilderParent methods.
+         */
+        private class BuilderParentImpl implements BuilderParent {
+
+            @Override
+            public void markDirty() {
+                onChanged();
+            }
+        }
+
+//        @Override
+        void dispose() {
+            builderParent = null;
+        }
+
+        /** Called by the subclass when a message is built. */
+        protected void onBuilt() {
+            if (builderParent != null) {
+                markClean();
+            }
+        }
+
+        /**
+         * Called by the subclass or a builder to notify us that a message was built and may be cached
+         * and therefore invalidations are needed.
+         */
+//        @Override
+        protected void markClean() {
+            this.isClean = true;
+        }
+
+        /**
+         * Gets whether invalidations are needed
+         *
+         * @return whether invalidations are needed
+         */
+        protected boolean isClean() {
+            return isClean;
+        }
+
+        protected ExtendableBuilder() {}
+
+        protected ExtendableBuilder(BuilderParent parent) {
+            this.builderParent = parent;
+//            super(parent);
+        }
+
+        // For immutable message conversion.
+        void internalSetExtensionSet(FieldSet<Descriptors.FieldDescriptor> extensions) {
+            this.extensions = FieldSet.Builder.fromFieldSet(extensions);
+        }
+
+//        @Override
+        public BuilderT clear() {
+            extensions = null;
+            return (BuilderT) this;
+        }
+
+        private void ensureExtensionsIsMutable() {
+            if (extensions == null) {
+                extensions = FieldSet.newBuilder();
+            }
+        }
+
+        private void verifyExtensionContainingType(final Extension<MessageT, ?> extension) {
+            if (extension.getDescriptor().getContainingType() != getDescriptorForType()) {
+                // This can only happen if someone uses unchecked operations.
+                throw new IllegalArgumentException(
+                        "Extension is for type \""
+                                + extension.getDescriptor().getContainingType().getFullName()
+                                + "\" which does not match message type \""
+                                + getDescriptorForType().getFullName()
+                                + "\".");
+            }
+        }
+
+        /** Check if a singular extension is present. */
+        @Override
+        public final <T> boolean hasExtension(final ExtensionLite<MessageT, T> extensionLite) {
+            Extension<MessageT, T> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            return extensions != null && extensions.hasField(extension.getDescriptor());
+        }
+
+        /** Get the number of elements in a repeated extension. */
+        @Override
+        public final <T> int getExtensionCount(final ExtensionLite<MessageT, List<T>> extensionLite) {
+            Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            final Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            return extensions == null ? 0 : extensions.getRepeatedFieldCount(descriptor);
+        }
+
+        /** Get the value of an extension. */
+        @Override
+        public final <T> T getExtension(final ExtensionLite<MessageT, T> extensionLite) {
+            Extension<MessageT, T> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            final Object value = extensions == null ? null : extensions.getField(descriptor);
+            if (value == null) {
+                if (descriptor.isRepeated()) {
+                    return (T) Collections.emptyList();
+                } else if (descriptor.getJavaType() == Descriptors.FieldDescriptor.JavaType.MESSAGE) {
+                    return (T) extension.getMessageDefaultInstance();
+                } else {
+                    return (T) extension.fromReflectionType(descriptor.getDefaultValue());
+                }
+            } else {
+                return (T) extension.fromReflectionType(value);
+            }
+        }
+
+        /** Get one element of a repeated extension. */
+        @Override
+        public final <T> T getExtension(
+                final ExtensionLite<MessageT, List<T>> extensionLite, final int index) {
+            Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            if (extensions == null) {
+                throw new IndexOutOfBoundsException();
+            }
+            return (T)
+                    extension.singularFromReflectionType(extensions.getRepeatedField(descriptor, index));
+        }
+
+        /**
+         * Called when a builder or one of its nested children has changed and any parent should be
+         * notified of its invalidation.
+         */
+        protected final void onChanged() {
+            if (isClean && builderParent != null) {
+                builderParent.markDirty();
+
+                // Don't keep dispatching invalidations until build is called again.
+                isClean = false;
+            }
+        }
+
+        /** Set the value of an extension. */
+        public final <T> BuilderT setExtension(
+                final ExtensionLite<MessageT, T> extensionLite, final T value) {
+            Extension<MessageT, T> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            ensureExtensionsIsMutable();
+            final Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            extensions.setField(descriptor, extension.toReflectionType(value));
+            onChanged();
+            return (BuilderT) this;
+        }
+
+        /** Set the value of one element of a repeated extension. */
+        public final <T> BuilderT setExtension(
+                final ExtensionLite<MessageT, List<T>> extensionLite, final int index, final T value) {
+            Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            ensureExtensionsIsMutable();
+            final Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            extensions.setRepeatedField(descriptor, index, extension.singularToReflectionType(value));
+            onChanged();
+            return (BuilderT) this;
+        }
+
+        /** Append a value to a repeated extension. */
+        public final <T> BuilderT addExtension(
+                final ExtensionLite<MessageT, List<T>> extensionLite, final T value) {
+            Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            ensureExtensionsIsMutable();
+            final Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            extensions.addRepeatedField(descriptor, extension.singularToReflectionType(value));
+            onChanged();
+            return (BuilderT) this;
+        }
+
+        /** Clear an extension. */
+        public final <T> BuilderT clearExtension(final ExtensionLite<MessageT, T> extensionLite) {
+            Extension<MessageT, T> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            ensureExtensionsIsMutable();
+            extensions.clearField(extension.getDescriptor());
+            onChanged();
+            return (BuilderT) this;
+        }
+
+        /**
+         * Check if a singular extension is present.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> boolean hasExtension(final Extension<MessageT, T> extension) {
+            return hasExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Check if a singular extension is present.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> boolean hasExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, T> extension) {
+            return hasExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Get the number of elements in a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> int getExtensionCount(
+                final Extension<MessageT, List<T>> extension) {
+            return getExtensionCount((ExtensionLite<MessageT, List<T>>) extension);
+        }
+        /**
+         * Get the number of elements in a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> int getExtensionCount(
+                final GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension) {
+            return getExtensionCount((ExtensionLite<MessageT, List<T>>) extension);
+        }
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(final Extension<MessageT, T> extension) {
+            return getExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /** Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, T> extension) {
+            return getExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(
+                final Extension<MessageT, List<T>> extension, final int index) {
+            return getExtension((ExtensionLite<MessageT, List<T>>) extension, index);
+        }
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension, final int index) {
+            return getExtension((ExtensionLite<MessageT, List<T>>) extension, index);
+        }
+        /**
+         * Set the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public final <T> BuilderT setExtension(
+                final Extension<MessageT, T> extension, final T value) {
+            return setExtension((ExtensionLite<MessageT, T>) extension, value);
+        }
+        /**
+         * Set the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public <T> BuilderT setExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, T> extension, final T value) {
+            return setExtension((ExtensionLite<MessageT, T>) extension, value);
+        }
+        /**
+         * Set the value of one element of a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public final <T> BuilderT setExtension(
+                final Extension<MessageT, List<T>> extension,
+                final int index, final T value) {
+            return setExtension((ExtensionLite<MessageT, List<T>>) extension, index, value);
+        }
+        /**
+         * Set the value of one element of a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public <T> BuilderT setExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension,
+                final int index, final T value) {
+            return setExtension((ExtensionLite<MessageT, List<T>>) extension, index, value);
+        }
+        /**
+         * Append a value to a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public final <T> BuilderT addExtension(
+                final Extension<MessageT, List<T>> extension, final T value) {
+            return addExtension((ExtensionLite<MessageT, List<T>>) extension, value);
+        }
+        /**
+         * Append a value to a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public <T> BuilderT addExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension, final T value) {
+            return addExtension((ExtensionLite<MessageT, List<T>>) extension, value);
+        }
+        /**
+         * Clear an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public final <T> BuilderT clearExtension(
+                final Extension<MessageT, T> extension) {
+            return clearExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Clears an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        public <T> BuilderT clearExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, T> extension) {
+            return clearExtension((ExtensionLite<MessageT, T>) extension);
+        }
+
+        /** Called by subclasses to check if all extensions are initialized. */
+        protected boolean extensionsAreInitialized() {
+            return extensions == null || extensions.isInitialized();
+        }
+
+        /**
+         * Called by the build code path to create a copy of the extensions for building the message.
+         */
+        private FieldSet<Descriptors.FieldDescriptor> buildExtensions() {
+            return extensions == null
+                    ? (FieldSet<Descriptors.FieldDescriptor>) FieldSet.emptySet()
+                    : extensions.buildPartial();
+        }
+
+        @Override
+        public boolean isInitialized() {
+            return
+//                    super.isInitialized() &&
+                            extensionsAreInitialized();
+        }
+
+        // ---------------------------------------------------------------
+        // Reflection
+
+        @Override
+        public Map<Descriptors.FieldDescriptor, Object> getAllFields() {
+            final Map<Descriptors.FieldDescriptor, Object> result = getAllFieldsMutable();
+            if (extensions != null) {
+                result.putAll(extensions.getAllFields());
+            }
+            return Collections.unmodifiableMap(result);
+        }
+
+        /**
+         * Get the FieldAccessorTable for this type. We can't have the message class pass this in to the
+         * constructor because of bootstrapping trouble with DescriptorProtos.
+         */
+        protected abstract GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable();
+
+        /** Internal helper which returns a mutable map. */
+        private Map<Descriptors.FieldDescriptor, Object> getAllFieldsMutable() {
+            final TreeMap<Descriptors.FieldDescriptor, Object> result = new TreeMap<>();
+            final Descriptors.Descriptor descriptor = internalGetFieldAccessorTable().descriptor;
+            final List<Descriptors.FieldDescriptor> fields = descriptor.getFields();
+
+            for (int i = 0; i < fields.size(); i++) {
+                Descriptors.FieldDescriptor field = fields.get(i);
+                final Descriptors.OneofDescriptor oneofDescriptor = field.getContainingOneof();
+
+                /*
+                 * If the field is part of a Oneof, then at maximum one field in the Oneof is set
+                 * and it is not repeated. There is no need to iterate through the others.
+                 */
+                if (oneofDescriptor != null) {
+                    // Skip other fields in the Oneof we know are not set
+                    i += oneofDescriptor.getFieldCount() - 1;
+                    if (!hasOneof(oneofDescriptor)) {
+                        // If no field is set in the Oneof, skip all the fields in the Oneof
+                        continue;
+                    }
+                    // Get the pointer to the only field which is set in the Oneof
+                    field = getOneofFieldDescriptor(oneofDescriptor);
+                } else {
+                    // If we are not in a Oneof, we need to check if the field is set and if it is repeated
+                    if (field.isRepeated()) {
+                        final List<?> value = (List<?>) getField(field);
+                        if (!value.isEmpty()) {
+                            result.put(field, value);
+                        }
+                        continue;
+                    }
+                    if (!hasField(field)) {
+                        continue;
+                    }
+                }
+                // Add the field to the map
+                result.put(field, getField(field));
+            }
+            return result;
+        }
+
+        @Override
+        public Object getField(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                final Object value = extensions == null ? null : extensions.getField(field);
+                if (value == null) {
+                    if (field.getJavaType() == Descriptors.FieldDescriptor.JavaType.MESSAGE) {
+                        // Lacking an ExtensionRegistry, we have no way to determine the
+                        // extension's real type, so we return a DynamicMessage.
+                        return DynamicMessage.getDefaultInstance(field.getMessageType());
+                    } else {
+                        return field.getDefaultValue();
+                    }
+                } else {
+                    return value;
+                }
+//            }
+//            else {
+//                return super.getField(field);
+//            }
+        }
+
+//        @Override
+        public Message.Builder getFieldBuilder(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                if (field.getJavaType() != Descriptors.FieldDescriptor.JavaType.MESSAGE) {
+                    throw new UnsupportedOperationException(
+                            "getFieldBuilder() called on a non-Message type.");
+                }
+                ensureExtensionsIsMutable();
+                final Object value = extensions.getFieldAllowBuilders(field);
+                if (value == null) {
+                    Message.Builder builder = DynamicMessage.newBuilder(field.getMessageType());
+                    extensions.setField(field, builder);
+                    onChanged();
+                    return builder;
+                } else {
+                    if (value instanceof Message.Builder) {
+                        return (Message.Builder) value;
+                    } else if (value instanceof Message) {
+                        Message.Builder builder = ((Message) value).toBuilder();
+                        extensions.setField(field, builder);
+                        onChanged();
+                        return builder;
+                    } else {
+                        throw new UnsupportedOperationException(
+                                "getRepeatedFieldBuilder() called on a non-Message type.");
+                    }
+                }
+//            } else {
+//                return super.getFieldBuilder(field);
+//            }
+        }
+
+        @Override
+        public int getRepeatedFieldCount(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                return extensions == null ? 0 : extensions.getRepeatedFieldCount(field);
+//            } else {
+//                return super.getRepeatedFieldCount(field);
+//            }
+        }
+
+        @Override
+        public Object getRepeatedField(final Descriptors.FieldDescriptor field, final int index) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                if (extensions == null) {
+                    throw new IndexOutOfBoundsException();
+                }
+                return extensions.getRepeatedField(field, index);
+//            } else {
+//                return super.getRepeatedField(field, index);
+//            }
+        }
+
+//        @Override
+        public Message.Builder getRepeatedFieldBuilder(final Descriptors.FieldDescriptor field, final int index) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                ensureExtensionsIsMutable();
+                if (field.getJavaType() != Descriptors.FieldDescriptor.JavaType.MESSAGE) {
+                    throw new UnsupportedOperationException(
+                            "getRepeatedFieldBuilder() called on a non-Message type.");
+                }
+                final Object value = extensions.getRepeatedFieldAllowBuilders(field, index);
+                if (value instanceof Message.Builder) {
+                    return (Message.Builder) value;
+                } else if (value instanceof Message) {
+                    Message.Builder builder = ((Message) value).toBuilder();
+                    extensions.setRepeatedField(field, index, builder);
+                    onChanged();
+                    return builder;
+                } else {
+                    throw new UnsupportedOperationException(
+                            "getRepeatedFieldBuilder() called on a non-Message type.");
+                }
+//            } else {
+//                return super.getRepeatedFieldBuilder(field, index);
+//            }
+        }
+
+        @Override
+        public boolean hasField(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                return extensions != null && extensions.hasField(field);
+//            } else {
+//                return super.hasField(field);
+//            }
+        }
+
+//        @Override
+        public BuilderT setField(final Descriptors.FieldDescriptor field, final Object value) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                ensureExtensionsIsMutable();
+                extensions.setField(field, value);
+                onChanged();
+                return (BuilderT) this;
+//            } else {
+//                return super.setField(field, value);
+//            }
+        }
+
+//        @Override
+        public BuilderT clearField(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                ensureExtensionsIsMutable();
+                extensions.clearField(field);
+                onChanged();
+                return (BuilderT) this;
+//            } else {
+//                return super.clearField(field);
+//            }
+        }
+
+//        @Override
+        public BuilderT setRepeatedField(
+                final Descriptors.FieldDescriptor field, final int index, final Object value) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                ensureExtensionsIsMutable();
+                extensions.setRepeatedField(field, index, value);
+                onChanged();
+                return (BuilderT) this;
+//            } else {
+//                return super.setRepeatedField(field, index, value);
+//            }
+        }
+
+//        @Override
+        public BuilderT addRepeatedField(final Descriptors.FieldDescriptor field, final Object value) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                ensureExtensionsIsMutable();
+                extensions.addRepeatedField(field, value);
+                onChanged();
+                return (BuilderT) this;
+//            } else {
+//                return super.addRepeatedField(field, value);
+//            }
+        }
+
+//        @Override
+        public Message.Builder newBuilderForField(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                return DynamicMessage.newBuilder(field.getMessageType());
+//            } else {
+//                return super.newBuilderForField(field);
+//            }
+        }
+
+        protected final void mergeExtensionFields(final ExtendableMessage<?> other) {
+            if (other.extensions != null) {
+                ensureExtensionsIsMutable();
+                extensions.mergeFrom(other.extensions);
+                onChanged();
+            }
+        }
+
+//        @Override
+        protected boolean parseUnknownField(
+                CodedInputStream input, ExtensionRegistryLite extensionRegistry, int tag)
+                throws IOException {
+            ensureExtensionsIsMutable();
+            return MessageReflection.mergeFieldFrom(
+                    input,
+//                    input.shouldDiscardUnknownFields() ? null : getUnknownFieldSetBuilder(),
+                    null,
+                    extensionRegistry,
+                    getDescriptorForType(),
+                    new MessageReflection.ExtensionBuilderAdapter(extensions),
+                    tag);
+        }
+
+        private void verifyContainingType(final Descriptors.FieldDescriptor field) {
+            if (field.getContainingType() != getDescriptorForType()) {
+                throw new IllegalArgumentException("FieldDescriptor does not match message type.");
+            }
+        }
+    }
+    /**
+     * Generated message classes for message types that contain extension ranges subclass this.
+     *
+     * <p>This class implements type-safe accessors for extensions. They implement all the same
+     * operations that you can do with normal fields -- e.g. "has", "get", and "getCount" -- but for
+     * extensions. The extensions are identified using instances of the class {@link
+     * GeneratedMessage.GeneratedExtension}; the protocol compiler generates a static instance of this class for every
+     * extension in its input. Through the magic of generics, all is made type-safe.
+     *
+     * <p>For example, imagine you have the {@code .proto} file:
+     *
+     * <pre>
+     * option java_class = "MyProto";
+     *
+     * message Foo {
+     *   extensions 1000 to max;
+     * }
+     *
+     * extend Foo {
+     *   optional int32 bar;
+     * }
+     * </pre>
+     *
+     * <p>Then you might write code like:
+     *
+     * <pre>
+     * MyProto.Foo foo = getFoo();
+     * int i = foo.getExtension(MyProto.bar);
+     * </pre>
+     *
+     * <p>See also {@link ExtendableBuilder}.
+     */
+    public abstract static class ExtendableMessage<MessageT extends ExtendableMessage<MessageT>>
+            implements Message, Serializable, ExtendableMessageOrBuilder<MessageT> {
+
+        private static final long serialVersionUID = 1L;
+
+        private final FieldSet<Descriptors.FieldDescriptor> extensions;
+
+        protected ExtendableMessage() {
+            this.extensions = FieldSet.newFieldSet();
+        }
+
+        protected ExtendableMessage(DescriptorProtos.ExtendableBuilder<MessageT, ?> builder) {
+            this.extensions = builder.buildExtensions();
+        }
+
+        private void verifyExtensionContainingType(final Extension<MessageT, ?> extension) {
+            if (extension.getDescriptor().getContainingType() != getDescriptorForType()) {
+                // This can only happen if someone uses unchecked operations.
+                throw new IllegalArgumentException(
+                        "Extension is for type \""
+                                + extension.getDescriptor().getContainingType().getFullName()
+                                + "\" which does not match message type \""
+                                + getDescriptorForType().getFullName()
+                                + "\".");
+            }
+        }
+
+        /** Check if a singular extension is present. */
+        @Override
+        public final <T> boolean hasExtension(final ExtensionLite<MessageT, T> extensionLite) {
+            Extension<MessageT, T> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            return extensions.hasField(extension.getDescriptor());
+        }
+
+        /** Get the number of elements in a repeated extension. */
+        @Override
+        public final <T> int getExtensionCount(final ExtensionLite<MessageT, List<T>> extensionLite) {
+            Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            final Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            return extensions.getRepeatedFieldCount(descriptor);
+        }
+
+        /** Get the value of an extension. */
+        @Override
+        @SuppressWarnings("unchecked")
+        public final <T> T getExtension(final ExtensionLite<MessageT, T> extensionLite) {
+            Extension<MessageT, T> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            final Object value = extensions.getField(descriptor);
+            if (value == null) {
+                if (descriptor.isRepeated()) {
+                    return (T) Collections.emptyList();
+                } else if (descriptor.getJavaType() == Descriptors.FieldDescriptor.JavaType.MESSAGE) {
+                    return (T) extension.getMessageDefaultInstance();
+                } else {
+                    return (T) extension.fromReflectionType(descriptor.getDefaultValue());
+                }
+            } else {
+                return (T) extension.fromReflectionType(value);
+            }
+        }
+
+        /** Get one element of a repeated extension. */
+        @Override
+        @SuppressWarnings("unchecked")
+        public final <T> T getExtension(
+                final ExtensionLite<MessageT, List<T>> extensionLite, final int index) {
+            Extension<MessageT, List<T>> extension = checkNotLite(extensionLite);
+
+            verifyExtensionContainingType(extension);
+            Descriptors.FieldDescriptor descriptor = extension.getDescriptor();
+            return (T)
+                    extension.singularFromReflectionType(extensions.getRepeatedField(descriptor, index));
+        }
+
+        /**
+         * Check if a singular extension is present.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> boolean hasExtension(final Extension<MessageT, T> extension) {
+            return hasExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Check if a singular extension is present.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> boolean hasExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, T> extension) {
+            return hasExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Get the number of elements in a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> int getExtensionCount(
+                final Extension<MessageT, List<T>> extension) {
+            return getExtensionCount((ExtensionLite<MessageT, List<T>>) extension);
+        }
+        /**
+         * Get the number of elements in a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> int getExtensionCount(
+                final GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension) {
+            return getExtensionCount((ExtensionLite<MessageT, List<T>>) extension);
+        }
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(final Extension<MessageT, T> extension) {
+            return getExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Get the value of an extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, T> extension) {
+            return getExtension((ExtensionLite<MessageT, T>) extension);
+        }
+        /**
+         * Get one element of a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(
+                final Extension<MessageT, List<T>> extension, final int index) {
+            return getExtension((ExtensionLite<MessageT, List<T>>) extension, index);
+        }
+        /**
+         * Get one element of a repeated extension.
+         * <p>TODO: handled by ExtensionLite version
+         */
+        @Override
+        public final <T> T getExtension(
+                final GeneratedMessage.GeneratedExtension<MessageT, List<T>> extension, final int index) {
+            return getExtension((ExtensionLite<MessageT, List<T>>) extension, index);
+        }
+
+        /** Called by subclasses to check if all extensions are initialized. */
+        protected boolean extensionsAreInitialized() {
+            return extensions.isInitialized();
+        }
+
+        // TODO: compute this in the builder at {@code build()} time.
+        @Override
+        public boolean isInitialized() {
+            return
+//                    super.isInitialized() &&
+                            extensionsAreInitialized();
+        }
+
+        // TODO: remove mutating method from immutable type
+//        @Override
+        protected boolean parseUnknownField(
+                CodedInputStream input,
+                UnknownFieldSet.Builder unknownFields,
+                ExtensionRegistryLite extensionRegistry,
+                int tag)
+                throws IOException {
+            return MessageReflection.mergeFieldFrom(
+                    input,
+                    input.shouldDiscardUnknownFields() ? null : unknownFields,
+                    extensionRegistry,
+                    getDescriptorForType(),
+                    new MessageReflection.ExtensionAdapter(extensions),
+                    tag);
+        }
+
+        /**
+         * Delegates to parseUnknownField. This method is obsolete, but we must retain it for
+         * compatibility with older generated code.
+         *
+         * <p>TODO: remove mutating method from immutable type
+         */
+//        @Override
+        protected boolean parseUnknownFieldProto3(
+                CodedInputStream input,
+                UnknownFieldSet.Builder unknownFields,
+                ExtensionRegistryLite extensionRegistry,
+                int tag)
+                throws IOException {
+            return parseUnknownField(input, unknownFields, extensionRegistry, tag);
+        }
+
+        /**
+         * Used by parsing constructors in generated classes.
+         *
+         * <p>TODO: remove unused method (extensions should be immutable after build)
+         */
+//        @Override
+        protected void makeExtensionsImmutable() {
+            extensions.makeImmutable();
+        }
+
+        /**
+         * Used by subclasses to serialize extensions. Extension ranges may be interleaved with field
+         * numbers, but we must write them in canonical (sorted by field number) order. ExtensionWriter
+         * helps us write individual ranges of extensions at once.
+         */
+        protected class ExtensionWriter {
+            // Imagine how much simpler this code would be if Java iterators had
+            // a way to get the next element without advancing the iterator.
+
+            private final Iterator<Map.Entry<Descriptors.FieldDescriptor, Object>> iter = extensions.iterator();
+            private Map.Entry<Descriptors.FieldDescriptor, Object> next;
+            private final boolean messageSetWireFormat;
+
+            private ExtensionWriter(final boolean messageSetWireFormat) {
+                if (iter.hasNext()) {
+                    next = iter.next();
+                }
+                this.messageSetWireFormat = messageSetWireFormat;
+            }
+
+            public void writeUntil(final int end, final CodedOutputStream output) throws IOException {
+                while (next != null && next.getKey().getNumber() < end) {
+                    Descriptors.FieldDescriptor descriptor = next.getKey();
+                    if (messageSetWireFormat
+                            && descriptor.getLiteJavaType() == WireFormat.JavaType.MESSAGE
+                            && !descriptor.isRepeated()) {
+                        if (next instanceof LazyField.LazyEntry<?>) {
+                            output.writeRawMessageSetExtension(
+                                    descriptor.getNumber(),
+                                    ((LazyField.LazyEntry<?>) next).getField().toByteString());
+                        } else {
+                            output.writeMessageSetExtension(descriptor.getNumber(), (Message) next.getValue());
+                        }
+                    } else {
+                        // TODO: Taken care of following code, it may cause
+                        // problem when we use LazyField for normal fields/extensions.
+                        // Due to the optional field can be duplicated at the end of
+                        // serialized bytes, which will make the serialized size change
+                        // after lazy field parsed. So when we use LazyField globally,
+                        // we need to change the following write method to write cached
+                        // bytes directly rather than write the parsed message.
+                        FieldSet.writeField(descriptor, next.getValue(), output);
+                    }
+                    if (iter.hasNext()) {
+                        next = iter.next();
+                    } else {
+                        next = null;
+                    }
+                }
+            }
+        }
+
+        protected ExtensionWriter newExtensionWriter() {
+            return new ExtensionWriter(false);
+        }
+
+        protected ExtensionWriter newMessageSetExtensionWriter() {
+            return new ExtensionWriter(true);
+        }
+
+        /** Called by subclasses to compute the size of extensions. */
+        protected int extensionsSerializedSize() {
+            return extensions.getSerializedSize();
+        }
+
+        protected int extensionsSerializedSizeAsMessageSet() {
+            return extensions.getMessageSetSerializedSize();
+        }
+
+        // ---------------------------------------------------------------
+        // Reflection
+
+        protected Map<Descriptors.FieldDescriptor, Object> getExtensionFields() {
+            return extensions.getAllFields();
+        }
+
+        protected abstract GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable();
+
+        /**
+         * Internal helper to return a modifiable map containing all the fields. The returned Map is
+         * modifiable so that the caller can add additional extension fields to implement {@link
+         * #getAllFields()}.
+         *
+         * @param getBytesForString whether to generate ByteString for string fields
+         */
+        private Map<Descriptors.FieldDescriptor, Object> getAllFieldsMutable(boolean getBytesForString) {
+            final TreeMap<Descriptors.FieldDescriptor, Object> result = new TreeMap<>();
+            final Descriptors.Descriptor descriptor = internalGetFieldAccessorTable().descriptor;
+            final List<Descriptors.FieldDescriptor> fields = descriptor.getFields();
+
+            for (int i = 0; i < fields.size(); i++) {
+                Descriptors.FieldDescriptor field = fields.get(i);
+                final Descriptors.OneofDescriptor oneofDescriptor = field.getContainingOneof();
+
+                /*
+                 * If the field is part of a Oneof, then at maximum one field in the Oneof is set
+                 * and it is not repeated. There is no need to iterate through the others.
+                 */
+                if (oneofDescriptor != null) {
+                    // Skip other fields in the Oneof we know are not set
+                    i += oneofDescriptor.getFieldCount() - 1;
+                    if (!hasOneof(oneofDescriptor)) {
+                        // If no field is set in the Oneof, skip all the fields in the Oneof
+                        continue;
+                    }
+                    // Get the pointer to the only field which is set in the Oneof
+                    field = getOneofFieldDescriptor(oneofDescriptor);
+                } else {
+                    // If we are not in a Oneof, we need to check if the field is set and if it is repeated
+                    if (field.isRepeated()) {
+                        final List<?> value = (List<?>) getField(field);
+                        if (!value.isEmpty()) {
+                            result.put(field, value);
+                        }
+                        continue;
+                    }
+                    if (!hasField(field)) {
+                        continue;
+                    }
+                }
+                // Add the field to the map
+                if (getBytesForString && field.getJavaType() == Descriptors.FieldDescriptor.JavaType.STRING) {
+                    result.put(field, getFieldRaw(field));
+                } else {
+                    result.put(field, getField(field));
+                }
+            }
+            return result;
+        }
+
+        Object getFieldRaw(final Descriptors.FieldDescriptor field) {
+            return internalGetFieldAccessorTable().getField(field).getRaw(this);
+        }
+
+        @Override
+        public Map<Descriptors.FieldDescriptor, Object> getAllFields() {
+            final Map<Descriptors.FieldDescriptor, Object> result =
+                    getAllFieldsMutable(/* getBytesForString= */ false);
+            result.putAll(getExtensionFields());
+            return Collections.unmodifiableMap(result);
+        }
+
+//        @Override
+        public Map<Descriptors.FieldDescriptor, Object> getAllFieldsRaw() {
+            final Map<Descriptors.FieldDescriptor, Object> result =
+                    getAllFieldsMutable(/* getBytesForString= */ false);
+            result.putAll(getExtensionFields());
+            return Collections.unmodifiableMap(result);
+        }
+
+        @Override
+        public boolean hasField(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                return extensions.hasField(field);
+//            } else {
+//                return super.hasField(field);
+//            }
+        }
+
+        @Override
+        public Object getField(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                final Object value = extensions.getField(field);
+                if (value == null) {
+                    if (field.isRepeated()) {
+                        return Collections.emptyList();
+                    } else if (field.getJavaType() == Descriptors.FieldDescriptor.JavaType.MESSAGE) {
+                        // Lacking an ExtensionRegistry, we have no way to determine the
+                        // extension's real type, so we return a DynamicMessage.
+                        return DynamicMessage.getDefaultInstance(field.getMessageType());
+                    } else {
+                        return field.getDefaultValue();
+                    }
+                } else {
+                    return value;
+                }
+//            } else {
+//                return super.getField(field);
+//            }
+        }
+
+        @Override
+        public int getRepeatedFieldCount(final Descriptors.FieldDescriptor field) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                return extensions.getRepeatedFieldCount(field);
+//            } else {
+//                return super.getRepeatedFieldCount(field);
+//            }
+        }
+
+        @Override
+        public Object getRepeatedField(final Descriptors.FieldDescriptor field, final int index) {
+//            if (field.isExtension()) {
+                verifyContainingType(field);
+                return extensions.getRepeatedField(field, index);
+//            } else {
+//                return super.getRepeatedField(field, index);
+//            }
+        }
+
+        private void verifyContainingType(final Descriptors.FieldDescriptor field) {
+            if (field.getContainingType() != getDescriptorForType()) {
+                throw new IllegalArgumentException("FieldDescriptor does not match message type.");
+            }
+        }
+    }
+
+    /** Construct an UninitializedMessageException reporting missing fields in the given message. */
+    protected static UninitializedMessageException newUninitializedMessageException(
+            Message message) {
+        return new UninitializedMessageException(MessageReflection.findMissingFields(message));
+    }
+
+    /** Converts a list of MapEntry messages into a Map used for equals() and hashCode(). */
+    @SuppressWarnings({"rawtypes", "unchecked"})
+    private static Map convertMapEntryListToMap(List list) {
+        if (list.isEmpty()) {
+            return Collections.emptyMap();
+        }
+        Map result = new HashMap<>();
+        Iterator iterator = list.iterator();
+        Message entry = (Message) iterator.next();
+        Descriptors.Descriptor descriptor = entry.getDescriptorForType();
+        Descriptors.FieldDescriptor key = descriptor.findFieldByName("key");
+        Descriptors.FieldDescriptor value = descriptor.findFieldByName("value");
+        Object fieldValue = entry.getField(value);
+        if (fieldValue instanceof Descriptors.EnumValueDescriptor) {
+            fieldValue = ((Descriptors.EnumValueDescriptor) fieldValue).getNumber();
+        }
+        result.put(entry.getField(key), fieldValue);
+        while (iterator.hasNext()) {
+            entry = (Message) iterator.next();
+            fieldValue = entry.getField(value);
+            if (fieldValue instanceof Descriptors.EnumValueDescriptor) {
+                fieldValue = ((Descriptors.EnumValueDescriptor) fieldValue).getNumber();
+            }
+            result.put(entry.getField(key), fieldValue);
+        }
+        return result;
+    }
+
+    /** Calculates the hash code of a map field. {@code value} must be a list of MapEntry messages. */
+    @SuppressWarnings("unchecked")
+    private static int hashMapField(Object value) {
+        return MapFieldLite.calculateHashCodeForMap(convertMapEntryListToMap((List) value));
+    }
+
+    /** Get a hash code for given fields and values, using the given seed. */
+    @SuppressWarnings("unchecked")
+    private static int hashFields(int hash, Map<Descriptors.FieldDescriptor, Object> map) {
+        for (Map.Entry<Descriptors.FieldDescriptor, Object> entry : map.entrySet()) {
+            Descriptors.FieldDescriptor field = entry.getKey();
+            Object value = entry.getValue();
+            hash = (37 * hash) + field.getNumber();
+            if (field.isMapField()) {
+                hash = (53 * hash) + hashMapField(value);
+            } else if (field.getType() != Descriptors.FieldDescriptor.Type.ENUM) {
+                hash = (53 * hash) + value.hashCode();
+            } else if (field.isRepeated()) {
+                List<? extends Internal.EnumLite> list = (List<? extends Internal.EnumLite>) value;
+                hash = (53 * hash) + Internal.hashEnumList(list);
+            } else {
+                hash = (53 * hash) + Internal.hashEnum((Internal.EnumLite) value);
+            }
+        }
+        return hash;
+    }
+
   /**
    * Protobuf type {@code google.protobuf.FieldOptions}
    */
   public static final class FieldOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.DescriptorProtos.ExtendableMessage<
         FieldOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FieldOptions)
       FieldOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FieldOptions.newBuilder() to construct.
-    private FieldOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FieldOptions, ?> builder) {
-      super(builder);
+    private FieldOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<?, ?> builder) {
+//      super(builder);
     }
     private FieldOptions() {
       ctype_ = 0;
@@ -32372,10 +33815,11 @@ public final class DescriptorProtos {
       uninterpretedOption_ = java.util.Collections.emptyList();
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
+//        UnusedPrivateParameter unused
+    ) {
       return new FieldOptions();
     }
 
@@ -32384,13 +33828,126 @@ public final class DescriptorProtos {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_descriptor;
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.google.protobuf.DescriptorProtos.FieldOptions.class, com.google.protobuf.DescriptorProtos.FieldOptions.Builder.class);
     }
+
+      protected UnknownFieldSet unknownFields = UnknownFieldSet.getDefaultInstance();
+
+      protected int memoizedHashCode = 0;
+
+      @Override
+      public UnknownFieldSet getUnknownFields() {
+          return unknownFields;
+      }
+
+      @Override
+      public int getRepeatedFieldCount(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).getRepeatedCount(this);
+      }
+
+      @Override
+      public Object getRepeatedField(final Descriptors.FieldDescriptor field, final int index) {
+          return internalGetFieldAccessorTable().getField(field).getRepeated(this, index);
+      }
+
+      @Override
+      public boolean hasOneof(final Descriptors.OneofDescriptor oneof) {
+          return internalGetFieldAccessorTable().getOneof(oneof).has(this);
+      }
+
+      @Override
+      public Descriptors.FieldDescriptor getOneofFieldDescriptor(final Descriptors.OneofDescriptor oneof) {
+          return internalGetFieldAccessorTable().getOneof(oneof).get(this);
+      }
+
+      @Override
+      public boolean hasField(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).has(this);
+      }
+
+      @Override
+      public Object getField(final Descriptors.FieldDescriptor field) {
+          return internalGetFieldAccessorTable().getField(field).get(this);
+      }
+
+      @Override
+      public Descriptors.Descriptor getDescriptorForType() {
+          return internalGetFieldAccessorTable().descriptor;
+      }
+
+      @Override
+      public ByteString toByteString() {
+          try {
+              final ByteString.CodedBuilder out = ByteString.newCodedBuilder(getSerializedSize());
+              writeTo(out.getCodedOutput());
+              return out.build();
+          } catch (IOException e) {
+              throw new RuntimeException(getSerializingExceptionMessage("ByteString"), e);
+          }
+      }
+
+      @Override
+      public byte[] toByteArray() {
+          try {
+              final byte[] result = new byte[getSerializedSize()];
+              final CodedOutputStream output = CodedOutputStream.newInstance(result);
+              writeTo(output);
+              output.checkNoSpaceLeft();
+              return result;
+          } catch (IOException e) {
+              throw new RuntimeException(getSerializingExceptionMessage("byte array"), e);
+          }
+      }
+
+      @Override
+      public void writeTo(final OutputStream output) throws IOException {
+          final int bufferSize = CodedOutputStream.computePreferredBufferSize(getSerializedSize());
+          final CodedOutputStream codedOutput = CodedOutputStream.newInstance(output, bufferSize);
+          writeTo(codedOutput);
+          codedOutput.flush();
+      }
+
+      @Override
+      public void writeDelimitedTo(final OutputStream output) throws IOException {
+          final int serialized = getSerializedSize();
+          final int bufferSize =
+                  CodedOutputStream.computePreferredBufferSize(
+                          CodedOutputStream.computeUInt32SizeNoTag(serialized) + serialized);
+          final CodedOutputStream codedOutput = CodedOutputStream.newInstance(output, bufferSize);
+          codedOutput.writeUInt32NoTag(serialized);
+          writeTo(codedOutput);
+          codedOutput.flush();
+      }
+
+      private String getSerializingExceptionMessage(String target) {
+          return "Serializing "
+                  + getClass().getName()
+                  + " to a "
+                  + target
+                  + " threw an IOException (should never happen).";
+      }
+
+      protected int memoizedSize = -1;
+
+      @Override
+      public List<String> findInitializationErrors() {
+          return MessageReflection.findMissingFields(this);
+      }
+
+      @Override
+      public String getInitializationErrorString() {
+          return MessageReflection.delimitWithCommas(findInitializationErrors());
+      }
+
+      @Override
+      public final String toString() {
+          return TextFormat.printer().printToString(this);
+      }
 
     /**
      * Protobuf enum {@code google.protobuf.FieldOptions.CType}
@@ -35358,7 +36915,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.DescriptorProtos
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.FieldOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -35714,7 +37271,7 @@ public final class DescriptorProtos {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+//    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -35725,7 +37282,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.FieldOptions, Builder> implements
+          FieldOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FieldOptions)
         com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -35813,7 +37370,7 @@ public final class DescriptorProtos {
         return com.google.protobuf.DescriptorProtos.FieldOptions.getDefaultInstance();
       }
 
-      @java.lang.Override
+//      @java.lang.Override
       public com.google.protobuf.DescriptorProtos.FieldOptions build() {
         com.google.protobuf.DescriptorProtos.FieldOptions result = buildPartial();
         if (!result.isInitialized()) {
@@ -35822,7 +37379,7 @@ public final class DescriptorProtos {
         return result;
       }
 
-      @java.lang.Override
+//      @java.lang.Override
       public com.google.protobuf.DescriptorProtos.FieldOptions buildPartial() {
         com.google.protobuf.DescriptorProtos.FieldOptions result = new com.google.protobuf.DescriptorProtos.FieldOptions(this);
         buildPartialRepeatedFields(result);
@@ -36077,7 +37634,7 @@ public final class DescriptorProtos {
             }
           }
         }
-        this.mergeExtensionFields(other);
+//        this.mergeExtensionFields(other);
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -38060,7 +39617,7 @@ public final class DescriptorProtos {
       OneofOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use OneofOptions.newBuilder() to construct.
-    private OneofOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.OneofOptions, ?> builder) {
+    private OneofOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<OneofOptions, ?> builder) {
       super(builder);
     }
     private OneofOptions() {
@@ -38400,7 +39957,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.OneofOptions, Builder> implements
+          OneofOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.OneofOptions)
         com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -39415,7 +40972,7 @@ public final class DescriptorProtos {
       EnumOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EnumOptions.newBuilder() to construct.
-    private EnumOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.EnumOptions, ?> builder) {
+    private EnumOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<EnumOptions, ?> builder) {
       super(builder);
     }
     private EnumOptions() {
@@ -39909,7 +41466,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.EnumOptions, Builder> implements
+          EnumOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.EnumOptions)
         com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -41171,7 +42728,7 @@ public final class DescriptorProtos {
       EnumValueOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EnumValueOptions.newBuilder() to construct.
-    private EnumValueOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.EnumValueOptions, ?> builder) {
+    private EnumValueOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<EnumValueOptions, ?> builder) {
       super(builder);
     }
     private EnumValueOptions() {
@@ -41663,7 +43220,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.EnumValueOptions, Builder> implements
+          EnumValueOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.EnumValueOptions)
         com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -42961,7 +44518,7 @@ public final class DescriptorProtos {
       ServiceOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ServiceOptions.newBuilder() to construct.
-    private ServiceOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.ServiceOptions, ?> builder) {
+    private ServiceOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<ServiceOptions, ?> builder) {
       super(builder);
     }
     private ServiceOptions() {
@@ -43351,7 +44908,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.ServiceOptions, Builder> implements
+          ServiceOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.ServiceOptions)
         com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -44404,7 +45961,7 @@ public final class DescriptorProtos {
       MethodOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MethodOptions.newBuilder() to construct.
-    private MethodOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.MethodOptions, ?> builder) {
+    private MethodOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<MethodOptions, ?> builder) {
       super(builder);
     }
     private MethodOptions() {
@@ -44955,7 +46512,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.MethodOptions, Builder> implements
+          MethodOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.MethodOptions)
         com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -48372,7 +49929,7 @@ public final class DescriptorProtos {
       FeatureSetOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FeatureSet.newBuilder() to construct.
-    private FeatureSet(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FeatureSet, ?> builder) {
+    private FeatureSet(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<FeatureSet, ?> builder) {
       super(builder);
     }
     private FeatureSet() {
@@ -49414,7 +50971,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.FeatureSet, Builder> implements
+          FeatureSet, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FeatureSet)
         com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -52487,7 +54044,7 @@ public final class DescriptorProtos {
       SourceCodeInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use SourceCodeInfo.newBuilder() to construct.
-    private SourceCodeInfo(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.SourceCodeInfo, ?> builder) {
+    private SourceCodeInfo(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<SourceCodeInfo, ?> builder) {
       super(builder);
     }
     private SourceCodeInfo() {
@@ -55365,7 +56922,7 @@ public final class DescriptorProtos {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo, Builder> implements
+          SourceCodeInfo, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.SourceCodeInfo)
         com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
