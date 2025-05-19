@@ -71,11 +71,11 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
   protected UnknownFieldSet unknownFields;
 
   protected GeneratedMessageV3() {
-    unknownFields = UnknownFieldSet.getDefaultInstance();
+    throw new RuntimeException();
   }
 
   protected GeneratedMessageV3(Builder<?> builder) {
-    unknownFields = builder.getUnknownFields();
+    throw new RuntimeException();
   }
 
   /** TODO: Remove this unnecessary intermediate implementation of this method. */
@@ -1079,12 +1079,11 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
     private final FieldSet<FieldDescriptor> extensions;
 
     protected ExtendableMessage() {
-      this.extensions = FieldSet.newFieldSet();
+      throw new RuntimeException();
     }
 
     protected ExtendableMessage(ExtendableBuilder<MessageT, ?> builder) {
-      super(builder);
-      this.extensions = builder.buildExtensions();
+      throw new RuntimeException();
     }
 
     private void verifyExtensionContainingType(final Extension<MessageT, ?> extension) {
@@ -1472,10 +1471,12 @@ public abstract class GeneratedMessageV3 extends AbstractMessage implements Seri
 
     private FieldSet.Builder<FieldDescriptor> extensions;
 
-    protected ExtendableBuilder() {}
+    protected ExtendableBuilder() {
+      throw new RuntimeException();
+    }
 
     protected ExtendableBuilder(BuilderParent parent) {
-      super(parent);
+      throw new RuntimeException();
     }
 
     // For immutable message conversion.

@@ -278,7 +278,7 @@ public final class TextFormat {
 
   /** Printer instance which escapes non-ASCII characters. */
   public static Printer printer() {
-    return Printer.DEFAULT;
+    throw new RuntimeException();
   }
 
   /** Helper class for converting protobufs to text. */
