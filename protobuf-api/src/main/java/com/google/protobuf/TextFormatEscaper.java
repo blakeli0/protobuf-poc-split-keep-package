@@ -27,7 +27,7 @@ import java.io.IOException;
  * Other ASCII characters less than 32 and all Unicode characters 128 or greater are
  * first encoded as UTF-8, then each byte is escaped individually as a 3-digit octal escape.
  */
-final class TextFormatEscaper {
+public final class TextFormatEscaper {
   private TextFormatEscaper() {}
 
   private interface ByteSequence {
