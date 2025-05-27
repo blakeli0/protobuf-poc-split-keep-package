@@ -159,7 +159,7 @@ public abstract class CodedOutputStream extends ByteOutput {
     serializationDeterministic = true;
   }
 
-  boolean isSerializationDeterministic() {
+  public boolean isSerializationDeterministic() {
     return serializationDeterministic;
   }
 
