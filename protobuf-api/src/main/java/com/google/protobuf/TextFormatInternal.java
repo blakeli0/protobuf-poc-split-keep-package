@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-class TextFormatInternal {
+public class TextFormatInternal {
     /**
      * Parse a 32-bit signed integer from the text. Unlike the Java standard {@code
      * Integer.parseInt()}, this function recognizes the prefixes "0x" and "0" to signify hexadecimal
