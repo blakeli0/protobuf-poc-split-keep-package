@@ -39,7 +39,7 @@ public final class TextFormatEscaper {
   /**
    * Backslash escapes bytes in the format used in protocol buffer text format.
    */
-  static String escapeBytes(ByteSequence input) {
+  public static String escapeBytes(ByteSequence input) {
     final StringBuilder builder = new StringBuilder(input.size());
     for (int i = 0; i < input.size(); i++) {
       byte b = input.byteAt(i);
@@ -128,12 +128,12 @@ public final class TextFormatEscaper {
   /**
    * Like {@link #escapeBytes(ByteString)}, but escapes a text string.
    */
-  static String escapeText(String input) {
+  public static String escapeText(String input) {
     return escapeBytes(ByteString.copyFromUtf8(input));
   }
 
   /** Escape double quotes and backslashes in a String for unicode output of a message. */
-  static String escapeDoubleQuotesAndBackslashes(String input) {
+  public static String escapeDoubleQuotesAndBackslashes(String input) {
     return input.replace("\\", "\\\\").replace("\"", "\\\"");
   }
 
@@ -165,7 +165,7 @@ public final class TextFormatEscaper {
    * Thrown by {@link TextFormat#unescapeBytes} and {@link TextFormat#unescapeText} when an invalid
    * escape sequence is seen.
    */
-  static class InvalidEscapeSequenceException extends IOException {
+  public static class InvalidEscapeSequenceException extends IOException {
     private static final long serialVersionUID = -8164033650142593305L;
 
     InvalidEscapeSequenceException(final String description) {
@@ -173,7 +173,7 @@ public final class TextFormatEscaper {
     }
   }
 
-  static ByteString unescapeBytes(CharSequence charString)
+  public static ByteString unescapeBytes(CharSequence charString)
           throws TextFormatEscaper.InvalidEscapeSequenceException {
     // First convert the Java character sequence to UTF-8 bytes.
     ByteString input = ByteString.copyFromUtf8(charString.toString());
