@@ -826,8 +826,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> fileBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FileDescriptorProto, FileDescriptorProto.Builder, FileDescriptorProtoOrBuilder> fileBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FileDescriptorProto file = 1;</code>
@@ -1042,12 +1042,12 @@ public final class DescriptorProtos {
            getFileBuilderList() {
         return getFileFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FileDescriptorProto, FileDescriptorProto.Builder, FileDescriptorProtoOrBuilder>
           getFileFieldBuilder() {
         if (fileBuilder_ == null) {
-          fileBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder>(
+          fileBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FileDescriptorProto, FileDescriptorProto.Builder, FileDescriptorProtoOrBuilder>(
                   file_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -3796,8 +3796,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> messageTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, DescriptorProto.Builder, DescriptorProtoOrBuilder> messageTypeBuilder_;
 
       /**
        * <pre>
@@ -4084,12 +4084,12 @@ public final class DescriptorProtos {
            getMessageTypeBuilderList() {
         return getMessageTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, DescriptorProto.Builder, DescriptorProtoOrBuilder>
           getMessageTypeFieldBuilder() {
         if (messageTypeBuilder_ == null) {
-          messageTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder>(
+          messageTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        DescriptorProto, DescriptorProto.Builder, DescriptorProtoOrBuilder>(
                   messageType_,
                   ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
@@ -4108,8 +4108,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.EnumDescriptorProto enum_type = 5;</code>
@@ -4324,12 +4324,12 @@ public final class DescriptorProtos {
            getEnumTypeBuilderList() {
         return getEnumTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>
           getEnumTypeFieldBuilder() {
         if (enumTypeBuilder_ == null) {
-          enumTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder>(
+          enumTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>(
                   enumType_,
                   ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
@@ -4348,8 +4348,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceDescriptorProto, com.google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder> serviceBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                ServiceDescriptorProto, ServiceDescriptorProto.Builder, ServiceDescriptorProtoOrBuilder> serviceBuilder_;
 
       /**
        * <code>repeated .google.protobuf.ServiceDescriptorProto service = 6;</code>
@@ -4564,12 +4564,12 @@ public final class DescriptorProtos {
            getServiceBuilderList() {
         return getServiceFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceDescriptorProto, com.google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                ServiceDescriptorProto, ServiceDescriptorProto.Builder, ServiceDescriptorProtoOrBuilder>
           getServiceFieldBuilder() {
         if (serviceBuilder_ == null) {
-          serviceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.ServiceDescriptorProto, com.google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder>(
+          serviceBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        ServiceDescriptorProto, ServiceDescriptorProto.Builder, ServiceDescriptorProtoOrBuilder>(
                   service_,
                   ((bitField0_ & 0x00000080) != 0),
                   getParentForChildren(),
@@ -4588,8 +4588,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> extensionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder> extensionBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldDescriptorProto extension = 7;</code>
@@ -4804,12 +4804,12 @@ public final class DescriptorProtos {
            getExtensionBuilderList() {
         return getExtensionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>
           getExtensionFieldBuilder() {
         if (extensionBuilder_ == null) {
-          extensionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder>(
+          extensionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>(
                   extension_,
                   ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
@@ -4820,8 +4820,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FileOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileOptions, com.google.protobuf.DescriptorProtos.FileOptions.Builder, com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FileOptions, FileOptions.Builder, FileOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.FileOptions options = 8;</code>
        * @return Whether the options field is set.
@@ -4926,12 +4926,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.FileOptions options = 8;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileOptions, com.google.protobuf.DescriptorProtos.FileOptions.Builder, com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FileOptions, FileOptions.Builder, FileOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FileOptions, com.google.protobuf.DescriptorProtos.FileOptions.Builder, com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        FileOptions, FileOptions.Builder, FileOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -4941,8 +4941,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.SourceCodeInfo sourceCodeInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder> sourceCodeInfoBuilder_;
+      private SingleFieldBuilderV3Internal<
+                SourceCodeInfo, SourceCodeInfo.Builder, SourceCodeInfoOrBuilder> sourceCodeInfoBuilder_;
       /**
        * <pre>
        * This field contains optional information about the original source code.
@@ -5110,12 +5110,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.SourceCodeInfo source_code_info = 9;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                SourceCodeInfo, SourceCodeInfo.Builder, SourceCodeInfoOrBuilder>
           getSourceCodeInfoFieldBuilder() {
         if (sourceCodeInfoBuilder_ == null) {
-          sourceCodeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder>(
+          sourceCodeInfoBuilder_ = new SingleFieldBuilderV3Internal<
+                        SourceCodeInfo, SourceCodeInfo.Builder, SourceCodeInfoOrBuilder>(
                   getSourceCodeInfo(),
                   getParentForChildren(),
                   isClean());
@@ -6397,8 +6397,8 @@ public final class DescriptorProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.ExtensionRangeOptions options_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder> optionsBuilder_;
+        private SingleFieldBuilderV3Internal<
+                    ExtensionRangeOptions, ExtensionRangeOptions.Builder, ExtensionRangeOptionsOrBuilder> optionsBuilder_;
         /**
          * <code>optional .google.protobuf.ExtensionRangeOptions options = 3;</code>
          * @return Whether the options field is set.
@@ -6503,12 +6503,12 @@ public final class DescriptorProtos {
         /**
          * <code>optional .google.protobuf.ExtensionRangeOptions options = 3;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder> 
+        private SingleFieldBuilderV3Internal<
+                    ExtensionRangeOptions, ExtensionRangeOptions.Builder, ExtensionRangeOptionsOrBuilder>
             getOptionsFieldBuilder() {
           if (optionsBuilder_ == null) {
-            optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder>(
+            optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                            ExtensionRangeOptions, ExtensionRangeOptions.Builder, ExtensionRangeOptionsOrBuilder>(
                     getOptions(),
                     getParentForChildren(),
                     isClean());
@@ -8754,8 +8754,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> fieldBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder> fieldBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldDescriptorProto field = 2;</code>
@@ -8970,12 +8970,12 @@ public final class DescriptorProtos {
            getFieldBuilderList() {
         return getFieldFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>
           getFieldFieldBuilder() {
         if (fieldBuilder_ == null) {
-          fieldBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder>(
+          fieldBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>(
                   field_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -8994,8 +8994,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> extensionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder> extensionBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldDescriptorProto extension = 6;</code>
@@ -9210,12 +9210,12 @@ public final class DescriptorProtos {
            getExtensionBuilderList() {
         return getExtensionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>
           getExtensionFieldBuilder() {
         if (extensionBuilder_ == null) {
-          extensionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder>(
+          extensionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>(
                   extension_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
@@ -9234,8 +9234,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> nestedTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, Builder, DescriptorProtoOrBuilder> nestedTypeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.DescriptorProto nested_type = 3;</code>
@@ -9450,12 +9450,12 @@ public final class DescriptorProtos {
            getNestedTypeBuilderList() {
         return getNestedTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, Builder, DescriptorProtoOrBuilder>
           getNestedTypeFieldBuilder() {
         if (nestedTypeBuilder_ == null) {
-          nestedTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder>(
+          nestedTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        DescriptorProto, Builder, DescriptorProtoOrBuilder>(
                   nestedType_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -9474,8 +9474,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.EnumDescriptorProto enum_type = 4;</code>
@@ -9690,12 +9690,12 @@ public final class DescriptorProtos {
            getEnumTypeBuilderList() {
         return getEnumTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>
           getEnumTypeFieldBuilder() {
         if (enumTypeBuilder_ == null) {
-          enumTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder>(
+          enumTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>(
                   enumType_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -9714,8 +9714,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder> extensionRangeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                ExtensionRange, ExtensionRange.Builder, ExtensionRangeOrBuilder> extensionRangeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.DescriptorProto.ExtensionRange extension_range = 5;</code>
@@ -9930,12 +9930,12 @@ public final class DescriptorProtos {
            getExtensionRangeBuilderList() {
         return getExtensionRangeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                ExtensionRange, ExtensionRange.Builder, ExtensionRangeOrBuilder>
           getExtensionRangeFieldBuilder() {
         if (extensionRangeBuilder_ == null) {
-          extensionRangeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder>(
+          extensionRangeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        ExtensionRange, ExtensionRange.Builder, ExtensionRangeOrBuilder>(
                   extensionRange_,
                   ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
@@ -9954,8 +9954,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofDescriptorProto, com.google.protobuf.DescriptorProtos.OneofDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder> oneofDeclBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                OneofDescriptorProto, OneofDescriptorProto.Builder, OneofDescriptorProtoOrBuilder> oneofDeclBuilder_;
 
       /**
        * <code>repeated .google.protobuf.OneofDescriptorProto oneof_decl = 8;</code>
@@ -10170,12 +10170,12 @@ public final class DescriptorProtos {
            getOneofDeclBuilderList() {
         return getOneofDeclFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofDescriptorProto, com.google.protobuf.DescriptorProtos.OneofDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                OneofDescriptorProto, OneofDescriptorProto.Builder, OneofDescriptorProtoOrBuilder>
           getOneofDeclFieldBuilder() {
         if (oneofDeclBuilder_ == null) {
-          oneofDeclBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.OneofDescriptorProto, com.google.protobuf.DescriptorProtos.OneofDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder>(
+          oneofDeclBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        OneofDescriptorProto, OneofDescriptorProto.Builder, OneofDescriptorProtoOrBuilder>(
                   oneofDecl_,
                   ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
@@ -10186,8 +10186,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.MessageOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MessageOptions, com.google.protobuf.DescriptorProtos.MessageOptions.Builder, com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                MessageOptions, MessageOptions.Builder, MessageOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.MessageOptions options = 7;</code>
        * @return Whether the options field is set.
@@ -10292,12 +10292,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.MessageOptions options = 7;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MessageOptions, com.google.protobuf.DescriptorProtos.MessageOptions.Builder, com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                MessageOptions, MessageOptions.Builder, MessageOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.MessageOptions, com.google.protobuf.DescriptorProtos.MessageOptions.Builder, com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        MessageOptions, MessageOptions.Builder, MessageOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -10315,8 +10315,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder> reservedRangeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                ReservedRange, ReservedRange.Builder, ReservedRangeOrBuilder> reservedRangeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.DescriptorProto.ReservedRange reserved_range = 9;</code>
@@ -10531,12 +10531,12 @@ public final class DescriptorProtos {
            getReservedRangeBuilderList() {
         return getReservedRangeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                ReservedRange, ReservedRange.Builder, ReservedRangeOrBuilder>
           getReservedRangeFieldBuilder() {
         if (reservedRangeBuilder_ == null) {
-          reservedRangeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder>(
+          reservedRangeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        ReservedRange, ReservedRange.Builder, ReservedRangeOrBuilder>(
                   reservedRange_,
                   ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
@@ -13176,8 +13176,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -13464,12 +13464,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -13488,8 +13488,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder> declarationBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                Declaration, Declaration.Builder, DeclarationOrBuilder> declarationBuilder_;
 
       /**
        * <pre>
@@ -13812,12 +13812,12 @@ public final class DescriptorProtos {
            getDeclarationBuilderList() {
         return getDeclarationFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                Declaration, Declaration.Builder, DeclarationOrBuilder>
           getDeclarationFieldBuilder() {
         if (declarationBuilder_ == null) {
-          declarationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder>(
+          declarationBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        Declaration, Declaration.Builder, DeclarationOrBuilder>(
                   declaration_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -13828,8 +13828,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -13970,12 +13970,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 50;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -16861,8 +16861,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FieldOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions, com.google.protobuf.DescriptorProtos.FieldOptions.Builder, com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FieldOptions, FieldOptions.Builder, FieldOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.FieldOptions options = 8;</code>
        * @return Whether the options field is set.
@@ -16967,12 +16967,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.FieldOptions options = 8;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions, com.google.protobuf.DescriptorProtos.FieldOptions.Builder, com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FieldOptions, FieldOptions.Builder, FieldOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions, com.google.protobuf.DescriptorProtos.FieldOptions.Builder, com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        FieldOptions, FieldOptions.Builder, FieldOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -17805,8 +17805,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.OneofOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofOptions, com.google.protobuf.DescriptorProtos.OneofOptions.Builder, com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                OneofOptions, OneofOptions.Builder, OneofOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.OneofOptions options = 2;</code>
        * @return Whether the options field is set.
@@ -17911,12 +17911,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.OneofOptions options = 2;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofOptions, com.google.protobuf.DescriptorProtos.OneofOptions.Builder, com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                OneofOptions, OneofOptions.Builder, OneofOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.OneofOptions, com.google.protobuf.DescriptorProtos.OneofOptions.Builder, com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        OneofOptions, OneofOptions.Builder, OneofOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -19796,8 +19796,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder> valueBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumValueDescriptorProto, EnumValueDescriptorProto.Builder, EnumValueDescriptorProtoOrBuilder> valueBuilder_;
 
       /**
        * <code>repeated .google.protobuf.EnumValueDescriptorProto value = 2;</code>
@@ -20012,12 +20012,12 @@ public final class DescriptorProtos {
            getValueBuilderList() {
         return getValueFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumValueDescriptorProto, EnumValueDescriptorProto.Builder, EnumValueDescriptorProtoOrBuilder>
           getValueFieldBuilder() {
         if (valueBuilder_ == null) {
-          valueBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder>(
+          valueBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumValueDescriptorProto, EnumValueDescriptorProto.Builder, EnumValueDescriptorProtoOrBuilder>(
                   value_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -20028,8 +20028,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.EnumOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumOptions, com.google.protobuf.DescriptorProtos.EnumOptions.Builder, com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                EnumOptions, EnumOptions.Builder, EnumOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.EnumOptions options = 3;</code>
        * @return Whether the options field is set.
@@ -20134,12 +20134,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.EnumOptions options = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumOptions, com.google.protobuf.DescriptorProtos.EnumOptions.Builder, com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                EnumOptions, EnumOptions.Builder, EnumOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumOptions, com.google.protobuf.DescriptorProtos.EnumOptions.Builder, com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        EnumOptions, EnumOptions.Builder, EnumOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -20157,8 +20157,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder> reservedRangeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumReservedRange, EnumReservedRange.Builder, EnumReservedRangeOrBuilder> reservedRangeBuilder_;
 
       /**
        * <pre>
@@ -20481,12 +20481,12 @@ public final class DescriptorProtos {
            getReservedRangeBuilderList() {
         return getReservedRangeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumReservedRange, EnumReservedRange.Builder, EnumReservedRangeOrBuilder>
           getReservedRangeFieldBuilder() {
         if (reservedRangeBuilder_ == null) {
-          reservedRangeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder>(
+          reservedRangeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumReservedRange, EnumReservedRange.Builder, EnumReservedRangeOrBuilder>(
                   reservedRange_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -21438,8 +21438,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.EnumValueOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueOptions, com.google.protobuf.DescriptorProtos.EnumValueOptions.Builder, com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                EnumValueOptions, EnumValueOptions.Builder, EnumValueOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.EnumValueOptions options = 3;</code>
        * @return Whether the options field is set.
@@ -21544,12 +21544,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.EnumValueOptions options = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueOptions, com.google.protobuf.DescriptorProtos.EnumValueOptions.Builder, com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                EnumValueOptions, EnumValueOptions.Builder, EnumValueOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumValueOptions, com.google.protobuf.DescriptorProtos.EnumValueOptions.Builder, com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        EnumValueOptions, EnumValueOptions.Builder, EnumValueOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -22404,8 +22404,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodDescriptorProto, com.google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder> methodBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                MethodDescriptorProto, MethodDescriptorProto.Builder, MethodDescriptorProtoOrBuilder> methodBuilder_;
 
       /**
        * <code>repeated .google.protobuf.MethodDescriptorProto method = 2;</code>
@@ -22620,12 +22620,12 @@ public final class DescriptorProtos {
            getMethodBuilderList() {
         return getMethodFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodDescriptorProto, com.google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                MethodDescriptorProto, MethodDescriptorProto.Builder, MethodDescriptorProtoOrBuilder>
           getMethodFieldBuilder() {
         if (methodBuilder_ == null) {
-          methodBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.MethodDescriptorProto, com.google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder>(
+          methodBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        MethodDescriptorProto, MethodDescriptorProto.Builder, MethodDescriptorProtoOrBuilder>(
                   method_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -22636,8 +22636,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.ServiceOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceOptions, com.google.protobuf.DescriptorProtos.ServiceOptions.Builder, com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                ServiceOptions, ServiceOptions.Builder, ServiceOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.ServiceOptions options = 3;</code>
        * @return Whether the options field is set.
@@ -22742,12 +22742,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.ServiceOptions options = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceOptions, com.google.protobuf.DescriptorProtos.ServiceOptions.Builder, com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                ServiceOptions, ServiceOptions.Builder, ServiceOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.ServiceOptions, com.google.protobuf.DescriptorProtos.ServiceOptions.Builder, com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        ServiceOptions, ServiceOptions.Builder, ServiceOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -24010,8 +24010,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.MethodOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodOptions, com.google.protobuf.DescriptorProtos.MethodOptions.Builder, com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                MethodOptions, MethodOptions.Builder, MethodOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.MethodOptions options = 4;</code>
        * @return Whether the options field is set.
@@ -24116,12 +24116,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.MethodOptions options = 4;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodOptions, com.google.protobuf.DescriptorProtos.MethodOptions.Builder, com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                MethodOptions, MethodOptions.Builder, MethodOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.MethodOptions, com.google.protobuf.DescriptorProtos.MethodOptions.Builder, com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        MethodOptions, MethodOptions.Builder, MethodOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -29012,8 +29012,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -29181,12 +29181,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 50;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -29204,8 +29204,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -29510,12 +29510,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00100000) != 0),
                   getParentForChildren(),
@@ -31390,8 +31390,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -31559,12 +31559,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 12;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -31582,8 +31582,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -31870,12 +31870,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
@@ -37054,8 +37054,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder> editionDefaultsBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EditionDefault, EditionDefault.Builder, EditionDefaultOrBuilder> editionDefaultsBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldOptions.EditionDefault edition_defaults = 20;</code>
@@ -37270,12 +37270,12 @@ public final class DescriptorProtos {
            getEditionDefaultsBuilderList() {
         return getEditionDefaultsFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EditionDefault, EditionDefault.Builder, EditionDefaultOrBuilder>
           getEditionDefaultsFieldBuilder() {
         if (editionDefaultsBuilder_ == null) {
-          editionDefaultsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder>(
+          editionDefaultsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EditionDefault, EditionDefault.Builder, EditionDefaultOrBuilder>(
                   editionDefaults_,
                   ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
@@ -37286,8 +37286,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -37455,12 +37455,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 21;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -37470,8 +37470,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport featureSupport_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> featureSupportBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSupport, FeatureSupport.Builder, FeatureSupportOrBuilder> featureSupportBuilder_;
       /**
        * <code>optional .google.protobuf.FieldOptions.FeatureSupport feature_support = 22;</code>
        * @return Whether the featureSupport field is set.
@@ -37576,12 +37576,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.FieldOptions.FeatureSupport feature_support = 22;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSupport, FeatureSupport.Builder, FeatureSupportOrBuilder>
           getFeatureSupportFieldBuilder() {
         if (featureSupportBuilder_ == null) {
-          featureSupportBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder>(
+          featureSupportBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSupport, FeatureSupport.Builder, FeatureSupportOrBuilder>(
                   getFeatureSupport(),
                   getParentForChildren(),
                   isClean());
@@ -37599,8 +37599,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -37887,12 +37887,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00002000) != 0),
                   getParentForChildren(),
@@ -38683,8 +38683,8 @@ public final class DescriptorProtos {
       private int bitField0_;
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -38852,12 +38852,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 1;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -38875,8 +38875,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -39163,12 +39163,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -40443,8 +40443,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -40612,12 +40612,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 7;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -40635,8 +40635,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -40923,12 +40923,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -42062,8 +42062,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -42231,12 +42231,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 2;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -42310,8 +42310,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport featureSupport_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> featureSupportBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FieldOptions.FeatureSupport, FieldOptions.FeatureSupport.Builder, FieldOptions.FeatureSupportOrBuilder> featureSupportBuilder_;
       /**
        * <pre>
        * Information about the support window of a feature value.
@@ -42452,12 +42452,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FieldOptions.FeatureSupport feature_support = 4;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FieldOptions.FeatureSupport, FieldOptions.FeatureSupport.Builder, FieldOptions.FeatureSupportOrBuilder>
           getFeatureSupportFieldBuilder() {
         if (featureSupportBuilder_ == null) {
-          featureSupportBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder>(
+          featureSupportBuilder_ = new SingleFieldBuilderV3Internal<
+                        FieldOptions.FeatureSupport, FieldOptions.FeatureSupport.Builder, FieldOptions.FeatureSupportOrBuilder>(
                   getFeatureSupport(),
                   getParentForChildren(),
                   isClean());
@@ -42475,8 +42475,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -42763,12 +42763,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -43647,8 +43647,8 @@ public final class DescriptorProtos {
       private int bitField0_;
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -43816,12 +43816,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 34;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -43907,8 +43907,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -44195,12 +44195,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
@@ -45381,8 +45381,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -45550,12 +45550,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 35;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -45573,8 +45573,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -45861,12 +45861,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -47638,8 +47638,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder> nameBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                NamePart, NamePart.Builder, NamePartOrBuilder> nameBuilder_;
 
       /**
        * <code>repeated .google.protobuf.UninterpretedOption.NamePart name = 2;</code>
@@ -47854,12 +47854,12 @@ public final class DescriptorProtos {
            getNameBuilderList() {
         return getNameFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                NamePart, NamePart.Builder, NamePartOrBuilder>
           getNameFieldBuilder() {
         if (nameBuilder_ == null) {
-          nameBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder>(
+          nameBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        NamePart, NamePart.Builder, NamePartOrBuilder>(
                   name_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -50848,8 +50848,8 @@ public final class DescriptorProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.FeatureSet overridableFeatures_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> overridableFeaturesBuilder_;
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> overridableFeaturesBuilder_;
         /**
          * <pre>
          * Defaults of features that can be overridden in this edition.
@@ -50990,12 +50990,12 @@ public final class DescriptorProtos {
          *
          * <code>optional .google.protobuf.FeatureSet overridable_features = 4;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
             getOverridableFeaturesFieldBuilder() {
           if (overridableFeaturesBuilder_ == null) {
-            overridableFeaturesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+            overridableFeaturesBuilder_ = new SingleFieldBuilderV3Internal<
+                            FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                     getOverridableFeatures(),
                     getParentForChildren(),
                     isClean());
@@ -51005,8 +51005,8 @@ public final class DescriptorProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.FeatureSet fixedFeatures_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> fixedFeaturesBuilder_;
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> fixedFeaturesBuilder_;
         /**
          * <pre>
          * Defaults of features that can't be overridden in this edition.
@@ -51147,12 +51147,12 @@ public final class DescriptorProtos {
          *
          * <code>optional .google.protobuf.FeatureSet fixed_features = 5;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
             getFixedFeaturesFieldBuilder() {
           if (fixedFeaturesBuilder_ == null) {
-            fixedFeaturesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+            fixedFeaturesBuilder_ = new SingleFieldBuilderV3Internal<
+                            FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                     getFixedFeatures(),
                     getParentForChildren(),
                     isClean());
@@ -51795,8 +51795,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder> defaultsBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FeatureSetEditionDefault, FeatureSetEditionDefault.Builder, FeatureSetEditionDefaultOrBuilder> defaultsBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault defaults = 1;</code>
@@ -52011,12 +52011,12 @@ public final class DescriptorProtos {
            getDefaultsBuilderList() {
         return getDefaultsFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FeatureSetEditionDefault, FeatureSetEditionDefault.Builder, FeatureSetEditionDefaultOrBuilder>
           getDefaultsFieldBuilder() {
         if (defaultsBuilder_ == null) {
-          defaultsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder>(
+          defaultsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FeatureSetEditionDefault, FeatureSetEditionDefault.Builder, FeatureSetEditionDefaultOrBuilder>(
                   defaults_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -55616,8 +55616,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder> locationBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                Location, Location.Builder, LocationOrBuilder> locationBuilder_;
 
       /**
        * <pre>
@@ -56660,12 +56660,12 @@ public final class DescriptorProtos {
            getLocationBuilderList() {
         return getLocationFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                Location, Location.Builder, LocationOrBuilder>
           getLocationFieldBuilder() {
         if (locationBuilder_ == null) {
-          locationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder>(
+          locationBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        Location, Location.Builder, LocationOrBuilder>(
                   location_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -58704,8 +58704,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder> annotationBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                Annotation, Annotation.Builder, AnnotationOrBuilder> annotationBuilder_;
 
       /**
        * <pre>
@@ -59010,12 +59010,12 @@ public final class DescriptorProtos {
            getAnnotationBuilderList() {
         return getAnnotationFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                Annotation, Annotation.Builder, AnnotationOrBuilder>
           getAnnotationFieldBuilder() {
         if (annotationBuilder_ == null) {
-          annotationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder>(
+          annotationBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        Annotation, Annotation.Builder, AnnotationOrBuilder>(
                   annotation_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
