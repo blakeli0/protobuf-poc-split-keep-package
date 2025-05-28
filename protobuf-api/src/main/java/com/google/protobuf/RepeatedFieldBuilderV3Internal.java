@@ -36,7 +36,7 @@ import java.util.RandomAccess;
  * @param <IType> the common interface for the message and the builder
  * @author jonp@google.com (Jon Perlow)
  */
-public class RepeatedFieldBuilderV3<
+class RepeatedFieldBuilderV3Internal<
         MType extends Message,
         BType extends Message.Builder,
         IType extends MessageOrBuilder>
@@ -54,7 +54,7 @@ public class RepeatedFieldBuilderV3<
 
   // List of builders. May be null, in which case, no nested builders were
   // created. If not null, entries represent the builder for that index.
-  private List<SingleFieldBuilderV3<MType, BType, IType>> builders;
+  private List<SingleFieldBuilderV3Internal<MType, BType, IType>> builders;
 
   // Here are the invariants for messages and builders:
   // 1. messages is never null and its count corresponds to the number of items
@@ -101,7 +101,7 @@ public class RepeatedFieldBuilderV3<
    * @param parent a listener to notify of changes
    * @param isClean whether the builder is initially marked clean
    */
-  public RepeatedFieldBuilderV3(
+  public RepeatedFieldBuilderV3Internal(
       List<MType> messages,
       boolean isMessagesListMutable,
       Message.BuilderParent parent,
@@ -134,7 +134,7 @@ public class RepeatedFieldBuilderV3<
    */
   private void ensureBuilders() {
     if (this.builders == null) {
-      this.builders = new ArrayList<SingleFieldBuilderV3<MType, BType, IType>>(messages.size());
+      this.builders = new ArrayList<SingleFieldBuilderV3Internal<MType, BType, IType>>(messages.size());
       for (int i = 0; i < messages.size(); i++) {
         builders.add(null);
       }
@@ -189,7 +189,7 @@ public class RepeatedFieldBuilderV3<
       return messages.get(index);
     }
 
-    SingleFieldBuilderV3<MType, BType, IType> builder = builders.get(index);
+    SingleFieldBuilderV3Internal<MType, BType, IType> builder = builders.get(index);
     if (builder == null) {
       // We don't have a builder -- return the current message.
       // This is the case where no builder was created for the entry at index,
@@ -210,10 +210,10 @@ public class RepeatedFieldBuilderV3<
    */
   public BType getBuilder(int index) {
     ensureBuilders();
-    SingleFieldBuilderV3<MType, BType, IType> builder = builders.get(index);
+    SingleFieldBuilderV3Internal<MType, BType, IType> builder = builders.get(index);
     if (builder == null) {
       MType message = messages.get(index);
-      builder = new SingleFieldBuilderV3<MType, BType, IType>(message, this, isClean);
+      builder = new SingleFieldBuilderV3Internal<MType, BType, IType>(message, this, isClean);
       builders.set(index, builder);
     }
     return builder.getBuilder();
@@ -235,7 +235,7 @@ public class RepeatedFieldBuilderV3<
       return (IType) messages.get(index);
     }
 
-    SingleFieldBuilderV3<MType, BType, IType> builder = builders.get(index);
+    SingleFieldBuilderV3Internal<MType, BType, IType> builder = builders.get(index);
     if (builder == null) {
       // We don't have a builder -- return the current message.
       // This is the case where no builder was created for the entry at index,
@@ -255,12 +255,12 @@ public class RepeatedFieldBuilderV3<
    * @return the builder
    */
   @CanIgnoreReturnValue
-  public RepeatedFieldBuilderV3<MType, BType, IType> setMessage(int index, MType message) {
+  public RepeatedFieldBuilderV3Internal<MType, BType, IType> setMessage(int index, MType message) {
     checkNotNull(message);
     ensureMutableMessageList();
     messages.set(index, message);
     if (builders != null) {
-      SingleFieldBuilderV3<MType, BType, IType> entry = builders.set(index, null);
+      SingleFieldBuilderV3Internal<MType, BType, IType> entry = builders.set(index, null);
       if (entry != null) {
         entry.dispose();
       }
@@ -277,7 +277,7 @@ public class RepeatedFieldBuilderV3<
    * @return the builder
    */
   @CanIgnoreReturnValue
-  public RepeatedFieldBuilderV3<MType, BType, IType> addMessage(MType message) {
+  public RepeatedFieldBuilderV3Internal<MType, BType, IType> addMessage(MType message) {
     checkNotNull(message);
     ensureMutableMessageList();
     messages.add(message);
@@ -299,7 +299,7 @@ public class RepeatedFieldBuilderV3<
    * @return the builder
    */
   @CanIgnoreReturnValue
-  public RepeatedFieldBuilderV3<MType, BType, IType> addMessage(int index, MType message) {
+  public RepeatedFieldBuilderV3Internal<MType, BType, IType> addMessage(int index, MType message) {
     checkNotNull(message);
     ensureMutableMessageList();
     messages.add(index, message);
@@ -319,7 +319,7 @@ public class RepeatedFieldBuilderV3<
    * @return the builder
    */
   @CanIgnoreReturnValue
-  public RepeatedFieldBuilderV3<MType, BType, IType> addAllMessages(
+  public RepeatedFieldBuilderV3Internal<MType, BType, IType> addAllMessages(
       Iterable<? extends MType> values) {
     for (final MType value : values) {
       checkNotNull(value);
@@ -358,8 +358,8 @@ public class RepeatedFieldBuilderV3<
   public BType addBuilder(MType message) {
     ensureMutableMessageList();
     ensureBuilders();
-    SingleFieldBuilderV3<MType, BType, IType> builder =
-        new SingleFieldBuilderV3<MType, BType, IType>(message, this, isClean);
+    SingleFieldBuilderV3Internal<MType, BType, IType> builder =
+        new SingleFieldBuilderV3Internal<MType, BType, IType>(message, this, isClean);
     messages.add(null);
     builders.add(builder);
     onChanged();
@@ -378,8 +378,8 @@ public class RepeatedFieldBuilderV3<
   public BType addBuilder(int index, MType message) {
     ensureMutableMessageList();
     ensureBuilders();
-    SingleFieldBuilderV3<MType, BType, IType> builder =
-        new SingleFieldBuilderV3<MType, BType, IType>(message, this, isClean);
+    SingleFieldBuilderV3Internal<MType, BType, IType> builder =
+        new SingleFieldBuilderV3Internal<MType, BType, IType>(message, this, isClean);
     messages.add(index, null);
     builders.add(index, builder);
     onChanged();
@@ -397,7 +397,7 @@ public class RepeatedFieldBuilderV3<
     ensureMutableMessageList();
     messages.remove(index);
     if (builders != null) {
-      SingleFieldBuilderV3<MType, BType, IType> entry = builders.remove(index);
+      SingleFieldBuilderV3Internal<MType, BType, IType> entry = builders.remove(index);
       if (entry != null) {
         entry.dispose();
       }
@@ -411,7 +411,7 @@ public class RepeatedFieldBuilderV3<
     messages = Collections.emptyList();
     isMessagesListMutable = false;
     if (builders != null) {
-      for (SingleFieldBuilderV3<MType, BType, IType> entry : builders) {
+      for (SingleFieldBuilderV3Internal<MType, BType, IType> entry : builders) {
         if (entry != null) {
           entry.dispose();
         }
@@ -443,7 +443,7 @@ public class RepeatedFieldBuilderV3<
       // of sync with their builders.
       for (int i = 0; i < messages.size(); i++) {
         Message message = messages.get(i);
-        SingleFieldBuilderV3<MType, BType, IType> builder = builders.get(i);
+        SingleFieldBuilderV3Internal<MType, BType, IType> builder = builders.get(i);
         if (builder != null) {
           if (builder.build() != message) {
             allMessagesInSync = false;
@@ -556,9 +556,9 @@ public class RepeatedFieldBuilderV3<
           IType extends MessageOrBuilder>
       extends AbstractList<MType> implements List<MType>, RandomAccess {
 
-    RepeatedFieldBuilderV3<MType, BType, IType> builder;
+    RepeatedFieldBuilderV3Internal<MType, BType, IType> builder;
 
-    MessageExternalList(RepeatedFieldBuilderV3<MType, BType, IType> builder) {
+    MessageExternalList(RepeatedFieldBuilderV3Internal<MType, BType, IType> builder) {
       this.builder = builder;
     }
 
@@ -590,9 +590,9 @@ public class RepeatedFieldBuilderV3<
           IType extends MessageOrBuilder>
       extends AbstractList<BType> implements List<BType>, RandomAccess {
 
-    RepeatedFieldBuilderV3<MType, BType, IType> builder;
+    RepeatedFieldBuilderV3Internal<MType, BType, IType> builder;
 
-    BuilderExternalList(RepeatedFieldBuilderV3<MType, BType, IType> builder) {
+    BuilderExternalList(RepeatedFieldBuilderV3Internal<MType, BType, IType> builder) {
       this.builder = builder;
     }
 
@@ -624,9 +624,9 @@ public class RepeatedFieldBuilderV3<
           IType extends MessageOrBuilder>
       extends AbstractList<IType> implements List<IType>, RandomAccess {
 
-    RepeatedFieldBuilderV3<MType, BType, IType> builder;
+    RepeatedFieldBuilderV3Internal<MType, BType, IType> builder;
 
-    MessageOrBuilderExternalList(RepeatedFieldBuilderV3<MType, BType, IType> builder) {
+    MessageOrBuilderExternalList(RepeatedFieldBuilderV3Internal<MType, BType, IType> builder) {
       this.builder = builder;
     }
 

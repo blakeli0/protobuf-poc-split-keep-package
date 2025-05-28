@@ -630,8 +630,8 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.Any value_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> valueBuilder_;
+    private SingleFieldBuilderV3Internal<
+            Any, Any.Builder, AnyOrBuilder> valueBuilder_;
     /**
      * <pre>
      * The option's value packed in an Any message. If the value is a primitive,
@@ -799,12 +799,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Any value = 2;</code>
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> 
+    private SingleFieldBuilderV3Internal<
+            Any, Any.Builder, AnyOrBuilder>
         getValueFieldBuilder() {
       if (valueBuilder_ == null) {
-        valueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder>(
+        valueBuilder_ = new SingleFieldBuilderV3Internal<
+                    Any, Any.Builder, AnyOrBuilder>(
                 getValue(),
                 getParentForChildren(),
                 isClean());
