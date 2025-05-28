@@ -29,7 +29,7 @@ import static com.google.protobuf.Internal.checkNotNull;
  * @param <IType> the common interface for the message and the builder
  * @author jonp@google.com (Jon Perlow)
  */
-public class SingleFieldBuilderV3<
+class SingleFieldBuilderV3Internal<
         MType extends Message,
         BType extends Message.Builder,
         IType extends MessageOrBuilder>
@@ -53,7 +53,7 @@ public class SingleFieldBuilderV3<
   // to dispatch dirty invalidations. See AbstractMessage.BuilderListener.
   private boolean isClean;
 
-  public SingleFieldBuilderV3(MType message, Message.BuilderParent parent, boolean isClean) {
+  public SingleFieldBuilderV3Internal(MType message, Message.BuilderParent parent, boolean isClean) {
     this.message = checkNotNull(message);
     this.parent = parent;
     this.isClean = isClean;
@@ -134,7 +134,7 @@ public class SingleFieldBuilderV3<
    * @return the builder
    */
   @CanIgnoreReturnValue
-  public SingleFieldBuilderV3<MType, BType, IType> setMessage(MType message) {
+  public SingleFieldBuilderV3Internal<MType, BType, IType> setMessage(MType message) {
     this.message = checkNotNull(message);
     if (builder != null) {
 //      builder.dispose();
@@ -151,7 +151,7 @@ public class SingleFieldBuilderV3<
    * @return the builder
    */
   @CanIgnoreReturnValue
-  public SingleFieldBuilderV3<MType, BType, IType> mergeFrom(MType value) {
+  public SingleFieldBuilderV3Internal<MType, BType, IType> mergeFrom(MType value) {
     if (builder == null && message == message.getDefaultInstanceForType()) {
       message = value;
     } else {
@@ -168,7 +168,7 @@ public class SingleFieldBuilderV3<
    */
   @SuppressWarnings("unchecked")
   @CanIgnoreReturnValue
-  public SingleFieldBuilderV3<MType, BType, IType> clear() {
+  public SingleFieldBuilderV3Internal<MType, BType, IType> clear() {
     message =
         (MType)
             (message != null
@@ -203,6 +203,13 @@ public class SingleFieldBuilderV3<
     }
   }
 
+  static <T> T checkNotNull(T obj) {
+    if (obj == null) {
+      throw new NullPointerException();
+    }
+    return obj;
+  }
+  
   @Override
   public void markDirty() {
     onChanged();

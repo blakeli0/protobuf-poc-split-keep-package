@@ -1186,8 +1186,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Method, com.google.protobuf.Method.Builder, com.google.protobuf.MethodOrBuilder> methodsBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            Method, Method.Builder, MethodOrBuilder> methodsBuilder_;
 
     /**
      * <pre>
@@ -1474,12 +1474,12 @@ private static final long serialVersionUID = 0L;
          getMethodsBuilderList() {
       return getMethodsFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Method, com.google.protobuf.Method.Builder, com.google.protobuf.MethodOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            Method, Method.Builder, MethodOrBuilder>
         getMethodsFieldBuilder() {
       if (methodsBuilder_ == null) {
-        methodsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.Method, com.google.protobuf.Method.Builder, com.google.protobuf.MethodOrBuilder>(
+        methodsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    Method, Method.Builder, MethodOrBuilder>(
                 methods_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1498,8 +1498,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder> optionsBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            Option, Option.Builder, OptionOrBuilder> optionsBuilder_;
 
     /**
      * <pre>
@@ -1786,12 +1786,12 @@ private static final long serialVersionUID = 0L;
          getOptionsBuilderList() {
       return getOptionsFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            Option, Option.Builder, OptionOrBuilder>
         getOptionsFieldBuilder() {
       if (optionsBuilder_ == null) {
-        optionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder>(
+        optionsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    Option, Option.Builder, OptionOrBuilder>(
                 options_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1984,8 +1984,8 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SourceContext sourceContext_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.SourceContext, com.google.protobuf.SourceContext.Builder, com.google.protobuf.SourceContextOrBuilder> sourceContextBuilder_;
+    private SingleFieldBuilderV3Internal<
+            SourceContext, SourceContext.Builder, SourceContextOrBuilder> sourceContextBuilder_;
     /**
      * <pre>
      * Source context for the protocol buffer service represented by this
@@ -2135,12 +2135,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.SourceContext source_context = 5;</code>
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.SourceContext, com.google.protobuf.SourceContext.Builder, com.google.protobuf.SourceContextOrBuilder> 
+    private SingleFieldBuilderV3Internal<
+            SourceContext, SourceContext.Builder, SourceContextOrBuilder>
         getSourceContextFieldBuilder() {
       if (sourceContextBuilder_ == null) {
-        sourceContextBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.SourceContext, com.google.protobuf.SourceContext.Builder, com.google.protobuf.SourceContextOrBuilder>(
+        sourceContextBuilder_ = new SingleFieldBuilderV3Internal<
+                    SourceContext, SourceContext.Builder, SourceContextOrBuilder>(
                 getSourceContext(),
                 getParentForChildren(),
                 isClean());
@@ -2158,8 +2158,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Mixin, com.google.protobuf.Mixin.Builder, com.google.protobuf.MixinOrBuilder> mixinsBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            Mixin, Mixin.Builder, MixinOrBuilder> mixinsBuilder_;
 
     /**
      * <pre>
@@ -2446,12 +2446,12 @@ private static final long serialVersionUID = 0L;
          getMixinsBuilderList() {
       return getMixinsFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Mixin, com.google.protobuf.Mixin.Builder, com.google.protobuf.MixinOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            Mixin, Mixin.Builder, MixinOrBuilder>
         getMixinsFieldBuilder() {
       if (mixinsBuilder_ == null) {
-        mixinsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.Mixin, com.google.protobuf.Mixin.Builder, com.google.protobuf.MixinOrBuilder>(
+        mixinsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    Mixin, Mixin.Builder, MixinOrBuilder>(
                 mixins_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),

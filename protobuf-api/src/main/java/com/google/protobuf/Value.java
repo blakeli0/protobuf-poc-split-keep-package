@@ -1196,8 +1196,8 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder> structValueBuilder_;
+    private SingleFieldBuilderV3Internal<
+            Struct, Struct.Builder, StructOrBuilder> structValueBuilder_;
     /**
      * <pre>
      * Represents a structured value.
@@ -1355,15 +1355,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Struct struct_value = 5;</code>
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder> 
+    private SingleFieldBuilderV3Internal<
+            Struct, Struct.Builder, StructOrBuilder>
         getStructValueFieldBuilder() {
       if (structValueBuilder_ == null) {
         if (!(kindCase_ == 5)) {
           kind_ = com.google.protobuf.Struct.getDefaultInstance();
         }
-        structValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder>(
+        structValueBuilder_ = new SingleFieldBuilderV3Internal<
+                    Struct, Struct.Builder, StructOrBuilder>(
                 (com.google.protobuf.Struct) kind_,
                 getParentForChildren(),
                 isClean());
@@ -1374,8 +1374,8 @@ private static final long serialVersionUID = 0L;
       return structValueBuilder_;
     }
 
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.ListValue, com.google.protobuf.ListValue.Builder, com.google.protobuf.ListValueOrBuilder> listValueBuilder_;
+    private SingleFieldBuilderV3Internal<
+            ListValue, ListValue.Builder, ListValueOrBuilder> listValueBuilder_;
     /**
      * <pre>
      * Represents a repeated `Value`.
@@ -1533,15 +1533,15 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.ListValue list_value = 6;</code>
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.ListValue, com.google.protobuf.ListValue.Builder, com.google.protobuf.ListValueOrBuilder> 
+    private SingleFieldBuilderV3Internal<
+            ListValue, ListValue.Builder, ListValueOrBuilder>
         getListValueFieldBuilder() {
       if (listValueBuilder_ == null) {
         if (!(kindCase_ == 6)) {
           kind_ = com.google.protobuf.ListValue.getDefaultInstance();
         }
-        listValueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.ListValue, com.google.protobuf.ListValue.Builder, com.google.protobuf.ListValueOrBuilder>(
+        listValueBuilder_ = new SingleFieldBuilderV3Internal<
+                    ListValue, ListValue.Builder, ListValueOrBuilder>(
                 (com.google.protobuf.ListValue) kind_,
                 getParentForChildren(),
                 isClean());

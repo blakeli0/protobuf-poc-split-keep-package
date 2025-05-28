@@ -4,6 +4,8 @@
 // Protobuf Java Version: 3.25.5
 package com.google.protobuf.compiler;
 
+import java.util.Map;
+
 public final class PluginProtos {
   private PluginProtos() {}
   public static void registerAllExtensions(
@@ -2549,7 +2551,7 @@ public final class PluginProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
+      private com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
           com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> protoFileBuilder_;
 
       /**
@@ -3161,11 +3163,11 @@ public final class PluginProtos {
            getProtoFileBuilderList() {
         return getProtoFileFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
+      private com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
           com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> 
           getProtoFileFieldBuilder() {
         if (protoFileBuilder_ == null) {
-          protoFileBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          protoFileBuilder_ = new com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
               com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder>(
                   protoFile_,
                   ((bitField0_ & 0x00000004) != 0),
@@ -3185,7 +3187,7 @@ public final class PluginProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
+      private com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
           com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> sourceFileDescriptorsBuilder_;
 
       /**
@@ -3509,11 +3511,11 @@ public final class PluginProtos {
            getSourceFileDescriptorsBuilderList() {
         return getSourceFileDescriptorsFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
+      private com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
           com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> 
           getSourceFileDescriptorsFieldBuilder() {
         if (sourceFileDescriptorsBuilder_ == null) {
-          sourceFileDescriptorsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          sourceFileDescriptorsBuilder_ = new com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
               com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder>(
                   sourceFileDescriptors_,
                   ((bitField0_ & 0x00000008) != 0),
@@ -3525,7 +3527,7 @@ public final class PluginProtos {
       }
 
       private com.google.protobuf.compiler.PluginProtos.Version compilerVersion_;
-      private com.google.protobuf.SingleFieldBuilderV3<
+      private com.google.protobuf.compiler.SingleFieldBuilderV3Internal<
           com.google.protobuf.compiler.PluginProtos.Version, com.google.protobuf.compiler.PluginProtos.Version.Builder, com.google.protobuf.compiler.PluginProtos.VersionOrBuilder> compilerVersionBuilder_;
       /**
        * <pre>
@@ -3667,11 +3669,11 @@ public final class PluginProtos {
        *
        * <code>optional .google.protobuf.compiler.Version compiler_version = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
+      private com.google.protobuf.compiler.SingleFieldBuilderV3Internal<
           com.google.protobuf.compiler.PluginProtos.Version, com.google.protobuf.compiler.PluginProtos.Version.Builder, com.google.protobuf.compiler.PluginProtos.VersionOrBuilder> 
           getCompilerVersionFieldBuilder() {
         if (compilerVersionBuilder_ == null) {
-          compilerVersionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          compilerVersionBuilder_ = new com.google.protobuf.compiler.SingleFieldBuilderV3Internal<
               com.google.protobuf.compiler.PluginProtos.Version, com.google.protobuf.compiler.PluginProtos.Version.Builder, com.google.protobuf.compiler.PluginProtos.VersionOrBuilder>(
                   getCompilerVersion(),
                   getParentForChildren(),
@@ -5743,7 +5745,7 @@ public final class PluginProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.GeneratedCodeInfo generatedCodeInfo_;
-        private com.google.protobuf.SingleFieldBuilderV3<
+        private com.google.protobuf.compiler.SingleFieldBuilderV3Internal<
             com.google.protobuf.DescriptorProtos.GeneratedCodeInfo, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfoOrBuilder> generatedCodeInfoBuilder_;
         /**
          * <pre>
@@ -5903,11 +5905,11 @@ public final class PluginProtos {
          *
          * <code>optional .google.protobuf.GeneratedCodeInfo generated_code_info = 16;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
+        private com.google.protobuf.compiler.SingleFieldBuilderV3Internal<
             com.google.protobuf.DescriptorProtos.GeneratedCodeInfo, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfoOrBuilder> 
             getGeneratedCodeInfoFieldBuilder() {
           if (generatedCodeInfoBuilder_ == null) {
-            generatedCodeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            generatedCodeInfoBuilder_ = new com.google.protobuf.compiler.SingleFieldBuilderV3Internal<
                 com.google.protobuf.DescriptorProtos.GeneratedCodeInfo, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfoOrBuilder>(
                     getGeneratedCodeInfo(),
                     getParentForChildren(),
@@ -7048,7 +7050,7 @@ public final class PluginProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
+      private com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
           com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File, com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File.Builder, com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.FileOrBuilder> fileBuilder_;
 
       /**
@@ -7264,11 +7266,11 @@ public final class PluginProtos {
            getFileBuilderList() {
         return getFileFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
+      private com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
           com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File, com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File.Builder, com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.FileOrBuilder> 
           getFileFieldBuilder() {
         if (fileBuilder_ == null) {
-          fileBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          fileBuilder_ = new com.google.protobuf.compiler.RepeatedFieldBuilderV3Internal<
               com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File, com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File.Builder, com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.FileOrBuilder>(
                   file_,
                   ((bitField0_ & 0x00000010) != 0),

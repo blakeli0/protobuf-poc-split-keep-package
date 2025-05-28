@@ -738,8 +738,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder> optionsBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            Option, Option.Builder, OptionOrBuilder> optionsBuilder_;
 
     /**
      * <pre>
@@ -1026,12 +1026,12 @@ private static final long serialVersionUID = 0L;
          getOptionsBuilderList() {
       return getOptionsFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            Option, Option.Builder, OptionOrBuilder>
         getOptionsFieldBuilder() {
       if (optionsBuilder_ == null) {
-        optionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder>(
+        optionsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    Option, Option.Builder, OptionOrBuilder>(
                 options_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),

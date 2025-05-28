@@ -993,8 +993,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.EnumValue, com.google.protobuf.EnumValue.Builder, com.google.protobuf.EnumValueOrBuilder> enumvalueBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            EnumValue, EnumValue.Builder, EnumValueOrBuilder> enumvalueBuilder_;
 
     /**
      * <pre>
@@ -1281,12 +1281,12 @@ private static final long serialVersionUID = 0L;
          getEnumvalueBuilderList() {
       return getEnumvalueFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.EnumValue, com.google.protobuf.EnumValue.Builder, com.google.protobuf.EnumValueOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            EnumValue, EnumValue.Builder, EnumValueOrBuilder>
         getEnumvalueFieldBuilder() {
       if (enumvalueBuilder_ == null) {
-        enumvalueBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.EnumValue, com.google.protobuf.EnumValue.Builder, com.google.protobuf.EnumValueOrBuilder>(
+        enumvalueBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    EnumValue, EnumValue.Builder, EnumValueOrBuilder>(
                 enumvalue_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1305,8 +1305,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder> optionsBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            Option, Option.Builder, OptionOrBuilder> optionsBuilder_;
 
     /**
      * <pre>
@@ -1593,12 +1593,12 @@ private static final long serialVersionUID = 0L;
          getOptionsBuilderList() {
       return getOptionsFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            Option, Option.Builder, OptionOrBuilder>
         getOptionsFieldBuilder() {
       if (optionsBuilder_ == null) {
-        optionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.Option, com.google.protobuf.Option.Builder, com.google.protobuf.OptionOrBuilder>(
+        optionsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    Option, Option.Builder, OptionOrBuilder>(
                 options_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1609,8 +1609,8 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SourceContext sourceContext_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.SourceContext, com.google.protobuf.SourceContext.Builder, com.google.protobuf.SourceContextOrBuilder> sourceContextBuilder_;
+    private SingleFieldBuilderV3Internal<
+            SourceContext, SourceContext.Builder, SourceContextOrBuilder> sourceContextBuilder_;
     /**
      * <pre>
      * The source context.
@@ -1751,12 +1751,12 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.SourceContext source_context = 4;</code>
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.SourceContext, com.google.protobuf.SourceContext.Builder, com.google.protobuf.SourceContextOrBuilder> 
+    private SingleFieldBuilderV3Internal<
+            SourceContext, SourceContext.Builder, SourceContextOrBuilder>
         getSourceContextFieldBuilder() {
       if (sourceContextBuilder_ == null) {
-        sourceContextBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.SourceContext, com.google.protobuf.SourceContext.Builder, com.google.protobuf.SourceContextOrBuilder>(
+        sourceContextBuilder_ = new SingleFieldBuilderV3Internal<
+                    SourceContext, SourceContext.Builder, SourceContextOrBuilder>(
                 getSourceContext(),
                 getParentForChildren(),
                 isClean());
