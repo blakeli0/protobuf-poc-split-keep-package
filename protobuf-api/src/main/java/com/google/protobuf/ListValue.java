@@ -496,8 +496,8 @@ private static final long serialVersionUID = 0L;
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Value, com.google.protobuf.Value.Builder, com.google.protobuf.ValueOrBuilder> valuesBuilder_;
+    private RepeatedFieldBuilderV3Internal<
+            Value, Value.Builder, ValueOrBuilder> valuesBuilder_;
 
     /**
      * <pre>
@@ -784,12 +784,12 @@ private static final long serialVersionUID = 0L;
          getValuesBuilderList() {
       return getValuesFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.protobuf.Value, com.google.protobuf.Value.Builder, com.google.protobuf.ValueOrBuilder> 
+    private RepeatedFieldBuilderV3Internal<
+            Value, Value.Builder, ValueOrBuilder>
         getValuesFieldBuilder() {
       if (valuesBuilder_ == null) {
-        valuesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.protobuf.Value, com.google.protobuf.Value.Builder, com.google.protobuf.ValueOrBuilder>(
+        valuesBuilder_ = new RepeatedFieldBuilderV3Internal<
+                    Value, Value.Builder, ValueOrBuilder>(
                 values_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
