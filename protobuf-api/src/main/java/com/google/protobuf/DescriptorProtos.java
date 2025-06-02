@@ -556,7 +556,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -592,7 +592,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
 
       }
@@ -2578,7 +2578,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2612,7 +2612,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6064,7 +6064,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -6094,7 +6094,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -6892,7 +6892,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -6928,7 +6928,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -8004,7 +8004,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8038,7 +8038,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11676,7 +11676,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -11706,7 +11706,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -12800,7 +12800,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -12831,7 +12831,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -15742,7 +15742,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -15776,7 +15776,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -17511,7 +17511,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -17545,7 +17545,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -18506,7 +18506,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -18545,7 +18545,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -19351,7 +19351,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -19385,7 +19385,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -21091,7 +21091,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -21125,7 +21125,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -22037,7 +22037,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -22071,7 +22071,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -23470,7 +23470,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -23504,7 +23504,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -26700,7 +26700,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -26731,7 +26731,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -30541,7 +30541,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -30572,7 +30572,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -33268,7 +33268,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -33298,7 +33298,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -34175,7 +34175,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -34209,7 +34209,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -35716,7 +35716,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -35747,7 +35747,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -38391,7 +38391,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -38422,7 +38422,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -39900,7 +39900,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -39931,7 +39931,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -41654,7 +41654,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -41685,7 +41685,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -43342,7 +43342,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -43373,7 +43373,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -44946,7 +44946,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -44977,7 +44977,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -46435,7 +46435,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -46473,7 +46473,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -47312,7 +47312,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -47351,7 +47351,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
 
       }
@@ -49396,7 +49396,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -49436,7 +49436,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
 
       }
@@ -50557,7 +50557,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -50594,7 +50594,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -51513,7 +51513,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -51550,7 +51550,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
 
       }
@@ -53596,7 +53596,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -53626,7 +53626,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -55351,7 +55351,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -55387,7 +55387,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
 
       }
@@ -57542,7 +57542,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -57572,7 +57572,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.AbstractMessage.BuilderParent parent) {
           super(parent);
 
         }
@@ -58470,7 +58470,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.AbstractMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -58506,7 +58506,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.AbstractMessage.BuilderParent parent) {
         super(parent);
 
       }

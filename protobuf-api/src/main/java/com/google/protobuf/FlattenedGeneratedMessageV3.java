@@ -47,7 +47,7 @@ import static com.google.protobuf.Internal.checkNotNull;
  *
  * @author kenton@google.com Kenton Varda
  */
-abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
+abstract class FlattenedGeneratedMessageV3 extends AbstractMessage implements Message, Serializable {
   private static final long serialVersionUID = 1L;
 
   /**
@@ -795,7 +795,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
   }
 
   /** TODO: remove this together with GeneratedMessageV3.BuilderParent. */
-  protected abstract Message.Builder newBuilderForType(BuilderParent parent);
+//  protected abstract Message.Builder newBuilderForType(BuilderParent parent);
 
   /** TODO: generated class should implement this directly */
   protected Message.Builder newBuilderForType(final Message.BuilderParent parent) {
@@ -811,9 +811,9 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
   /** Builder class for {@link FlattenedGeneratedMessageV3}. */
   @SuppressWarnings("unchecked")
   public abstract static class Builder<BuilderT extends Builder<BuilderT>>
-      implements Message.Builder {
+          extends AbstractMessage.Builder<BuilderT> {
 
-    private BuilderParent builderParent;
+    private AbstractMessage.BuilderParent builderParent;
 
     private BuilderParentImpl meAsParent;
 
@@ -838,7 +838,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
       this(null);
     }
 
-    protected Builder(BuilderParent builderParent) {
+    protected Builder(AbstractMessage.BuilderParent builderParent) {
       this.builderParent = builderParent;
     }
 
@@ -2351,7 +2351,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
 
     protected ExtendableBuilder() {}
 
-    protected ExtendableBuilder(BuilderParent parent) {
+    protected ExtendableBuilder(AbstractMessage.BuilderParent parent) {
       super(parent);
     }
 
