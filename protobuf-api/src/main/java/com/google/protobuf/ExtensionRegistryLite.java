@@ -73,19 +73,6 @@ public class ExtensionRegistryLite {
       }
     }
   }
-  private static final Class<?> GENERATED_EXTENSION = getGeneratedExtensionClass();
-
-  private static Class<?> getGeneratedExtensionClass() {
-    try {
-      Class<?> generatedMessageLiteClass = Class.forName("com.google.protobuf.GeneratedMessageLite");
-      return Arrays.stream(generatedMessageLiteClass.getClasses())
-              .filter(innerClass -> innerClass.getName().equals("com.google.protobuf.GeneratedMessageLite$GeneratedExtension"))
-              .findFirst()
-              .get();
-    } catch (Throwable e) {
-      return null;
-    }
-  }
 
   public static boolean isEagerlyParseMessageSets() {
     return eagerlyParseMessageSets;
@@ -141,35 +128,33 @@ public class ExtensionRegistryLite {
    */
   @SuppressWarnings("unchecked")
   public <ContainingType extends MessageLite>
-      ExtensionLite<ContainingType, ?> findLiteExtensionByNumber(
+  GeneratedMessageLite.GeneratedExtension<ContainingType, ?> findLiteExtensionByNumber(
           final ContainingType containingTypeDefaultInstance, final int fieldNumber) {
-    return (ExtensionLite<ContainingType, ?>)
-        extensionsByNumber.get(new ObjectIntPair(containingTypeDefaultInstance, fieldNumber));
+    return (GeneratedMessageLite.GeneratedExtension<ContainingType, ?>)
+            extensionsByNumber.get(new ObjectIntPair(containingTypeDefaultInstance, fieldNumber));
   }
 
   /** Add an extension from a lite generated file to the registry. */
-//  public final void add(final ExtensionLite<?, ?> extension) {
-//    extensionsByNumber.put(
-//        new ObjectIntPair(extension, extension.getNumber()),
-//        extension);
-//  }
+  public final void add(final GeneratedMessageLite.GeneratedExtension<?, ?> extension) {
+    extensionsByNumber.put(
+            new ObjectIntPair(extension.getContainingTypeDefaultInstance(), extension.getNumber()),
+            extension);
+  }
 
   /**
    * Add an extension from a lite generated file to the registry only if it is a non-lite extension
    * i.e. {@link GeneratedMessageLite.GeneratedExtension}.
    */
   public final void add(ExtensionLite<?, ?> extension) {
-    if (GENERATED_EXTENSION.isAssignableFrom(extension.getClass())) {
-      extensionsByNumber.put(
-              new ObjectIntPair(extension, extension.getNumber()),
-              extension);
+    if (GeneratedMessageLite.GeneratedExtension.class.isAssignableFrom(extension.getClass())) {
+      add((GeneratedMessageLite.GeneratedExtension<?, ?>) extension);
     }
     if (doFullRuntimeInheritanceCheck && ExtensionRegistryFactory.isFullRegistry(this)) {
       try {
         this.getClass().getMethod("add", ExtensionClassHolder.INSTANCE).invoke(this, extension);
       } catch (Exception e) {
         throw new IllegalArgumentException(
-            String.format("Could not invoke ExtensionRegistry#add for %s", extension), e);
+                String.format("Could not invoke ExtensionRegistry#add for %s", extension), e);
       }
     }
   }
