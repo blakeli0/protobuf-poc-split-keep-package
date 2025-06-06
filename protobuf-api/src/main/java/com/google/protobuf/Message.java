@@ -84,6 +84,10 @@ public interface Message extends MessageLite, MessageOrBuilder {
   @Override
   String toString();
 
+  default boolean isGenerated() {
+    return false;
+  }
+
   // =================================================================
   // Builders
 
@@ -284,5 +288,9 @@ public interface Message extends MessageLite, MessageOrBuilder {
     @Override
     boolean mergeDelimitedFrom(InputStream input, ExtensionRegistryLite extensionRegistry)
         throws IOException;
+
+    default boolean isGenerated() {
+      return false;
+    }
   }
 }
