@@ -55,6 +55,11 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
   }
 
   @Override
+  public boolean isGenerated() {
+    return true;
+  }
+
+  @Override
   public Parser<? extends GeneratedMessage> getParserForType() {
     throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
   }
@@ -356,6 +361,11 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
 
     protected Builder(BuilderParent builderParent) {
       this.builderParent = builderParent;
+    }
+
+    @Override
+    public boolean isGenerated() {
+      return true;
     }
 
     @Override
