@@ -18,7 +18,7 @@ public final class EmptyProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Empty_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Empty_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -42,7 +42,7 @@ public final class EmptyProto {
     internal_static_google_protobuf_Empty_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_Empty_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Empty_descriptor,
         new java.lang.String[] { });
   }

@@ -12,12 +12,12 @@ package com.google.protobuf;
  * Protobuf type {@code google.protobuf.Field}
  */
 public final class Field extends
-    com.google.protobuf.FlattenedGeneratedMessageV3 implements
+    com.google.protobuf.GeneratedMessageV3Internal implements
     // @@protoc_insertion_point(message_implements:google.protobuf.Field)
     FieldOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Field.newBuilder() to construct.
-  private Field(com.google.protobuf.FlattenedGeneratedMessageV3.Builder<?> builder) {
+  private Field(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
     super(builder);
   }
   private Field() {
@@ -43,7 +43,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.google.protobuf.TypeProto.internal_static_google_protobuf_Field_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -1001,11 +1001,11 @@ private static final long serialVersionUID = 0L;
     if (number_ != 0) {
       output.writeInt32(3, number_);
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(name_)) {
-      com.google.protobuf.FlattenedGeneratedMessageV3.writeString(output, 4, name_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(name_)) {
+      com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 4, name_);
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(typeUrl_)) {
-      com.google.protobuf.FlattenedGeneratedMessageV3.writeString(output, 6, typeUrl_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(typeUrl_)) {
+      com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 6, typeUrl_);
     }
     if (oneofIndex_ != 0) {
       output.writeInt32(7, oneofIndex_);
@@ -1016,11 +1016,11 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < options_.size(); i++) {
       output.writeMessage(9, options_.get(i));
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(jsonName_)) {
-      com.google.protobuf.FlattenedGeneratedMessageV3.writeString(output, 10, jsonName_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(jsonName_)) {
+      com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 10, jsonName_);
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(defaultValue_)) {
-      com.google.protobuf.FlattenedGeneratedMessageV3.writeString(output, 11, defaultValue_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(defaultValue_)) {
+      com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 11, defaultValue_);
     }
     getUnknownFields().writeTo(output);
   }
@@ -1043,11 +1043,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(3, number_);
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(name_)) {
-      size += com.google.protobuf.FlattenedGeneratedMessageV3.computeStringSize(4, name_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(name_)) {
+      size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(4, name_);
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(typeUrl_)) {
-      size += com.google.protobuf.FlattenedGeneratedMessageV3.computeStringSize(6, typeUrl_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(typeUrl_)) {
+      size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(6, typeUrl_);
     }
     if (oneofIndex_ != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -1061,11 +1061,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(9, options_.get(i));
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(jsonName_)) {
-      size += com.google.protobuf.FlattenedGeneratedMessageV3.computeStringSize(10, jsonName_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(jsonName_)) {
+      size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(10, jsonName_);
     }
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(defaultValue_)) {
-      size += com.google.protobuf.FlattenedGeneratedMessageV3.computeStringSize(11, defaultValue_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(defaultValue_)) {
+      size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(11, defaultValue_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -1173,20 +1173,20 @@ private static final long serialVersionUID = 0L;
   }
   public static com.google.protobuf.Field parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.Field parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public static com.google.protobuf.Field parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input);
   }
 
@@ -1194,20 +1194,20 @@ private static final long serialVersionUID = 0L;
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.google.protobuf.Field parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.Field parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -1227,7 +1227,7 @@ private static final long serialVersionUID = 0L;
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -1239,7 +1239,7 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code google.protobuf.Field}
    */
   public static final class Builder extends
-      com.google.protobuf.FlattenedGeneratedMessageV3.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.protobuf.Field)
       com.google.protobuf.FieldOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -1248,7 +1248,7 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.TypeProto.internal_static_google_protobuf_Field_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -1261,7 +1261,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       super(parent);
 
     }
@@ -1448,7 +1448,7 @@ private static final long serialVersionUID = 0L;
             options_ = other.options_;
             bitField0_ = (bitField0_ & ~0x00000080);
             optionsBuilder_ = 
-              com.google.protobuf.FlattenedGeneratedMessageV3.alwaysUseFieldBuilders ?
+              com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                  getOptionsFieldBuilder() : null;
           } else {
             optionsBuilder_.addAllMessages(other.options_);
