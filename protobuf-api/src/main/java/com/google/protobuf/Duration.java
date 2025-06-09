@@ -69,12 +69,12 @@ package com.google.protobuf;
  * Protobuf type {@code google.protobuf.Duration}
  */
 public final class Duration extends
-    com.google.protobuf.FlattenedGeneratedMessageV3 implements
+    com.google.protobuf.GeneratedMessageV3Internal implements
     // @@protoc_insertion_point(message_implements:google.protobuf.Duration)
     DurationOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Duration.newBuilder() to construct.
-  private Duration(com.google.protobuf.FlattenedGeneratedMessageV3.Builder<?> builder) {
+  private Duration(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
     super(builder);
   }
   private Duration() {
@@ -93,7 +93,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.google.protobuf.DurationProto.internal_static_google_protobuf_Duration_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -248,20 +248,20 @@ private static final long serialVersionUID = 0L;
   }
   public static com.google.protobuf.Duration parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.Duration parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public static com.google.protobuf.Duration parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input);
   }
 
@@ -269,20 +269,20 @@ private static final long serialVersionUID = 0L;
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.google.protobuf.Duration parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.Duration parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -302,7 +302,7 @@ private static final long serialVersionUID = 0L;
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -371,7 +371,7 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code google.protobuf.Duration}
    */
   public static final class Builder extends
-      com.google.protobuf.FlattenedGeneratedMessageV3.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.protobuf.Duration)
       com.google.protobuf.DurationOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -380,7 +380,7 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DurationProto.internal_static_google_protobuf_Duration_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -393,7 +393,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       super(parent);
 
     }

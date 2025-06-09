@@ -12,12 +12,12 @@ package com.google.protobuf;
  * Protobuf type {@code google.protobuf.EnumValue}
  */
 public final class EnumValue extends
-    com.google.protobuf.FlattenedGeneratedMessageV3 implements
+    com.google.protobuf.GeneratedMessageV3Internal implements
     // @@protoc_insertion_point(message_implements:google.protobuf.EnumValue)
     EnumValueOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use EnumValue.newBuilder() to construct.
-  private EnumValue(com.google.protobuf.FlattenedGeneratedMessageV3.Builder<?> builder) {
+  private EnumValue(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
     super(builder);
   }
   private EnumValue() {
@@ -38,7 +38,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.google.protobuf.TypeProto.internal_static_google_protobuf_EnumValue_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -182,8 +182,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(name_)) {
-      com.google.protobuf.FlattenedGeneratedMessageV3.writeString(output, 1, name_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(name_)) {
+      com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
     }
     if (number_ != 0) {
       output.writeInt32(2, number_);
@@ -200,8 +200,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!com.google.protobuf.FlattenedGeneratedMessageV3.isStringEmpty(name_)) {
-      size += com.google.protobuf.FlattenedGeneratedMessageV3.computeStringSize(1, name_);
+    if (!com.google.protobuf.GeneratedMessageV3Internal.isStringEmpty(name_)) {
+      size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
     }
     if (number_ != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -290,20 +290,20 @@ private static final long serialVersionUID = 0L;
   }
   public static com.google.protobuf.EnumValue parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.EnumValue parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public static com.google.protobuf.EnumValue parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input);
   }
 
@@ -311,20 +311,20 @@ private static final long serialVersionUID = 0L;
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.google.protobuf.EnumValue parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.EnumValue parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -344,7 +344,7 @@ private static final long serialVersionUID = 0L;
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -356,7 +356,7 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code google.protobuf.EnumValue}
    */
   public static final class Builder extends
-      com.google.protobuf.FlattenedGeneratedMessageV3.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.protobuf.EnumValue)
       com.google.protobuf.EnumValueOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -365,7 +365,7 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.TypeProto.internal_static_google_protobuf_EnumValue_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -378,7 +378,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       super(parent);
 
     }
@@ -520,7 +520,7 @@ private static final long serialVersionUID = 0L;
             options_ = other.options_;
             bitField0_ = (bitField0_ & ~0x00000004);
             optionsBuilder_ = 
-              com.google.protobuf.FlattenedGeneratedMessageV3.alwaysUseFieldBuilders ?
+              com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                  getOptionsFieldBuilder() : null;
           } else {
             optionsBuilder_.addAllMessages(other.options_);
