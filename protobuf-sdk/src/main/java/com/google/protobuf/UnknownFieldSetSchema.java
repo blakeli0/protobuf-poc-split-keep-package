@@ -65,22 +65,22 @@ class UnknownFieldSetSchema extends UnknownFieldSchema<UnknownFieldSet, UnknownF
 
   @Override
   UnknownFieldSet getFromMessage(Object message) {
-    return ((GeneratedMessageV3) message).unknownFields;
+    return ((GeneratedMessageV4) message).unknownFields;
   }
 
   @Override
   void setToMessage(Object message, UnknownFieldSet fields) {
-    ((GeneratedMessageV3) message).unknownFields = fields;
+    ((GeneratedMessageV4) message).unknownFields = fields;
   }
 
   @Override
   UnknownFieldSet.Builder getBuilderFromMessage(Object message) {
-    return ((GeneratedMessageV3) message).unknownFields.toBuilder();
+    return ((GeneratedMessageV4) message).unknownFields.toBuilder();
   }
 
   @Override
   void setBuilderToMessage(Object message, UnknownFieldSet.Builder builder) {
-    ((GeneratedMessageV3) message).unknownFields = builder.build();
+    ((GeneratedMessageV4) message).unknownFields = builder.build();
   }
 
   @Override
