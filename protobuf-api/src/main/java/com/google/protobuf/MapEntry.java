@@ -328,11 +328,6 @@ public final class MapEntry<K, V> implements Message {
     void markDirty();
   }
 
-  /** Create a nested builder. */
-  protected Message.Builder newBuilderForType(Message.BuilderParent parent) {
-    throw new UnsupportedOperationException("Nested builder is not supported for this type.");
-  }
-
   @Override
   public List<String> findInitializationErrors() {
     return MessageReflection.findMissingFields(this);
@@ -996,29 +991,6 @@ public final class MapEntry<K, V> implements Message {
     protected static UninitializedMessageException newUninitializedMessageException(
             Message message) {
       return new UninitializedMessageException(MessageReflection.findMissingFields(message));
-    }
-
-    /**
-     * Used to support nested builders and called to mark this builder as clean. Clean builders will
-     * propagate the {@link FlattenedAbstractMapEntry.Builder<K,V>Parent#markDirty()} event to their parent builders, while dirty
-     * builders will not, as their parents should be dirty already.
-     *
-     * <p>NOTE: Implementations that don't support nested builders don't need to override this
-     * method.
-     */
-    void markClean() {
-      throw new IllegalStateException("Should be overridden by subclasses.");
-    }
-
-    /**
-     * Used to support nested builders and called when this nested builder is no longer used by its
-     * parent builder and should release the reference to its parent builder.
-     *
-     * <p>NOTE: Implementations that don't support nested builders don't need to override this
-     * method.
-     */
-    void dispose() {
-      throw new IllegalStateException("Should be overridden by subclasses.");
     }
 
     public MapEntry.Builder<K,V> mergeFrom(final ByteString data) throws InvalidProtocolBufferException {

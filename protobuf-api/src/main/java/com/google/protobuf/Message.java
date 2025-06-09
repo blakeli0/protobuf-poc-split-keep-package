@@ -95,11 +95,37 @@ public interface Message extends MessageLite, MessageOrBuilder {
   @Override
   Builder newBuilderForType();
 
+  default Message.Builder newBuilderForType(BuilderParent parent) {
+    throw new UnsupportedOperationException("Nested builder is not supported for this type.");
+  }
   @Override
   Builder toBuilder();
 
   /** Abstract interface implemented by Protocol Message builders. */
   interface Builder extends MessageLite.Builder, MessageOrBuilder {
+
+    /**
+     * Used to support nested builders and called to mark this builder as clean. Clean builders will
+     * propagate the {@link BuilderParent#markDirty()} event to their parent builders, while dirty
+     * builders will not, as their parents should be dirty already.
+     *
+     * <p>NOTE: Implementations that don't support nested builders don't need to override this
+     * method.
+     */
+    default void markClean() {
+      throw new IllegalStateException("Should be overridden by subclasses.");
+    }
+
+    /**
+     * Used to support nested builders and called when this nested builder is no longer used by its
+     * parent builder and should release the reference to its parent builder.
+     *
+     * <p>NOTE: Implementations that don't support nested builders don't need to override this
+     * method.
+     */
+    default void dispose() {
+      throw new IllegalStateException("Should be overridden by subclasses.");
+    }
 
     // (From MessageLite.Builder, re-declared here only for return type
     // covariance.)

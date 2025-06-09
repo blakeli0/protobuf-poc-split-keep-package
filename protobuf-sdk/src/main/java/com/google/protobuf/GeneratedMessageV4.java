@@ -544,7 +544,7 @@ public abstract class GeneratedMessageV4 extends AbstractMessage implements Seri
 
   /** TODO: generated class should implement this directly */
   @Override
-  protected Message.Builder newBuilderForType(final AbstractMessage.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final AbstractMessage.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
@@ -589,7 +589,7 @@ public abstract class GeneratedMessageV4 extends AbstractMessage implements Seri
     }
 
     @Override
-    void dispose() {
+    public void dispose() {
       builderParent = null;
     }
 
@@ -605,7 +605,7 @@ public abstract class GeneratedMessageV4 extends AbstractMessage implements Seri
      * and therefore invalidations are needed.
      */
     @Override
-    protected void markClean() {
+    public void markClean() {
       this.isClean = true;
     }
 
