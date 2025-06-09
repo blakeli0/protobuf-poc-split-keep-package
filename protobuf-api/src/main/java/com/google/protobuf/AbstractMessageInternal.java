@@ -447,29 +447,6 @@ abstract class AbstractMessageInternal
       return new UninitializedMessageException(MessageReflection.findMissingFields(message));
     }
 
-    /**
-     * Used to support nested builders and called to mark this builder as clean. Clean builders will
-     * propagate the {@link BuilderParent#markDirty()} event to their parent builders, while dirty
-     * builders will not, as their parents should be dirty already.
-     *
-     * <p>NOTE: Implementations that don't support nested builders don't need to override this
-     * method.
-     */
-    void markClean() {
-      throw new IllegalStateException("Should be overridden by subclasses.");
-    }
-
-    /**
-     * Used to support nested builders and called when this nested builder is no longer used by its
-     * parent builder and should release the reference to its parent builder.
-     *
-     * <p>NOTE: Implementations that don't support nested builders don't need to override this
-     * method.
-     */
-    void dispose() {
-      throw new IllegalStateException("Should be overridden by subclasses.");
-    }
-
     // ===============================================================
     // The following definitions seem to be required in order to make javac
     // not produce weird errors like:

@@ -35,31 +35,6 @@ public abstract class AbstractMessage
     return MessageReflection.isInitialized(this);
   }
 
-  /**
-   * Interface for the parent of a Builder that allows the builder to communicate invalidations back
-   * to the parent for use when using nested builders.
-   */
-  protected interface BuilderParent extends Message.BuilderParent{
-
-    /**
-     * A builder becomes dirty whenever a field is modified -- including fields in nested builders
-     * -- and becomes clean when build() is called. Thus, when a builder becomes dirty, all its
-     * parents become dirty as well, and when it becomes clean, all its children become clean. The
-     * dirtiness state is used to invalidate certain cached values.
-     *
-     * <p>To this end, a builder calls markDirty() on its parent whenever it transitions from clean
-     * to dirty. The parent must propagate this call to its own parent, unless it was already dirty,
-     * in which case the grandparent must necessarily already be dirty as well. The parent can only
-     * transition back to "clean" after calling build() on all children.
-     */
-    void markDirty();
-  }
-
-  /** Create a nested builder. */
-  protected Message.Builder newBuilderForType(BuilderParent parent) {
-    throw new UnsupportedOperationException("Nested builder is not supported for this type.");
-  }
-
   @Override
   public List<String> findInitializationErrors() {
     return MessageReflection.findMissingFields(this);
@@ -444,29 +419,6 @@ public abstract class AbstractMessage
     protected static UninitializedMessageException newUninitializedMessageException(
         Message message) {
       return new UninitializedMessageException(MessageReflection.findMissingFields(message));
-    }
-
-    /**
-     * Used to support nested builders and called to mark this builder as clean. Clean builders will
-     * propagate the {@link BuilderParent#markDirty()} event to their parent builders, while dirty
-     * builders will not, as their parents should be dirty already.
-     *
-     * <p>NOTE: Implementations that don't support nested builders don't need to override this
-     * method.
-     */
-    void markClean() {
-      throw new IllegalStateException("Should be overridden by subclasses.");
-    }
-
-    /**
-     * Used to support nested builders and called when this nested builder is no longer used by its
-     * parent builder and should release the reference to its parent builder.
-     *
-     * <p>NOTE: Implementations that don't support nested builders don't need to override this
-     * method.
-     */
-    void dispose() {
-      throw new IllegalStateException("Should be overridden by subclasses.");
     }
 
     // ===============================================================

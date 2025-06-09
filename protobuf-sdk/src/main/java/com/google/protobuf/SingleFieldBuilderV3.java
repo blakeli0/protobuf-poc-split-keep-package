@@ -28,13 +28,13 @@ package com.google.protobuf;
  * @author jonp@google.com (Jon Perlow)
  */
 public class SingleFieldBuilderV3<
-        MType extends AbstractMessage,
-        BType extends AbstractMessage.Builder,
+        MType extends Message,
+        BType extends Message.Builder,
         IType extends MessageOrBuilder>
-    implements AbstractMessage.BuilderParent {
+    implements Message.BuilderParent {
 
   // Parent to send changes to.
-  private AbstractMessage.BuilderParent parent;
+  private Message.BuilderParent parent;
 
   // Invariant: one of builder or message fields must be non-null.
 
@@ -48,10 +48,10 @@ public class SingleFieldBuilderV3<
   private MType message;
 
   // Indicates that we've built a message and so we are now obligated
-  // to dispatch dirty invalidations. See AbstractMessage.BuilderListener.
+  // to dispatch dirty invalidations. See Message.BuilderListener.
   private boolean isClean;
 
-  public SingleFieldBuilderV3(MType message, AbstractMessage.BuilderParent parent, boolean isClean) {
+  public SingleFieldBuilderV3(MType message, Message.BuilderParent parent, boolean isClean) {
     this.message = checkNotNull(message);
     this.parent = parent;
     this.isClean = isClean;

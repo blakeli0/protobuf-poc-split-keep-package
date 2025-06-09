@@ -370,7 +370,7 @@ abstract class GeneratedMessageInternal extends AbstractMessageInternal implemen
     }
 
     @Override
-    void dispose() {
+    public void dispose() {
       builderParent = null;
     }
 
@@ -386,7 +386,7 @@ abstract class GeneratedMessageInternal extends AbstractMessageInternal implemen
      * and therefore invalidations are needed.
      */
     @Override
-    protected void markClean() {
+    public void markClean() {
       this.isClean = true;
     }
 
