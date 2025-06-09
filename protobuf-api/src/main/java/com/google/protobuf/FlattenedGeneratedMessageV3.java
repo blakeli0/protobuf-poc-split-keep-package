@@ -798,7 +798,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
   protected abstract Message.Builder newBuilderForType(BuilderParent parent);
 
   /** TODO: generated class should implement this directly */
-  protected Message.Builder newBuilderForType(final Message.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final Message.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
@@ -1237,7 +1237,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
       return hash;
     }
 
-    void dispose() {
+    public void dispose() {
       builderParent = null;
     }
 
@@ -1252,7 +1252,7 @@ abstract class FlattenedGeneratedMessageV3 implements Message, Serializable {
      * Called by the subclass or a builder to notify us that a message was built and may be cached
      * and therefore invalidations are needed.
      */
-    protected void markClean() {
+    public void markClean() {
       this.isClean = true;
     }
 

@@ -331,7 +331,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
   protected abstract Message.Builder newBuilderForType(BuilderParent parent);
 
   @Override
-  protected Message.Builder newBuilderForType(final AbstractMessage.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final AbstractMessage.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
@@ -369,7 +369,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
     }
 
     @Override
-    void dispose() {
+    public void dispose() {
       builderParent = null;
     }
 
@@ -385,7 +385,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
      * and therefore invalidations are needed.
      */
     @Override
-    protected void markClean() {
+    public void markClean() {
       this.isClean = true;
     }
 
