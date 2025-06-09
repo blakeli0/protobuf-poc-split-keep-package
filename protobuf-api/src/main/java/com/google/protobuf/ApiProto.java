@@ -18,17 +18,17 @@ public final class ApiProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Api_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Api_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Method_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Method_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Mixin_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Mixin_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -68,19 +68,19 @@ public final class ApiProto {
     internal_static_google_protobuf_Api_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_Api_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Api_descriptor,
         new java.lang.String[] { "Name", "Methods", "Options", "Version", "SourceContext", "Mixins", "Syntax", });
     internal_static_google_protobuf_Method_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_google_protobuf_Method_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Method_descriptor,
         new java.lang.String[] { "Name", "RequestTypeUrl", "RequestStreaming", "ResponseTypeUrl", "ResponseStreaming", "Options", "Syntax", });
     internal_static_google_protobuf_Mixin_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_google_protobuf_Mixin_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Mixin_descriptor,
         new java.lang.String[] { "Name", "Root", });
     com.google.protobuf.SourceContextProto.getDescriptor();

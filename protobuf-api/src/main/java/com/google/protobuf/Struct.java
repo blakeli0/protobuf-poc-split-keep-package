@@ -19,12 +19,12 @@ package com.google.protobuf;
  * Protobuf type {@code google.protobuf.Struct}
  */
 public final class Struct extends
-    com.google.protobuf.FlattenedGeneratedMessageV3 implements
+    com.google.protobuf.GeneratedMessageV3Internal implements
     // @@protoc_insertion_point(message_implements:google.protobuf.Struct)
     StructOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Struct.newBuilder() to construct.
-  private Struct(com.google.protobuf.FlattenedGeneratedMessageV3.Builder<?> builder) {
+  private Struct(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
     super(builder);
   }
   private Struct() {
@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   @java.lang.Override
-  protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.google.protobuf.StructProto.internal_static_google_protobuf_Struct_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -171,7 +171,7 @@ com.google.protobuf.Value defaultValue) {
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    com.google.protobuf.FlattenedGeneratedMessageV3
+    com.google.protobuf.GeneratedMessageV3Internal
       .serializeStringMapTo(
         output,
         internalGetFields(),
@@ -267,20 +267,20 @@ com.google.protobuf.Value defaultValue) {
   }
   public static com.google.protobuf.Struct parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.Struct parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   public static com.google.protobuf.Struct parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input);
   }
 
@@ -288,20 +288,20 @@ com.google.protobuf.Value defaultValue) {
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.google.protobuf.Struct parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input);
   }
   public static com.google.protobuf.Struct parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.FlattenedGeneratedMessageV3
+    return com.google.protobuf.GeneratedMessageV3Internal
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -321,7 +321,7 @@ com.google.protobuf.Value defaultValue) {
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -340,7 +340,7 @@ com.google.protobuf.Value defaultValue) {
    * Protobuf type {@code google.protobuf.Struct}
    */
   public static final class Builder extends
-      com.google.protobuf.FlattenedGeneratedMessageV3.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:google.protobuf.Struct)
       com.google.protobuf.StructOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -371,7 +371,7 @@ com.google.protobuf.Value defaultValue) {
       }
     }
     @java.lang.Override
-    protected com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.StructProto.internal_static_google_protobuf_Struct_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -384,7 +384,7 @@ com.google.protobuf.Value defaultValue) {
     }
 
     private Builder(
-        com.google.protobuf.FlattenedGeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       super(parent);
 
     }

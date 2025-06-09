@@ -18,7 +18,7 @@ public final class FieldMaskProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FieldMask_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FieldMask_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -43,7 +43,7 @@ public final class FieldMaskProto {
     internal_static_google_protobuf_FieldMask_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_FieldMask_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FieldMask_descriptor,
         new java.lang.String[] { "Paths", });
   }

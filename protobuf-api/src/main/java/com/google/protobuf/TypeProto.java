@@ -18,27 +18,27 @@ public final class TypeProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Type_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Type_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Field_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Field_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Enum_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Enum_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_EnumValue_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_EnumValue_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Option_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Option_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -101,31 +101,31 @@ public final class TypeProto {
     internal_static_google_protobuf_Type_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_Type_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Type_descriptor,
         new java.lang.String[] { "Name", "Fields", "Oneofs", "Options", "SourceContext", "Syntax", "Edition", });
     internal_static_google_protobuf_Field_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_google_protobuf_Field_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Field_descriptor,
         new java.lang.String[] { "Kind", "Cardinality", "Number", "Name", "TypeUrl", "OneofIndex", "Packed", "Options", "JsonName", "DefaultValue", });
     internal_static_google_protobuf_Enum_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_google_protobuf_Enum_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Enum_descriptor,
         new java.lang.String[] { "Name", "Enumvalue", "Options", "SourceContext", "Syntax", "Edition", });
     internal_static_google_protobuf_EnumValue_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_google_protobuf_EnumValue_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_EnumValue_descriptor,
         new java.lang.String[] { "Name", "Number", "Options", });
     internal_static_google_protobuf_Option_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_google_protobuf_Option_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Option_descriptor,
         new java.lang.String[] { "Name", "Value", });
     com.google.protobuf.AnyProto.getDescriptor();

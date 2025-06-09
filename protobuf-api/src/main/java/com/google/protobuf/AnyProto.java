@@ -18,7 +18,7 @@ public final class AnyProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Any_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Any_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -43,7 +43,7 @@ public final class AnyProto {
     internal_static_google_protobuf_Any_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_Any_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Any_descriptor,
         new java.lang.String[] { "TypeUrl", "Value", });
   }

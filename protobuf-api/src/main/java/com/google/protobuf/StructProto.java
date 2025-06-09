@@ -18,22 +18,22 @@ public final class StructProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Struct_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Struct_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Struct_FieldsEntry_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Struct_FieldsEntry_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_Value_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_Value_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_ListValue_descriptor;
   static final 
-    com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_ListValue_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -68,25 +68,25 @@ public final class StructProto {
     internal_static_google_protobuf_Struct_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_Struct_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Struct_descriptor,
         new java.lang.String[] { "Fields", });
     internal_static_google_protobuf_Struct_FieldsEntry_descriptor =
       internal_static_google_protobuf_Struct_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_Struct_FieldsEntry_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Struct_FieldsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_google_protobuf_Value_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_google_protobuf_Value_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_Value_descriptor,
         new java.lang.String[] { "NullValue", "NumberValue", "StringValue", "BoolValue", "StructValue", "ListValue", "Kind", });
     internal_static_google_protobuf_ListValue_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_google_protobuf_ListValue_fieldAccessorTable = new
-      com.google.protobuf.FlattenedGeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_ListValue_descriptor,
         new java.lang.String[] { "Values", });
   }
