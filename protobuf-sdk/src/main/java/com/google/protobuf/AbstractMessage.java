@@ -30,6 +30,26 @@ public abstract class AbstractMessage
     // TODO: Update GeneratedMessage to parameterize with MessageType and BuilderType.
     extends AbstractMessageLite implements Message {
 
+  /**
+   * Interface for the parent of a Builder that allows the builder to communicate invalidations back
+   * to the parent for use when using nested builders.
+   */
+  protected interface BuilderParent extends Message.BuilderParent{
+
+    /**
+     * A builder becomes dirty whenever a field is modified -- including fields in nested builders
+     * -- and becomes clean when build() is called. Thus, when a builder becomes dirty, all its
+     * parents become dirty as well, and when it becomes clean, all its children become clean. The
+     * dirtiness state is used to invalidate certain cached values.
+     *
+     * <p>To this end, a builder calls markDirty() on its parent whenever it transitions from clean
+     * to dirty. The parent must propagate this call to its own parent, unless it was already dirty,
+     * in which case the grandparent must necessarily already be dirty as well. The parent can only
+     * transition back to "clean" after calling build() on all children.
+     */
+    void markDirty();
+  }
+
   @Override
   public boolean isInitialized() {
     return MessageReflection.isInitialized(this);
