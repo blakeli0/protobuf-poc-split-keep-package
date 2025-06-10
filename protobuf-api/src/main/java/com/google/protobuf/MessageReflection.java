@@ -638,7 +638,7 @@ class MessageReflection {
         return WireFormat.Utf8Validation.STRICT;
       }
       // TODO: support lazy strings for repeated fields.
-      if (!descriptor.isRepeated() && builder instanceof GeneratedMessage.Builder) {
+      if (!descriptor.isRepeated() && builder.isGenerated()) {
         return WireFormat.Utf8Validation.LAZY;
       }
       return WireFormat.Utf8Validation.LOOSE;

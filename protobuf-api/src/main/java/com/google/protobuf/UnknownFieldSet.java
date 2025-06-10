@@ -7,7 +7,6 @@
 
 package com.google.protobuf;
 
-import com.google.protobuf.AbstractMessageLite.Builder.LimitedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -110,11 +109,11 @@ public final class UnknownFieldSet implements MessageLite {
 
   /**
    * Converts the set to a string in protocol buffer text format. This is just a trivial wrapper
-   * around {@link TextFormat.Printer#printToString(UnknownFieldSet)}.
+   * around {@link TextFormatInternal.printer#printToString(UnknownFieldSet)}.
    */
   @Override
   public String toString() {
-    return TextFormat.printer().printToString(this);
+    return TextFormatInternal.printer().printToString(this);
   }
 
   /**

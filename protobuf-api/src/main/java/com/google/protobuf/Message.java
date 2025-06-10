@@ -24,6 +24,26 @@ import java.util.Map;
 @CheckReturnValue
 public interface Message extends MessageLite, MessageOrBuilder {
 
+  /**
+   * Interface for the parent of a Builder that allows the builder to communicate invalidations back
+   * to the parent for use when using nested builders.
+   */
+   interface BuilderParent {
+
+    /**
+     * A builder becomes dirty whenever a field is modified -- including fields in nested builders
+     * -- and becomes clean when build() is called. Thus, when a builder becomes dirty, all its
+     * parents become dirty as well, and when it becomes clean, all its children become clean. The
+     * dirtiness state is used to invalidate certain cached values.
+     *
+     * <p>To this end, a builder calls markDirty() on its parent whenever it transitions from clean
+     * to dirty. The parent must propagate this call to its own parent, unless it was already dirty,
+     * in which case the grandparent must necessarily already be dirty as well. The parent can only
+     * transition back to "clean" after calling build() on all children.
+     */
+    void markDirty();
+  }
+
   // (From MessageLite, re-declared here only for return type covariance.)
   @Override
   Parser<? extends Message> getParserForType();
@@ -64,6 +84,10 @@ public interface Message extends MessageLite, MessageOrBuilder {
   @Override
   String toString();
 
+  default boolean isGenerated() {
+    return false;
+  }
+
   // =================================================================
   // Builders
 
@@ -71,11 +95,39 @@ public interface Message extends MessageLite, MessageOrBuilder {
   @Override
   Builder newBuilderForType();
 
+  default Message.Builder newBuilderForType(BuilderParent parent) {
+    throw new UnsupportedOperationException("Nested builder is not supported for this type.");
+  }
+
   @Override
   Builder toBuilder();
 
   /** Abstract interface implemented by Protocol Message builders. */
   interface Builder extends MessageLite.Builder, MessageOrBuilder {
+
+    /**
+     * Used to support nested builders and called to mark this builder as clean. Clean builders will
+     * propagate the {@link BuilderParent#markDirty()} event to their parent builders, while dirty
+     * builders will not, as their parents should be dirty already.
+     *
+     * <p>NOTE: Implementations that don't support nested builders don't need to override this
+     * method.
+     */
+    default void markClean() {
+      throw new IllegalStateException("Should be overridden by subclasses.");
+    }
+
+    /**
+     * Used to support nested builders and called when this nested builder is no longer used by its
+     * parent builder and should release the reference to its parent builder.
+     *
+     * <p>NOTE: Implementations that don't support nested builders don't need to override this
+     * method.
+     */
+    default void dispose() {
+      throw new IllegalStateException("Should be overridden by subclasses.");
+    }
+
     // (From MessageLite.Builder, re-declared here only for return type
     // covariance.)
     @Override
@@ -263,5 +315,9 @@ public interface Message extends MessageLite, MessageOrBuilder {
     @Override
     boolean mergeDelimitedFrom(InputStream input, ExtensionRegistryLite extensionRegistry)
         throws IOException;
+
+    default boolean isGenerated() {
+      return false;
+    }
   }
 }

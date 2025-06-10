@@ -1649,20 +1649,20 @@ public final class Descriptors {
             case INT32:
             case SINT32:
             case SFIXED32:
-              defaultValue = TextFormat.parseInt32(proto.getDefaultValue());
+              defaultValue = TextFormatInternal.parseInt32(proto.getDefaultValue());
               break;
             case UINT32:
             case FIXED32:
-              defaultValue = TextFormat.parseUInt32(proto.getDefaultValue());
+              defaultValue = TextFormatInternal.parseUInt32(proto.getDefaultValue());
               break;
             case INT64:
             case SINT64:
             case SFIXED64:
-              defaultValue = TextFormat.parseInt64(proto.getDefaultValue());
+              defaultValue = TextFormatInternal.parseInt64(proto.getDefaultValue());
               break;
             case UINT64:
             case FIXED64:
-              defaultValue = TextFormat.parseUInt64(proto.getDefaultValue());
+              defaultValue = TextFormatInternal.parseUInt64(proto.getDefaultValue());
               break;
             case FLOAT:
               if (proto.getDefaultValue().equals("inf")) {
@@ -1694,8 +1694,8 @@ public final class Descriptors {
               break;
             case BYTES:
               try {
-                defaultValue = TextFormat.unescapeBytes(proto.getDefaultValue());
-              } catch (TextFormat.InvalidEscapeSequenceException e) {
+                defaultValue = TextFormatEscaper.unescapeBytes(proto.getDefaultValue());
+              } catch (Exception e) {
                 throw new DescriptorValidationException(
                     this, "Couldn't parse default value: " + e.getMessage(), e);
               }

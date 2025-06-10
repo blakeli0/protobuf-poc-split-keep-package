@@ -273,7 +273,7 @@ public final class DescriptorProtos {
 
   public interface FileDescriptorSetOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.FileDescriptorSet)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<FileDescriptorSet> {
 
     /**
@@ -309,13 +309,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FileDescriptorSet}
    */
   public static final class FileDescriptorSet extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         FileDescriptorSet> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FileDescriptorSet)
       FileDescriptorSetOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FileDescriptorSet.newBuilder() to construct.
-    private FileDescriptorSet(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FileDescriptorSet, ?> builder) {
+    private FileDescriptorSet(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FileDescriptorSet, ?> builder) {
       super(builder);
     }
     private FileDescriptorSet() {
@@ -335,7 +335,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FileDescriptorSet_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -407,7 +407,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.FileDescriptorSet>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       for (int i = 0; i < file_.size(); i++) {
@@ -502,20 +502,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorSet parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorSet parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FileDescriptorSet parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -523,20 +523,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorSet parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorSet parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -556,7 +556,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -569,7 +569,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FileDescriptorSet}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.FileDescriptorSet, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FileDescriptorSet)
         com.google.protobuf.DescriptorProtos.FileDescriptorSetOrBuilder {
@@ -579,7 +579,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FileDescriptorSet_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -592,7 +592,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
 
       }
@@ -687,33 +687,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileDescriptorSet, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileDescriptorSet, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileDescriptorSet, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileDescriptorSet, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileDescriptorSet, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileDescriptorSet, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileDescriptorSet, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileDescriptorSet, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.FileDescriptorSet) {
@@ -745,7 +745,7 @@ public final class DescriptorProtos {
               file_ = other.file_;
               bitField0_ = (bitField0_ & ~0x00000001);
               fileBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getFileFieldBuilder() : null;
             } else {
               fileBuilder_.addAllMessages(other.file_);
@@ -826,8 +826,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> fileBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FileDescriptorProto, FileDescriptorProto.Builder, FileDescriptorProtoOrBuilder> fileBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FileDescriptorProto file = 1;</code>
@@ -958,7 +958,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FileDescriptorProto> values) {
         if (fileBuilder_ == null) {
           ensureFileIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, file_);
           onChanged();
         } else {
@@ -1042,12 +1042,12 @@ public final class DescriptorProtos {
            getFileBuilderList() {
         return getFileFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FileDescriptorProto, FileDescriptorProto.Builder, FileDescriptorProtoOrBuilder>
           getFileFieldBuilder() {
         if (fileBuilder_ == null) {
-          fileBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FileDescriptorProto, com.google.protobuf.DescriptorProtos.FileDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder>(
+          fileBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FileDescriptorProto, FileDescriptorProto.Builder, FileDescriptorProtoOrBuilder>(
                   file_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1531,12 +1531,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FileDescriptorProto}
    */
   public static final class FileDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FileDescriptorProto)
       FileDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FileDescriptorProto.newBuilder() to construct.
-    private FileDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private FileDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private FileDescriptorProto() {
@@ -1567,7 +1567,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FileDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -2254,13 +2254,13 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, package_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 2, package_);
       }
       for (int i = 0; i < dependency_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, dependency_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 3, dependency_.getRaw(i));
       }
       for (int i = 0; i < messageType_.size(); i++) {
         output.writeMessage(4, messageType_.get(i));
@@ -2287,7 +2287,7 @@ public final class DescriptorProtos {
         output.writeInt32(11, weakDependency_.getInt(i));
       }
       if (((bitField0_ & 0x00000010) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, syntax_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 12, syntax_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
         output.writeEnum(14, edition_);
@@ -2302,10 +2302,10 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, package_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(2, package_);
       }
       {
         int dataSize = 0;
@@ -2358,7 +2358,7 @@ public final class DescriptorProtos {
         size += 1 * getWeakDependencyList().size();
       }
       if (((bitField0_ & 0x00000010) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, syntax_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(12, syntax_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2524,20 +2524,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FileDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -2545,20 +2545,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FileDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -2578,7 +2578,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2590,7 +2590,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FileDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FileDescriptorProto)
         com.google.protobuf.DescriptorProtos.FileDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -2599,7 +2599,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FileDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -2612,12 +2612,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getMessageTypeFieldBuilder();
           getEnumTypeFieldBuilder();
@@ -2899,7 +2899,7 @@ public final class DescriptorProtos {
               messageType_ = other.messageType_;
               bitField0_ = (bitField0_ & ~0x00000020);
               messageTypeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getMessageTypeFieldBuilder() : null;
             } else {
               messageTypeBuilder_.addAllMessages(other.messageType_);
@@ -2925,7 +2925,7 @@ public final class DescriptorProtos {
               enumType_ = other.enumType_;
               bitField0_ = (bitField0_ & ~0x00000040);
               enumTypeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getEnumTypeFieldBuilder() : null;
             } else {
               enumTypeBuilder_.addAllMessages(other.enumType_);
@@ -2951,7 +2951,7 @@ public final class DescriptorProtos {
               service_ = other.service_;
               bitField0_ = (bitField0_ & ~0x00000080);
               serviceBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getServiceFieldBuilder() : null;
             } else {
               serviceBuilder_.addAllMessages(other.service_);
@@ -2977,7 +2977,7 @@ public final class DescriptorProtos {
               extension_ = other.extension_;
               bitField0_ = (bitField0_ & ~0x00000100);
               extensionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getExtensionFieldBuilder() : null;
             } else {
               extensionBuilder_.addAllMessages(other.extension_);
@@ -3516,7 +3516,7 @@ public final class DescriptorProtos {
       public Builder addAllDependency(
           java.lang.Iterable<java.lang.String> values) {
         ensureDependencyIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
             values, dependency_);
         bitField0_ |= 0x00000004;
         onChanged();
@@ -3647,7 +3647,7 @@ public final class DescriptorProtos {
       public Builder addAllPublicDependency(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensurePublicDependencyIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
             values, publicDependency_);
         bitField0_ |= 0x00000008;
         onChanged();
@@ -3765,7 +3765,7 @@ public final class DescriptorProtos {
       public Builder addAllWeakDependency(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureWeakDependencyIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
             values, weakDependency_);
         bitField0_ |= 0x00000010;
         onChanged();
@@ -3796,8 +3796,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> messageTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, DescriptorProto.Builder, DescriptorProtoOrBuilder> messageTypeBuilder_;
 
       /**
        * <pre>
@@ -3968,7 +3968,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto> values) {
         if (messageTypeBuilder_ == null) {
           ensureMessageTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, messageType_);
           onChanged();
         } else {
@@ -4084,12 +4084,12 @@ public final class DescriptorProtos {
            getMessageTypeBuilderList() {
         return getMessageTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, DescriptorProto.Builder, DescriptorProtoOrBuilder>
           getMessageTypeFieldBuilder() {
         if (messageTypeBuilder_ == null) {
-          messageTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder>(
+          messageTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        DescriptorProto, DescriptorProto.Builder, DescriptorProtoOrBuilder>(
                   messageType_,
                   ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
@@ -4108,8 +4108,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.EnumDescriptorProto enum_type = 5;</code>
@@ -4240,7 +4240,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumDescriptorProto> values) {
         if (enumTypeBuilder_ == null) {
           ensureEnumTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, enumType_);
           onChanged();
         } else {
@@ -4324,12 +4324,12 @@ public final class DescriptorProtos {
            getEnumTypeBuilderList() {
         return getEnumTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>
           getEnumTypeFieldBuilder() {
         if (enumTypeBuilder_ == null) {
-          enumTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder>(
+          enumTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>(
                   enumType_,
                   ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
@@ -4348,8 +4348,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceDescriptorProto, com.google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder> serviceBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                ServiceDescriptorProto, ServiceDescriptorProto.Builder, ServiceDescriptorProtoOrBuilder> serviceBuilder_;
 
       /**
        * <code>repeated .google.protobuf.ServiceDescriptorProto service = 6;</code>
@@ -4480,7 +4480,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.ServiceDescriptorProto> values) {
         if (serviceBuilder_ == null) {
           ensureServiceIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, service_);
           onChanged();
         } else {
@@ -4564,12 +4564,12 @@ public final class DescriptorProtos {
            getServiceBuilderList() {
         return getServiceFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceDescriptorProto, com.google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                ServiceDescriptorProto, ServiceDescriptorProto.Builder, ServiceDescriptorProtoOrBuilder>
           getServiceFieldBuilder() {
         if (serviceBuilder_ == null) {
-          serviceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.ServiceDescriptorProto, com.google.protobuf.DescriptorProtos.ServiceDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder>(
+          serviceBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        ServiceDescriptorProto, ServiceDescriptorProto.Builder, ServiceDescriptorProtoOrBuilder>(
                   service_,
                   ((bitField0_ & 0x00000080) != 0),
                   getParentForChildren(),
@@ -4588,8 +4588,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> extensionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder> extensionBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldDescriptorProto extension = 7;</code>
@@ -4720,7 +4720,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldDescriptorProto> values) {
         if (extensionBuilder_ == null) {
           ensureExtensionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, extension_);
           onChanged();
         } else {
@@ -4804,12 +4804,12 @@ public final class DescriptorProtos {
            getExtensionBuilderList() {
         return getExtensionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>
           getExtensionFieldBuilder() {
         if (extensionBuilder_ == null) {
-          extensionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder>(
+          extensionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>(
                   extension_,
                   ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
@@ -4820,8 +4820,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FileOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileOptions, com.google.protobuf.DescriptorProtos.FileOptions.Builder, com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FileOptions, FileOptions.Builder, FileOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.FileOptions options = 8;</code>
        * @return Whether the options field is set.
@@ -4926,12 +4926,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.FileOptions options = 8;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FileOptions, com.google.protobuf.DescriptorProtos.FileOptions.Builder, com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FileOptions, FileOptions.Builder, FileOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FileOptions, com.google.protobuf.DescriptorProtos.FileOptions.Builder, com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        FileOptions, FileOptions.Builder, FileOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -4941,8 +4941,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.SourceCodeInfo sourceCodeInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder> sourceCodeInfoBuilder_;
+      private SingleFieldBuilderV3Internal<
+                SourceCodeInfo, SourceCodeInfo.Builder, SourceCodeInfoOrBuilder> sourceCodeInfoBuilder_;
       /**
        * <pre>
        * This field contains optional information about the original source code.
@@ -5110,12 +5110,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.SourceCodeInfo source_code_info = 9;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                SourceCodeInfo, SourceCodeInfo.Builder, SourceCodeInfoOrBuilder>
           getSourceCodeInfoFieldBuilder() {
         if (sourceCodeInfoBuilder_ == null) {
-          sourceCodeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder>(
+          sourceCodeInfoBuilder_ = new SingleFieldBuilderV3Internal<
+                        SourceCodeInfo, SourceCodeInfo.Builder, SourceCodeInfoOrBuilder>(
                   getSourceCodeInfo(),
                   getParentForChildren(),
                   isClean());
@@ -5654,12 +5654,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.DescriptorProto}
    */
   public static final class DescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.DescriptorProto)
       DescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use DescriptorProto.newBuilder() to construct.
-    private DescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private DescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private DescriptorProto() {
@@ -5688,7 +5688,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_DescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -5756,12 +5756,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.DescriptorProto.ExtensionRange}
      */
     public static final class ExtensionRange extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.DescriptorProto.ExtensionRange)
         ExtensionRangeOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use ExtensionRange.newBuilder() to construct.
-      private ExtensionRange(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private ExtensionRange(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private ExtensionRange() {
@@ -5780,7 +5780,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_DescriptorProto_ExtensionRange_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -6010,20 +6010,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -6031,20 +6031,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -6064,7 +6064,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -6072,7 +6072,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.DescriptorProto.ExtensionRange}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.DescriptorProto.ExtensionRange)
           com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -6081,7 +6081,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_DescriptorProto_ExtensionRange_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -6094,12 +6094,12 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
         private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
+          if (com.google.protobuf.GeneratedMessageV3Internal
                   .alwaysUseFieldBuilders) {
             getOptionsFieldBuilder();
           }
@@ -6397,8 +6397,8 @@ public final class DescriptorProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.ExtensionRangeOptions options_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder> optionsBuilder_;
+        private SingleFieldBuilderV3Internal<
+                    ExtensionRangeOptions, ExtensionRangeOptions.Builder, ExtensionRangeOptionsOrBuilder> optionsBuilder_;
         /**
          * <code>optional .google.protobuf.ExtensionRangeOptions options = 3;</code>
          * @return Whether the options field is set.
@@ -6503,12 +6503,12 @@ public final class DescriptorProtos {
         /**
          * <code>optional .google.protobuf.ExtensionRangeOptions options = 3;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder> 
+        private SingleFieldBuilderV3Internal<
+                    ExtensionRangeOptions, ExtensionRangeOptions.Builder, ExtensionRangeOptionsOrBuilder>
             getOptionsFieldBuilder() {
           if (optionsBuilder_ == null) {
-            optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder>(
+            optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                            ExtensionRangeOptions, ExtensionRangeOptions.Builder, ExtensionRangeOptionsOrBuilder>(
                     getOptions(),
                     getParentForChildren(),
                     isClean());
@@ -6632,12 +6632,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.DescriptorProto.ReservedRange}
      */
     public static final class ReservedRange extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.DescriptorProto.ReservedRange)
         ReservedRangeOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use ReservedRange.newBuilder() to construct.
-      private ReservedRange(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private ReservedRange(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private ReservedRange() {
@@ -6656,7 +6656,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_DescriptorProto_ReservedRange_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -6838,20 +6838,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -6859,20 +6859,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -6892,7 +6892,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -6906,7 +6906,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.DescriptorProto.ReservedRange}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.DescriptorProto.ReservedRange)
           com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -6915,7 +6915,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_DescriptorProto_ReservedRange_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -6928,7 +6928,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -7738,7 +7738,7 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       for (int i = 0; i < field_.size(); i++) {
         output.writeMessage(2, field_.get(i));
@@ -7765,7 +7765,7 @@ public final class DescriptorProtos {
         output.writeMessage(9, reservedRange_.get(i));
       }
       for (int i = 0; i < reservedName_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, reservedName_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 10, reservedName_.getRaw(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -7777,7 +7777,7 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       for (int i = 0; i < field_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -7950,20 +7950,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.DescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.DescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.DescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -7971,20 +7971,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.DescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.DescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -8004,7 +8004,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8016,7 +8016,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.DescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.DescriptorProto)
         com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -8025,7 +8025,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_DescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -8038,12 +8038,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFieldFieldBuilder();
           getExtensionFieldBuilder();
@@ -8302,7 +8302,7 @@ public final class DescriptorProtos {
               field_ = other.field_;
               bitField0_ = (bitField0_ & ~0x00000002);
               fieldBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getFieldFieldBuilder() : null;
             } else {
               fieldBuilder_.addAllMessages(other.field_);
@@ -8328,7 +8328,7 @@ public final class DescriptorProtos {
               extension_ = other.extension_;
               bitField0_ = (bitField0_ & ~0x00000004);
               extensionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getExtensionFieldBuilder() : null;
             } else {
               extensionBuilder_.addAllMessages(other.extension_);
@@ -8354,7 +8354,7 @@ public final class DescriptorProtos {
               nestedType_ = other.nestedType_;
               bitField0_ = (bitField0_ & ~0x00000008);
               nestedTypeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getNestedTypeFieldBuilder() : null;
             } else {
               nestedTypeBuilder_.addAllMessages(other.nestedType_);
@@ -8380,7 +8380,7 @@ public final class DescriptorProtos {
               enumType_ = other.enumType_;
               bitField0_ = (bitField0_ & ~0x00000010);
               enumTypeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getEnumTypeFieldBuilder() : null;
             } else {
               enumTypeBuilder_.addAllMessages(other.enumType_);
@@ -8406,7 +8406,7 @@ public final class DescriptorProtos {
               extensionRange_ = other.extensionRange_;
               bitField0_ = (bitField0_ & ~0x00000020);
               extensionRangeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getExtensionRangeFieldBuilder() : null;
             } else {
               extensionRangeBuilder_.addAllMessages(other.extensionRange_);
@@ -8432,7 +8432,7 @@ public final class DescriptorProtos {
               oneofDecl_ = other.oneofDecl_;
               bitField0_ = (bitField0_ & ~0x00000040);
               oneofDeclBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getOneofDeclFieldBuilder() : null;
             } else {
               oneofDeclBuilder_.addAllMessages(other.oneofDecl_);
@@ -8461,7 +8461,7 @@ public final class DescriptorProtos {
               reservedRange_ = other.reservedRange_;
               bitField0_ = (bitField0_ & ~0x00000100);
               reservedRangeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getReservedRangeFieldBuilder() : null;
             } else {
               reservedRangeBuilder_.addAllMessages(other.reservedRange_);
@@ -8754,8 +8754,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> fieldBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder> fieldBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldDescriptorProto field = 2;</code>
@@ -8886,7 +8886,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldDescriptorProto> values) {
         if (fieldBuilder_ == null) {
           ensureFieldIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, field_);
           onChanged();
         } else {
@@ -8970,12 +8970,12 @@ public final class DescriptorProtos {
            getFieldBuilderList() {
         return getFieldFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>
           getFieldFieldBuilder() {
         if (fieldBuilder_ == null) {
-          fieldBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder>(
+          fieldBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>(
                   field_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -8994,8 +8994,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> extensionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder> extensionBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldDescriptorProto extension = 6;</code>
@@ -9126,7 +9126,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldDescriptorProto> values) {
         if (extensionBuilder_ == null) {
           ensureExtensionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, extension_);
           onChanged();
         } else {
@@ -9210,12 +9210,12 @@ public final class DescriptorProtos {
            getExtensionBuilderList() {
         return getExtensionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>
           getExtensionFieldBuilder() {
         if (extensionBuilder_ == null) {
-          extensionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldDescriptorProto, com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder>(
+          extensionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FieldDescriptorProto, FieldDescriptorProto.Builder, FieldDescriptorProtoOrBuilder>(
                   extension_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
@@ -9234,8 +9234,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> nestedTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, Builder, DescriptorProtoOrBuilder> nestedTypeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.DescriptorProto nested_type = 3;</code>
@@ -9366,7 +9366,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto> values) {
         if (nestedTypeBuilder_ == null) {
           ensureNestedTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, nestedType_);
           onChanged();
         } else {
@@ -9450,12 +9450,12 @@ public final class DescriptorProtos {
            getNestedTypeBuilderList() {
         return getNestedTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                DescriptorProto, Builder, DescriptorProtoOrBuilder>
           getNestedTypeFieldBuilder() {
         if (nestedTypeBuilder_ == null) {
-          nestedTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto, com.google.protobuf.DescriptorProtos.DescriptorProto.Builder, com.google.protobuf.DescriptorProtos.DescriptorProtoOrBuilder>(
+          nestedTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        DescriptorProto, Builder, DescriptorProtoOrBuilder>(
                   nestedType_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -9474,8 +9474,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder> enumTypeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.EnumDescriptorProto enum_type = 4;</code>
@@ -9606,7 +9606,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumDescriptorProto> values) {
         if (enumTypeBuilder_ == null) {
           ensureEnumTypeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, enumType_);
           onChanged();
         } else {
@@ -9690,12 +9690,12 @@ public final class DescriptorProtos {
            getEnumTypeBuilderList() {
         return getEnumTypeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>
           getEnumTypeFieldBuilder() {
         if (enumTypeBuilder_ == null) {
-          enumTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumDescriptorProto, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder>(
+          enumTypeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumDescriptorProto, EnumDescriptorProto.Builder, EnumDescriptorProtoOrBuilder>(
                   enumType_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -9714,8 +9714,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder> extensionRangeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                ExtensionRange, ExtensionRange.Builder, ExtensionRangeOrBuilder> extensionRangeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.DescriptorProto.ExtensionRange extension_range = 5;</code>
@@ -9846,7 +9846,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange> values) {
         if (extensionRangeBuilder_ == null) {
           ensureExtensionRangeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, extensionRange_);
           onChanged();
         } else {
@@ -9930,12 +9930,12 @@ public final class DescriptorProtos {
            getExtensionRangeBuilderList() {
         return getExtensionRangeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                ExtensionRange, ExtensionRange.Builder, ExtensionRangeOrBuilder>
           getExtensionRangeFieldBuilder() {
         if (extensionRangeBuilder_ == null) {
-          extensionRangeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ExtensionRangeOrBuilder>(
+          extensionRangeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        ExtensionRange, ExtensionRange.Builder, ExtensionRangeOrBuilder>(
                   extensionRange_,
                   ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
@@ -9954,8 +9954,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofDescriptorProto, com.google.protobuf.DescriptorProtos.OneofDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder> oneofDeclBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                OneofDescriptorProto, OneofDescriptorProto.Builder, OneofDescriptorProtoOrBuilder> oneofDeclBuilder_;
 
       /**
        * <code>repeated .google.protobuf.OneofDescriptorProto oneof_decl = 8;</code>
@@ -10086,7 +10086,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.OneofDescriptorProto> values) {
         if (oneofDeclBuilder_ == null) {
           ensureOneofDeclIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, oneofDecl_);
           onChanged();
         } else {
@@ -10170,12 +10170,12 @@ public final class DescriptorProtos {
            getOneofDeclBuilderList() {
         return getOneofDeclFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofDescriptorProto, com.google.protobuf.DescriptorProtos.OneofDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                OneofDescriptorProto, OneofDescriptorProto.Builder, OneofDescriptorProtoOrBuilder>
           getOneofDeclFieldBuilder() {
         if (oneofDeclBuilder_ == null) {
-          oneofDeclBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.OneofDescriptorProto, com.google.protobuf.DescriptorProtos.OneofDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder>(
+          oneofDeclBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        OneofDescriptorProto, OneofDescriptorProto.Builder, OneofDescriptorProtoOrBuilder>(
                   oneofDecl_,
                   ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
@@ -10186,8 +10186,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.MessageOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MessageOptions, com.google.protobuf.DescriptorProtos.MessageOptions.Builder, com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                MessageOptions, MessageOptions.Builder, MessageOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.MessageOptions options = 7;</code>
        * @return Whether the options field is set.
@@ -10292,12 +10292,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.MessageOptions options = 7;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MessageOptions, com.google.protobuf.DescriptorProtos.MessageOptions.Builder, com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                MessageOptions, MessageOptions.Builder, MessageOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.MessageOptions, com.google.protobuf.DescriptorProtos.MessageOptions.Builder, com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        MessageOptions, MessageOptions.Builder, MessageOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -10315,8 +10315,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder> reservedRangeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                ReservedRange, ReservedRange.Builder, ReservedRangeOrBuilder> reservedRangeBuilder_;
 
       /**
        * <code>repeated .google.protobuf.DescriptorProto.ReservedRange reserved_range = 9;</code>
@@ -10447,7 +10447,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange> values) {
         if (reservedRangeBuilder_ == null) {
           ensureReservedRangeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, reservedRange_);
           onChanged();
         } else {
@@ -10531,12 +10531,12 @@ public final class DescriptorProtos {
            getReservedRangeBuilderList() {
         return getReservedRangeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                ReservedRange, ReservedRange.Builder, ReservedRangeOrBuilder>
           getReservedRangeFieldBuilder() {
         if (reservedRangeBuilder_ == null) {
-          reservedRangeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRange.Builder, com.google.protobuf.DescriptorProtos.DescriptorProto.ReservedRangeOrBuilder>(
+          reservedRangeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        ReservedRange, ReservedRange.Builder, ReservedRangeOrBuilder>(
                   reservedRange_,
                   ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
@@ -10659,7 +10659,7 @@ public final class DescriptorProtos {
       public Builder addAllReservedName(
           java.lang.Iterable<java.lang.String> values) {
         ensureReservedNameIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
             values, reservedName_);
         bitField0_ |= 0x00000200;
         onChanged();
@@ -10766,7 +10766,7 @@ public final class DescriptorProtos {
 
   public interface ExtensionRangeOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.ExtensionRangeOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<ExtensionRangeOptions> {
 
     /**
@@ -10921,13 +10921,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.ExtensionRangeOptions}
    */
   public static final class ExtensionRangeOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         ExtensionRangeOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.ExtensionRangeOptions)
       ExtensionRangeOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ExtensionRangeOptions.newBuilder() to construct.
-    private ExtensionRangeOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, ?> builder) {
+    private ExtensionRangeOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, ?> builder) {
       super(builder);
     }
     private ExtensionRangeOptions() {
@@ -10949,7 +10949,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ExtensionRangeOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -11202,12 +11202,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.ExtensionRangeOptions.Declaration}
      */
     public static final class Declaration extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.ExtensionRangeOptions.Declaration)
         DeclarationOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Declaration.newBuilder() to construct.
-      private Declaration(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private Declaration(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private Declaration() {
@@ -11228,7 +11228,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ExtensionRangeOptions_Declaration_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -11472,10 +11472,10 @@ public final class DescriptorProtos {
           output.writeInt32(1, number_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, fullName_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 2, fullName_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 3, type_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
           output.writeBool(5, reserved_);
@@ -11497,10 +11497,10 @@ public final class DescriptorProtos {
             .computeInt32Size(1, number_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, fullName_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(2, fullName_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(3, type_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -11622,20 +11622,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -11643,20 +11643,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -11676,7 +11676,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -11684,7 +11684,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.ExtensionRangeOptions.Declaration}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.ExtensionRangeOptions.Declaration)
           com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -11693,7 +11693,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ExtensionRangeOptions_Declaration_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -11706,7 +11706,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -12607,7 +12607,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.ExtensionRangeOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       for (int i = 0; i < declaration_.size(); i++) {
@@ -12746,20 +12746,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -12767,20 +12767,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.ExtensionRangeOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -12800,7 +12800,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -12808,7 +12808,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.ExtensionRangeOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.ExtensionRangeOptions)
         com.google.protobuf.DescriptorProtos.ExtensionRangeOptionsOrBuilder {
@@ -12818,7 +12818,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ExtensionRangeOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -12831,12 +12831,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getUninterpretedOptionFieldBuilder();
           getDeclarationFieldBuilder();
@@ -12968,33 +12968,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.ExtensionRangeOptions) {
@@ -13026,7 +13026,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000001);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -13052,7 +13052,7 @@ public final class DescriptorProtos {
               declaration_ = other.declaration_;
               bitField0_ = (bitField0_ & ~0x00000002);
               declarationBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getDeclarationFieldBuilder() : null;
             } else {
               declarationBuilder_.addAllMessages(other.declaration_);
@@ -13176,8 +13176,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -13348,7 +13348,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -13464,12 +13464,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -13488,8 +13488,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder> declarationBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                Declaration, Declaration.Builder, DeclarationOrBuilder> declarationBuilder_;
 
       /**
        * <pre>
@@ -13680,7 +13680,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration> values) {
         if (declarationBuilder_ == null) {
           ensureDeclarationIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, declaration_);
           onChanged();
         } else {
@@ -13812,12 +13812,12 @@ public final class DescriptorProtos {
            getDeclarationBuilderList() {
         return getDeclarationFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                Declaration, Declaration.Builder, DeclarationOrBuilder>
           getDeclarationFieldBuilder() {
         if (declarationBuilder_ == null) {
-          declarationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.Declaration.Builder, com.google.protobuf.DescriptorProtos.ExtensionRangeOptions.DeclarationOrBuilder>(
+          declarationBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        Declaration, Declaration.Builder, DeclarationOrBuilder>(
                   declaration_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -13828,8 +13828,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -13970,12 +13970,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 50;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -14429,12 +14429,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FieldDescriptorProto}
    */
   public static final class FieldDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FieldDescriptorProto)
       FieldDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FieldDescriptorProto.newBuilder() to construct.
-    private FieldDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private FieldDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private FieldDescriptorProto() {
@@ -14460,7 +14460,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -15445,10 +15445,10 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, extendee_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 2, extendee_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeInt32(3, number_);
@@ -15460,10 +15460,10 @@ public final class DescriptorProtos {
         output.writeEnum(5, type_);
       }
       if (((bitField0_ & 0x00000010) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, typeName_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 6, typeName_);
       }
       if (((bitField0_ & 0x00000040) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, defaultValue_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 7, defaultValue_);
       }
       if (((bitField0_ & 0x00000200) != 0)) {
         output.writeMessage(8, getOptions());
@@ -15472,7 +15472,7 @@ public final class DescriptorProtos {
         output.writeInt32(9, oneofIndex_);
       }
       if (((bitField0_ & 0x00000100) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, jsonName_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 10, jsonName_);
       }
       if (((bitField0_ & 0x00000400) != 0)) {
         output.writeBool(17, proto3Optional_);
@@ -15487,10 +15487,10 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, extendee_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(2, extendee_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -15505,10 +15505,10 @@ public final class DescriptorProtos {
           .computeEnumSize(5, type_);
       }
       if (((bitField0_ & 0x00000010) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, typeName_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(6, typeName_);
       }
       if (((bitField0_ & 0x00000040) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, defaultValue_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(7, defaultValue_);
       }
       if (((bitField0_ & 0x00000200) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -15519,7 +15519,7 @@ public final class DescriptorProtos {
           .computeInt32Size(9, oneofIndex_);
       }
       if (((bitField0_ & 0x00000100) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, jsonName_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(10, jsonName_);
       }
       if (((bitField0_ & 0x00000400) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -15688,20 +15688,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FieldDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FieldDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FieldDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -15709,20 +15709,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FieldDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FieldDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -15742,7 +15742,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -15754,7 +15754,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FieldDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FieldDescriptorProto)
         com.google.protobuf.DescriptorProtos.FieldDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -15763,7 +15763,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -15776,12 +15776,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getOptionsFieldBuilder();
         }
@@ -16861,8 +16861,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FieldOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions, com.google.protobuf.DescriptorProtos.FieldOptions.Builder, com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FieldOptions, FieldOptions.Builder, FieldOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.FieldOptions options = 8;</code>
        * @return Whether the options field is set.
@@ -16967,12 +16967,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.FieldOptions options = 8;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions, com.google.protobuf.DescriptorProtos.FieldOptions.Builder, com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FieldOptions, FieldOptions.Builder, FieldOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions, com.google.protobuf.DescriptorProtos.FieldOptions.Builder, com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        FieldOptions, FieldOptions.Builder, FieldOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -17224,12 +17224,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.OneofDescriptorProto}
    */
   public static final class OneofDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.OneofDescriptorProto)
       OneofDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use OneofDescriptorProto.newBuilder() to construct.
-    private OneofDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private OneofDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private OneofDescriptorProto() {
@@ -17249,7 +17249,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_OneofDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -17353,7 +17353,7 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeMessage(2, getOptions());
@@ -17368,7 +17368,7 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -17457,20 +17457,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.OneofDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.OneofDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.OneofDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -17478,20 +17478,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.OneofDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.OneofDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -17511,7 +17511,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -17523,7 +17523,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.OneofDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.OneofDescriptorProto)
         com.google.protobuf.DescriptorProtos.OneofDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -17532,7 +17532,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_OneofDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -17545,12 +17545,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getOptionsFieldBuilder();
         }
@@ -17805,8 +17805,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.OneofOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofOptions, com.google.protobuf.DescriptorProtos.OneofOptions.Builder, com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                OneofOptions, OneofOptions.Builder, OneofOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.OneofOptions options = 2;</code>
        * @return Whether the options field is set.
@@ -17911,12 +17911,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.OneofOptions options = 2;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.OneofOptions, com.google.protobuf.DescriptorProtos.OneofOptions.Builder, com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                OneofOptions, OneofOptions.Builder, OneofOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.OneofOptions, com.google.protobuf.DescriptorProtos.OneofOptions.Builder, com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        OneofOptions, OneofOptions.Builder, OneofOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -18155,12 +18155,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.EnumDescriptorProto}
    */
   public static final class EnumDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.EnumDescriptorProto)
       EnumDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EnumDescriptorProto.newBuilder() to construct.
-    private EnumDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private EnumDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private EnumDescriptorProto() {
@@ -18184,7 +18184,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -18246,12 +18246,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.EnumDescriptorProto.EnumReservedRange}
      */
     public static final class EnumReservedRange extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.EnumDescriptorProto.EnumReservedRange)
         EnumReservedRangeOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use EnumReservedRange.newBuilder() to construct.
-      private EnumReservedRange(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private EnumReservedRange(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private EnumReservedRange() {
@@ -18270,7 +18270,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -18452,20 +18452,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -18473,20 +18473,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -18506,7 +18506,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -18523,7 +18523,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.EnumDescriptorProto.EnumReservedRange}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.EnumDescriptorProto.EnumReservedRange)
           com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -18532,7 +18532,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -18545,7 +18545,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -19150,7 +19150,7 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       for (int i = 0; i < value_.size(); i++) {
         output.writeMessage(2, value_.get(i));
@@ -19162,7 +19162,7 @@ public final class DescriptorProtos {
         output.writeMessage(4, reservedRange_.get(i));
       }
       for (int i = 0; i < reservedName_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reservedName_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 5, reservedName_.getRaw(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -19174,7 +19174,7 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       for (int i = 0; i < value_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -19297,20 +19297,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -19318,20 +19318,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -19351,7 +19351,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -19363,7 +19363,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.EnumDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.EnumDescriptorProto)
         com.google.protobuf.DescriptorProtos.EnumDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -19372,7 +19372,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -19385,12 +19385,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getValueFieldBuilder();
           getOptionsFieldBuilder();
@@ -19564,7 +19564,7 @@ public final class DescriptorProtos {
               value_ = other.value_;
               bitField0_ = (bitField0_ & ~0x00000002);
               valueBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getValueFieldBuilder() : null;
             } else {
               valueBuilder_.addAllMessages(other.value_);
@@ -19593,7 +19593,7 @@ public final class DescriptorProtos {
               reservedRange_ = other.reservedRange_;
               bitField0_ = (bitField0_ & ~0x00000008);
               reservedRangeBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getReservedRangeFieldBuilder() : null;
             } else {
               reservedRangeBuilder_.addAllMessages(other.reservedRange_);
@@ -19796,8 +19796,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder> valueBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumValueDescriptorProto, EnumValueDescriptorProto.Builder, EnumValueDescriptorProtoOrBuilder> valueBuilder_;
 
       /**
        * <code>repeated .google.protobuf.EnumValueDescriptorProto value = 2;</code>
@@ -19928,7 +19928,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto> values) {
         if (valueBuilder_ == null) {
           ensureValueIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, value_);
           onChanged();
         } else {
@@ -20012,12 +20012,12 @@ public final class DescriptorProtos {
            getValueBuilderList() {
         return getValueFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumValueDescriptorProto, EnumValueDescriptorProto.Builder, EnumValueDescriptorProtoOrBuilder>
           getValueFieldBuilder() {
         if (valueBuilder_ == null) {
-          valueBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder>(
+          valueBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumValueDescriptorProto, EnumValueDescriptorProto.Builder, EnumValueDescriptorProtoOrBuilder>(
                   value_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -20028,8 +20028,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.EnumOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumOptions, com.google.protobuf.DescriptorProtos.EnumOptions.Builder, com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                EnumOptions, EnumOptions.Builder, EnumOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.EnumOptions options = 3;</code>
        * @return Whether the options field is set.
@@ -20134,12 +20134,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.EnumOptions options = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumOptions, com.google.protobuf.DescriptorProtos.EnumOptions.Builder, com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                EnumOptions, EnumOptions.Builder, EnumOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumOptions, com.google.protobuf.DescriptorProtos.EnumOptions.Builder, com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        EnumOptions, EnumOptions.Builder, EnumOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -20157,8 +20157,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder> reservedRangeBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EnumReservedRange, EnumReservedRange.Builder, EnumReservedRangeOrBuilder> reservedRangeBuilder_;
 
       /**
        * <pre>
@@ -20349,7 +20349,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange> values) {
         if (reservedRangeBuilder_ == null) {
           ensureReservedRangeIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, reservedRange_);
           onChanged();
         } else {
@@ -20481,12 +20481,12 @@ public final class DescriptorProtos {
            getReservedRangeBuilderList() {
         return getReservedRangeFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EnumReservedRange, EnumReservedRange.Builder, EnumReservedRangeOrBuilder>
           getReservedRangeFieldBuilder() {
         if (reservedRangeBuilder_ == null) {
-          reservedRangeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRange.Builder, com.google.protobuf.DescriptorProtos.EnumDescriptorProto.EnumReservedRangeOrBuilder>(
+          reservedRangeBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EnumReservedRange, EnumReservedRange.Builder, EnumReservedRangeOrBuilder>(
                   reservedRange_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -20609,7 +20609,7 @@ public final class DescriptorProtos {
       public Builder addAllReservedName(
           java.lang.Iterable<java.lang.String> values) {
         ensureReservedNameIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+        com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
             values, reservedName_);
         bitField0_ |= 0x00000010;
         onChanged();
@@ -20769,12 +20769,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.EnumValueDescriptorProto}
    */
   public static final class EnumValueDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.EnumValueDescriptorProto)
       EnumValueDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EnumValueDescriptorProto.newBuilder() to construct.
-    private EnumValueDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private EnumValueDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private EnumValueDescriptorProto() {
@@ -20794,7 +20794,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumValueDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -20917,7 +20917,7 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeInt32(2, number_);
@@ -20935,7 +20935,7 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -21037,20 +21037,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -21058,20 +21058,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -21091,7 +21091,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -21103,7 +21103,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.EnumValueDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.EnumValueDescriptorProto)
         com.google.protobuf.DescriptorProtos.EnumValueDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -21112,7 +21112,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumValueDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -21125,12 +21125,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getOptionsFieldBuilder();
         }
@@ -21438,8 +21438,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.EnumValueOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueOptions, com.google.protobuf.DescriptorProtos.EnumValueOptions.Builder, com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                EnumValueOptions, EnumValueOptions.Builder, EnumValueOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.EnumValueOptions options = 3;</code>
        * @return Whether the options field is set.
@@ -21544,12 +21544,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.EnumValueOptions options = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.EnumValueOptions, com.google.protobuf.DescriptorProtos.EnumValueOptions.Builder, com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                EnumValueOptions, EnumValueOptions.Builder, EnumValueOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.EnumValueOptions, com.google.protobuf.DescriptorProtos.EnumValueOptions.Builder, com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        EnumValueOptions, EnumValueOptions.Builder, EnumValueOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -21689,12 +21689,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.ServiceDescriptorProto}
    */
   public static final class ServiceDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.ServiceDescriptorProto)
       ServiceDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ServiceDescriptorProto.newBuilder() to construct.
-    private ServiceDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private ServiceDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private ServiceDescriptorProto() {
@@ -21715,7 +21715,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ServiceDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -21866,7 +21866,7 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       for (int i = 0; i < method_.size(); i++) {
         output.writeMessage(2, method_.get(i));
@@ -21884,7 +21884,7 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       for (int i = 0; i < method_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -21983,20 +21983,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.ServiceDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.ServiceDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.ServiceDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -22004,20 +22004,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.ServiceDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.ServiceDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -22037,7 +22037,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -22049,7 +22049,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.ServiceDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.ServiceDescriptorProto)
         com.google.protobuf.DescriptorProtos.ServiceDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -22058,7 +22058,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ServiceDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -22071,12 +22071,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getMethodFieldBuilder();
           getOptionsFieldBuilder();
@@ -22227,7 +22227,7 @@ public final class DescriptorProtos {
               method_ = other.method_;
               bitField0_ = (bitField0_ & ~0x00000002);
               methodBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getMethodFieldBuilder() : null;
             } else {
               methodBuilder_.addAllMessages(other.method_);
@@ -22404,8 +22404,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodDescriptorProto, com.google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder> methodBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                MethodDescriptorProto, MethodDescriptorProto.Builder, MethodDescriptorProtoOrBuilder> methodBuilder_;
 
       /**
        * <code>repeated .google.protobuf.MethodDescriptorProto method = 2;</code>
@@ -22536,7 +22536,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.MethodDescriptorProto> values) {
         if (methodBuilder_ == null) {
           ensureMethodIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, method_);
           onChanged();
         } else {
@@ -22620,12 +22620,12 @@ public final class DescriptorProtos {
            getMethodBuilderList() {
         return getMethodFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodDescriptorProto, com.google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                MethodDescriptorProto, MethodDescriptorProto.Builder, MethodDescriptorProtoOrBuilder>
           getMethodFieldBuilder() {
         if (methodBuilder_ == null) {
-          methodBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.MethodDescriptorProto, com.google.protobuf.DescriptorProtos.MethodDescriptorProto.Builder, com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder>(
+          methodBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        MethodDescriptorProto, MethodDescriptorProto.Builder, MethodDescriptorProtoOrBuilder>(
                   method_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -22636,8 +22636,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.ServiceOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceOptions, com.google.protobuf.DescriptorProtos.ServiceOptions.Builder, com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                ServiceOptions, ServiceOptions.Builder, ServiceOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.ServiceOptions options = 3;</code>
        * @return Whether the options field is set.
@@ -22742,12 +22742,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.ServiceOptions options = 3;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.ServiceOptions, com.google.protobuf.DescriptorProtos.ServiceOptions.Builder, com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                ServiceOptions, ServiceOptions.Builder, ServiceOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.ServiceOptions, com.google.protobuf.DescriptorProtos.ServiceOptions.Builder, com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        ServiceOptions, ServiceOptions.Builder, ServiceOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -22950,12 +22950,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.MethodDescriptorProto}
    */
   public static final class MethodDescriptorProto extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.MethodDescriptorProto)
       MethodDescriptorProtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MethodDescriptorProto.newBuilder() to construct.
-    private MethodDescriptorProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private MethodDescriptorProto(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private MethodDescriptorProto() {
@@ -22977,7 +22977,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_MethodDescriptorProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -23248,13 +23248,13 @@ public final class DescriptorProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, inputType_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 2, inputType_);
       }
       if (((bitField0_ & 0x00000004) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, outputType_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 3, outputType_);
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         output.writeMessage(4, getOptions());
@@ -23275,13 +23275,13 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, name_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, inputType_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(2, inputType_);
       }
       if (((bitField0_ & 0x00000004) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, outputType_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(3, outputType_);
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -23416,20 +23416,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.MethodDescriptorProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.MethodDescriptorProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.MethodDescriptorProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -23437,20 +23437,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.MethodDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.MethodDescriptorProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -23470,7 +23470,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -23482,7 +23482,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.MethodDescriptorProto}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.MethodDescriptorProto)
         com.google.protobuf.DescriptorProtos.MethodDescriptorProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -23491,7 +23491,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_MethodDescriptorProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -23504,12 +23504,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getOptionsFieldBuilder();
         }
@@ -24010,8 +24010,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.MethodOptions options_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodOptions, com.google.protobuf.DescriptorProtos.MethodOptions.Builder, com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder> optionsBuilder_;
+      private SingleFieldBuilderV3Internal<
+                MethodOptions, MethodOptions.Builder, MethodOptionsOrBuilder> optionsBuilder_;
       /**
        * <code>optional .google.protobuf.MethodOptions options = 4;</code>
        * @return Whether the options field is set.
@@ -24116,12 +24116,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.MethodOptions options = 4;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.MethodOptions, com.google.protobuf.DescriptorProtos.MethodOptions.Builder, com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                MethodOptions, MethodOptions.Builder, MethodOptionsOrBuilder>
           getOptionsFieldBuilder() {
         if (optionsBuilder_ == null) {
-          optionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.MethodOptions, com.google.protobuf.DescriptorProtos.MethodOptions.Builder, com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder>(
+          optionsBuilder_ = new SingleFieldBuilderV3Internal<
+                        MethodOptions, MethodOptions.Builder, MethodOptionsOrBuilder>(
                   getOptions(),
                   getParentForChildren(),
                   isClean());
@@ -24307,7 +24307,7 @@ public final class DescriptorProtos {
 
   public interface FileOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.FileOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<FileOptions> {
 
     /**
@@ -24960,13 +24960,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FileOptions}
    */
   public static final class FileOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         FileOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FileOptions)
       FileOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FileOptions.newBuilder() to construct.
-    private FileOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FileOptions, ?> builder) {
+    private FileOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FileOptions, ?> builder) {
       super(builder);
     }
     private FileOptions() {
@@ -24998,7 +24998,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FileOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -26234,14 +26234,14 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.FileOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, javaPackage_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, javaPackage_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, javaOuterClassname_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 8, javaOuterClassname_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
         output.writeEnum(9, optimizeFor_);
@@ -26250,7 +26250,7 @@ public final class DescriptorProtos {
         output.writeBool(10, javaMultipleFiles_);
       }
       if (((bitField0_ & 0x00000040) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, goPackage_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 11, goPackage_);
       }
       if (((bitField0_ & 0x00000080) != 0)) {
         output.writeBool(16, ccGenericServices_);
@@ -26274,25 +26274,25 @@ public final class DescriptorProtos {
         output.writeBool(31, ccEnableArenas_);
       }
       if (((bitField0_ & 0x00001000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 36, objcClassPrefix_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 36, objcClassPrefix_);
       }
       if (((bitField0_ & 0x00002000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 37, csharpNamespace_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 37, csharpNamespace_);
       }
       if (((bitField0_ & 0x00004000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 39, swiftPrefix_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 39, swiftPrefix_);
       }
       if (((bitField0_ & 0x00008000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 40, phpClassPrefix_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 40, phpClassPrefix_);
       }
       if (((bitField0_ & 0x00010000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 41, phpNamespace_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 41, phpNamespace_);
       }
       if (((bitField0_ & 0x00020000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 44, phpMetadataNamespace_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 44, phpMetadataNamespace_);
       }
       if (((bitField0_ & 0x00040000) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 45, rubyPackage_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 45, rubyPackage_);
       }
       if (((bitField0_ & 0x00080000) != 0)) {
         output.writeMessage(50, getFeatures());
@@ -26311,10 +26311,10 @@ public final class DescriptorProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, javaPackage_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, javaPackage_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, javaOuterClassname_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(8, javaOuterClassname_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -26325,7 +26325,7 @@ public final class DescriptorProtos {
           .computeBoolSize(10, javaMultipleFiles_);
       }
       if (((bitField0_ & 0x00000040) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, goPackage_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(11, goPackage_);
       }
       if (((bitField0_ & 0x00000080) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -26356,25 +26356,25 @@ public final class DescriptorProtos {
           .computeBoolSize(31, ccEnableArenas_);
       }
       if (((bitField0_ & 0x00001000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(36, objcClassPrefix_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(36, objcClassPrefix_);
       }
       if (((bitField0_ & 0x00002000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(37, csharpNamespace_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(37, csharpNamespace_);
       }
       if (((bitField0_ & 0x00004000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(39, swiftPrefix_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(39, swiftPrefix_);
       }
       if (((bitField0_ & 0x00008000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(40, phpClassPrefix_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(40, phpClassPrefix_);
       }
       if (((bitField0_ & 0x00010000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(41, phpNamespace_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(41, phpNamespace_);
       }
       if (((bitField0_ & 0x00020000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(44, phpMetadataNamespace_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(44, phpMetadataNamespace_);
       }
       if (((bitField0_ & 0x00040000) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(45, rubyPackage_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(45, rubyPackage_);
       }
       if (((bitField0_ & 0x00080000) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -26646,20 +26646,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FileOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FileOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FileOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -26667,20 +26667,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FileOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FileOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -26700,7 +26700,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -26708,7 +26708,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FileOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.FileOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FileOptions)
         com.google.protobuf.DescriptorProtos.FileOptionsOrBuilder {
@@ -26718,7 +26718,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FileOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -26731,12 +26731,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getUninterpretedOptionFieldBuilder();
@@ -26941,33 +26941,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FileOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FileOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.FileOptions) {
@@ -27079,7 +27079,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00100000);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -29012,8 +29012,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -29181,12 +29181,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 50;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -29204,8 +29204,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -29386,7 +29386,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -29510,12 +29510,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00100000) != 0),
                   getParentForChildren(),
@@ -29590,7 +29590,7 @@ public final class DescriptorProtos {
 
   public interface MessageOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.MessageOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<MessageOptions> {
 
     /**
@@ -29878,13 +29878,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.MessageOptions}
    */
   public static final class MessageOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         MessageOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.MessageOptions)
       MessageOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MessageOptions.newBuilder() to construct.
-    private MessageOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.MessageOptions, ?> builder) {
+    private MessageOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.MessageOptions, ?> builder) {
       super(builder);
     }
     private MessageOptions() {
@@ -29904,7 +29904,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_MessageOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -30291,7 +30291,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.MessageOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -30487,20 +30487,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.MessageOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.MessageOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.MessageOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -30508,20 +30508,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.MessageOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.MessageOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -30541,7 +30541,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -30549,7 +30549,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.MessageOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.MessageOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.MessageOptions)
         com.google.protobuf.DescriptorProtos.MessageOptionsOrBuilder {
@@ -30559,7 +30559,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_MessageOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -30572,12 +30572,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getUninterpretedOptionFieldBuilder();
@@ -30712,33 +30712,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MessageOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MessageOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MessageOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MessageOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MessageOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MessageOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MessageOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MessageOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.MessageOptions) {
@@ -30788,7 +30788,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000040);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -31390,8 +31390,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -31559,12 +31559,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 12;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -31582,8 +31582,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -31754,7 +31754,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -31870,12 +31870,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000040) != 0),
                   getParentForChildren(),
@@ -31950,7 +31950,7 @@ public final class DescriptorProtos {
 
   public interface FieldOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.FieldOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<FieldOptions> {
 
     /**
@@ -32354,13 +32354,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FieldOptions}
    */
   public static final class FieldOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         FieldOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FieldOptions)
       FieldOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FieldOptions.newBuilder() to construct.
-    private FieldOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FieldOptions, ?> builder) {
+    private FieldOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FieldOptions, ?> builder) {
       super(builder);
     }
     private FieldOptions() {
@@ -32385,7 +32385,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -32983,12 +32983,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FieldOptions.EditionDefault}
      */
     public static final class EditionDefault extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.FieldOptions.EditionDefault)
         EditionDefaultOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use EditionDefault.newBuilder() to construct.
-      private EditionDefault(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private EditionDefault(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private EditionDefault() {
@@ -33009,7 +33009,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_EditionDefault_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -33111,7 +33111,7 @@ public final class DescriptorProtos {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (((bitField0_ & 0x00000002) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, value_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 2, value_);
         }
         if (((bitField0_ & 0x00000001) != 0)) {
           output.writeEnum(3, edition_);
@@ -33126,7 +33126,7 @@ public final class DescriptorProtos {
 
         size = 0;
         if (((bitField0_ & 0x00000002) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, value_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(2, value_);
         }
         if (((bitField0_ & 0x00000001) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -33214,20 +33214,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -33235,20 +33235,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -33268,7 +33268,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -33276,7 +33276,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.FieldOptions.EditionDefault}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.FieldOptions.EditionDefault)
           com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -33285,7 +33285,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_EditionDefault_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -33298,7 +33298,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -33785,12 +33785,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FieldOptions.FeatureSupport}
      */
     public static final class FeatureSupport extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.FieldOptions.FeatureSupport)
         FeatureSupportOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use FeatureSupport.newBuilder() to construct.
-      private FeatureSupport(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private FeatureSupport(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private FeatureSupport() {
@@ -33813,7 +33813,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_FeatureSupport_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -33994,7 +33994,7 @@ public final class DescriptorProtos {
           output.writeEnum(2, editionDeprecated_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 3, deprecationWarning_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 3, deprecationWarning_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
           output.writeEnum(4, editionRemoved_);
@@ -34017,7 +34017,7 @@ public final class DescriptorProtos {
             .computeEnumSize(2, editionDeprecated_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, deprecationWarning_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(3, deprecationWarning_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -34121,20 +34121,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -34142,20 +34142,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -34175,7 +34175,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -34187,7 +34187,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.FieldOptions.FeatureSupport}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.FieldOptions.FeatureSupport)
           com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -34196,7 +34196,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_FeatureSupport_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -34209,7 +34209,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -35358,7 +35358,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.FieldOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -35662,20 +35662,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FieldOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FieldOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FieldOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -35683,20 +35683,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FieldOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FieldOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -35716,7 +35716,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -35724,7 +35724,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FieldOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.FieldOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FieldOptions)
         com.google.protobuf.DescriptorProtos.FieldOptionsOrBuilder {
@@ -35734,7 +35734,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FieldOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -35747,12 +35747,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getEditionDefaultsFieldBuilder();
           getFeaturesFieldBuilder();
@@ -35943,33 +35943,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FieldOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FieldOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FieldOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FieldOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FieldOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FieldOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FieldOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FieldOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.FieldOptions) {
@@ -36038,7 +36038,7 @@ public final class DescriptorProtos {
               editionDefaults_ = other.editionDefaults_;
               bitField0_ = (bitField0_ & ~0x00000400);
               editionDefaultsBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getEditionDefaultsFieldBuilder() : null;
             } else {
               editionDefaultsBuilder_.addAllMessages(other.editionDefaults_);
@@ -36070,7 +36070,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00002000);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -37054,8 +37054,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder> editionDefaultsBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                EditionDefault, EditionDefault.Builder, EditionDefaultOrBuilder> editionDefaultsBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FieldOptions.EditionDefault edition_defaults = 20;</code>
@@ -37186,7 +37186,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault> values) {
         if (editionDefaultsBuilder_ == null) {
           ensureEditionDefaultsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, editionDefaults_);
           onChanged();
         } else {
@@ -37270,12 +37270,12 @@ public final class DescriptorProtos {
            getEditionDefaultsBuilderList() {
         return getEditionDefaultsFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                EditionDefault, EditionDefault.Builder, EditionDefaultOrBuilder>
           getEditionDefaultsFieldBuilder() {
         if (editionDefaultsBuilder_ == null) {
-          editionDefaultsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefault.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.EditionDefaultOrBuilder>(
+          editionDefaultsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        EditionDefault, EditionDefault.Builder, EditionDefaultOrBuilder>(
                   editionDefaults_,
                   ((bitField0_ & 0x00000400) != 0),
                   getParentForChildren(),
@@ -37286,8 +37286,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -37455,12 +37455,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 21;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -37470,8 +37470,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport featureSupport_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> featureSupportBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSupport, FeatureSupport.Builder, FeatureSupportOrBuilder> featureSupportBuilder_;
       /**
        * <code>optional .google.protobuf.FieldOptions.FeatureSupport feature_support = 22;</code>
        * @return Whether the featureSupport field is set.
@@ -37576,12 +37576,12 @@ public final class DescriptorProtos {
       /**
        * <code>optional .google.protobuf.FieldOptions.FeatureSupport feature_support = 22;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSupport, FeatureSupport.Builder, FeatureSupportOrBuilder>
           getFeatureSupportFieldBuilder() {
         if (featureSupportBuilder_ == null) {
-          featureSupportBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder>(
+          featureSupportBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSupport, FeatureSupport.Builder, FeatureSupportOrBuilder>(
                   getFeatureSupport(),
                   getParentForChildren(),
                   isClean());
@@ -37599,8 +37599,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -37771,7 +37771,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -37887,12 +37887,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00002000) != 0),
                   getParentForChildren(),
@@ -37967,7 +37967,7 @@ public final class DescriptorProtos {
 
   public interface OneofOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.OneofOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<OneofOptions> {
 
     /**
@@ -38054,13 +38054,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.OneofOptions}
    */
   public static final class OneofOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         OneofOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.OneofOptions)
       OneofOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use OneofOptions.newBuilder() to construct.
-    private OneofOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.OneofOptions, ?> builder) {
+    private OneofOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.OneofOptions, ?> builder) {
       super(builder);
     }
     private OneofOptions() {
@@ -38080,7 +38080,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_OneofOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -38226,7 +38226,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.OneofOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -38337,20 +38337,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.OneofOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.OneofOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.OneofOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -38358,20 +38358,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.OneofOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.OneofOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -38391,7 +38391,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -38399,7 +38399,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.OneofOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.OneofOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.OneofOptions)
         com.google.protobuf.DescriptorProtos.OneofOptionsOrBuilder {
@@ -38409,7 +38409,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_OneofOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -38422,12 +38422,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getUninterpretedOptionFieldBuilder();
@@ -38537,33 +38537,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.OneofOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.OneofOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.OneofOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.OneofOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.OneofOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.OneofOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.OneofOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.OneofOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.OneofOptions) {
@@ -38598,7 +38598,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000002);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -38683,8 +38683,8 @@ public final class DescriptorProtos {
       private int bitField0_;
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -38852,12 +38852,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 1;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -38875,8 +38875,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -39047,7 +39047,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -39163,12 +39163,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -39243,7 +39243,7 @@ public final class DescriptorProtos {
 
   public interface EnumOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.EnumOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<EnumOptions> {
 
     /**
@@ -39409,13 +39409,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.EnumOptions}
    */
   public static final class EnumOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         EnumOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.EnumOptions)
       EnumOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EnumOptions.newBuilder() to construct.
-    private EnumOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.EnumOptions, ?> builder) {
+    private EnumOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.EnumOptions, ?> builder) {
       super(builder);
     }
     private EnumOptions() {
@@ -39435,7 +39435,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -39684,7 +39684,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.EnumOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -39846,20 +39846,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.EnumOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.EnumOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -39867,20 +39867,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.EnumOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -39900,7 +39900,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -39908,7 +39908,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.EnumOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.EnumOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.EnumOptions)
         com.google.protobuf.DescriptorProtos.EnumOptionsOrBuilder {
@@ -39918,7 +39918,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -39931,12 +39931,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getUninterpretedOptionFieldBuilder();
@@ -40061,33 +40061,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.EnumOptions) {
@@ -40131,7 +40131,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000010);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -40443,8 +40443,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -40612,12 +40612,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 7;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -40635,8 +40635,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -40807,7 +40807,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -40923,12 +40923,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -41003,7 +41003,7 @@ public final class DescriptorProtos {
 
   public interface EnumValueOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.EnumValueOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<EnumValueOptions> {
 
     /**
@@ -41165,13 +41165,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.EnumValueOptions}
    */
   public static final class EnumValueOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         EnumValueOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.EnumValueOptions)
       EnumValueOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EnumValueOptions.newBuilder() to construct.
-    private EnumValueOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.EnumValueOptions, ?> builder) {
+    private EnumValueOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.EnumValueOptions, ?> builder) {
       super(builder);
     }
     private EnumValueOptions() {
@@ -41191,7 +41191,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumValueOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -41439,7 +41439,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.EnumValueOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -41600,20 +41600,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.EnumValueOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -41621,20 +41621,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.EnumValueOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -41654,7 +41654,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -41662,7 +41662,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.EnumValueOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.EnumValueOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.EnumValueOptions)
         com.google.protobuf.DescriptorProtos.EnumValueOptionsOrBuilder {
@@ -41672,7 +41672,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_EnumValueOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -41685,12 +41685,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getFeatureSupportFieldBuilder();
@@ -41822,33 +41822,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumValueOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumValueOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumValueOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.EnumValueOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumValueOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumValueOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumValueOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.EnumValueOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.EnumValueOptions) {
@@ -41892,7 +41892,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000010);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -42062,8 +42062,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -42231,12 +42231,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 2;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -42310,8 +42310,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport featureSupport_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> featureSupportBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FieldOptions.FeatureSupport, FieldOptions.FeatureSupport.Builder, FieldOptions.FeatureSupportOrBuilder> featureSupportBuilder_;
       /**
        * <pre>
        * Information about the support window of a feature value.
@@ -42452,12 +42452,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FieldOptions.FeatureSupport feature_support = 4;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FieldOptions.FeatureSupport, FieldOptions.FeatureSupport.Builder, FieldOptions.FeatureSupportOrBuilder>
           getFeatureSupportFieldBuilder() {
         if (featureSupportBuilder_ == null) {
-          featureSupportBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupport.Builder, com.google.protobuf.DescriptorProtos.FieldOptions.FeatureSupportOrBuilder>(
+          featureSupportBuilder_ = new SingleFieldBuilderV3Internal<
+                        FieldOptions.FeatureSupport, FieldOptions.FeatureSupport.Builder, FieldOptions.FeatureSupportOrBuilder>(
                   getFeatureSupport(),
                   getParentForChildren(),
                   isClean());
@@ -42475,8 +42475,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -42647,7 +42647,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -42763,12 +42763,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -42843,7 +42843,7 @@ public final class DescriptorProtos {
 
   public interface ServiceOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.ServiceOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<ServiceOptions> {
 
     /**
@@ -42955,13 +42955,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.ServiceOptions}
    */
   public static final class ServiceOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         ServiceOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.ServiceOptions)
       ServiceOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ServiceOptions.newBuilder() to construct.
-    private ServiceOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.ServiceOptions, ?> builder) {
+    private ServiceOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.ServiceOptions, ?> builder) {
       super(builder);
     }
     private ServiceOptions() {
@@ -42981,7 +42981,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ServiceOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -43160,7 +43160,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.ServiceOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000002) != 0)) {
@@ -43288,20 +43288,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.ServiceOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.ServiceOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.ServiceOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -43309,20 +43309,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.ServiceOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.ServiceOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -43342,7 +43342,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -43350,7 +43350,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.ServiceOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.ServiceOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.ServiceOptions)
         com.google.protobuf.DescriptorProtos.ServiceOptionsOrBuilder {
@@ -43360,7 +43360,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_ServiceOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -43373,12 +43373,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getUninterpretedOptionFieldBuilder();
@@ -43493,33 +43493,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ServiceOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ServiceOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ServiceOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.ServiceOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ServiceOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ServiceOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ServiceOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.ServiceOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.ServiceOptions) {
@@ -43557,7 +43557,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000004);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -43647,8 +43647,8 @@ public final class DescriptorProtos {
       private int bitField0_;
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -43816,12 +43816,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 34;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -43907,8 +43907,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -44079,7 +44079,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -44195,12 +44195,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
@@ -44275,7 +44275,7 @@ public final class DescriptorProtos {
 
   public interface MethodOptionsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.MethodOptions)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<MethodOptions> {
 
     /**
@@ -44398,13 +44398,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.MethodOptions}
    */
   public static final class MethodOptions extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         MethodOptions> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.MethodOptions)
       MethodOptionsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MethodOptions.newBuilder() to construct.
-    private MethodOptions(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.MethodOptions, ?> builder) {
+    private MethodOptions(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.MethodOptions, ?> builder) {
       super(builder);
     }
     private MethodOptions() {
@@ -44425,7 +44425,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_MethodOptions_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -44749,7 +44749,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.MethodOptions>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -44892,20 +44892,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.MethodOptions parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.MethodOptions parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.MethodOptions parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -44913,20 +44913,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.MethodOptions parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.MethodOptions parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -44946,7 +44946,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -44954,7 +44954,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.MethodOptions}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.MethodOptions, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.MethodOptions)
         com.google.protobuf.DescriptorProtos.MethodOptionsOrBuilder {
@@ -44964,7 +44964,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_MethodOptions_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -44977,12 +44977,12 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
+        if (com.google.protobuf.GeneratedMessageV3Internal
                 .alwaysUseFieldBuilders) {
           getFeaturesFieldBuilder();
           getUninterpretedOptionFieldBuilder();
@@ -45102,33 +45102,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MethodOptions, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MethodOptions, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MethodOptions, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.MethodOptions, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MethodOptions, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MethodOptions, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MethodOptions, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.MethodOptions, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.MethodOptions) {
@@ -45169,7 +45169,7 @@ public final class DescriptorProtos {
               uninterpretedOption_ = other.uninterpretedOption_;
               bitField0_ = (bitField0_ & ~0x00000008);
               uninterpretedOptionBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getUninterpretedOptionFieldBuilder() : null;
             } else {
               uninterpretedOptionBuilder_.addAllMessages(other.uninterpretedOption_);
@@ -45381,8 +45381,8 @@ public final class DescriptorProtos {
       }
 
       private com.google.protobuf.DescriptorProtos.FeatureSet features_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> featuresBuilder_;
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> featuresBuilder_;
       /**
        * <pre>
        * Any features defined in the specific edition.
@@ -45550,12 +45550,12 @@ public final class DescriptorProtos {
        *
        * <code>optional .google.protobuf.FeatureSet features = 35;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+      private SingleFieldBuilderV3Internal<
+                FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
           getFeaturesFieldBuilder() {
         if (featuresBuilder_ == null) {
-          featuresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+          featuresBuilder_ = new SingleFieldBuilderV3Internal<
+                        FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                   getFeatures(),
                   getParentForChildren(),
                   isClean());
@@ -45573,8 +45573,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder> uninterpretedOptionBuilder_;
 
       /**
        * <pre>
@@ -45745,7 +45745,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption> values) {
         if (uninterpretedOptionBuilder_ == null) {
           ensureUninterpretedOptionIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, uninterpretedOption_);
           onChanged();
         } else {
@@ -45861,12 +45861,12 @@ public final class DescriptorProtos {
            getUninterpretedOptionBuilderList() {
         return getUninterpretedOptionFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>
           getUninterpretedOptionFieldBuilder() {
         if (uninterpretedOptionBuilder_ == null) {
-          uninterpretedOptionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption, com.google.protobuf.DescriptorProtos.UninterpretedOption.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder>(
+          uninterpretedOptionBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        UninterpretedOption, UninterpretedOption.Builder, UninterpretedOptionOrBuilder>(
                   uninterpretedOption_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -46073,12 +46073,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.UninterpretedOption}
    */
   public static final class UninterpretedOption extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.UninterpretedOption)
       UninterpretedOptionOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use UninterpretedOption.newBuilder() to construct.
-    private UninterpretedOption(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private UninterpretedOption(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private UninterpretedOption() {
@@ -46101,7 +46101,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_UninterpretedOption_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -46152,12 +46152,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.UninterpretedOption.NamePart}
      */
     public static final class NamePart extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.UninterpretedOption.NamePart)
         NamePartOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use NamePart.newBuilder() to construct.
-      private NamePart(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private NamePart(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private NamePart() {
@@ -46177,7 +46177,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_UninterpretedOption_NamePart_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -46276,7 +46276,7 @@ public final class DescriptorProtos {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (((bitField0_ & 0x00000001) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 1, namePart_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 1, namePart_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           output.writeBool(2, isExtension_);
@@ -46291,7 +46291,7 @@ public final class DescriptorProtos {
 
         size = 0;
         if (((bitField0_ & 0x00000001) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, namePart_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(1, namePart_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -46381,20 +46381,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -46402,20 +46402,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -46435,7 +46435,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -46451,7 +46451,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.UninterpretedOption.NamePart}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.UninterpretedOption.NamePart)
           com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -46460,7 +46460,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_UninterpretedOption_NamePart_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -46473,7 +46473,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -47077,7 +47077,7 @@ public final class DescriptorProtos {
         output.writeMessage(2, name_.get(i));
       }
       if (((bitField0_ & 0x00000001) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, identifierValue_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 3, identifierValue_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeUInt64(4, positiveIntValue_);
@@ -47092,7 +47092,7 @@ public final class DescriptorProtos {
         output.writeBytes(7, stringValue_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, aggregateValue_);
+        com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 8, aggregateValue_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -47108,7 +47108,7 @@ public final class DescriptorProtos {
           .computeMessageSize(2, name_.get(i));
       }
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, identifierValue_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(3, identifierValue_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -47127,7 +47127,7 @@ public final class DescriptorProtos {
           .computeBytesSize(7, stringValue_);
       }
       if (((bitField0_ & 0x00000020) != 0)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, aggregateValue_);
+        size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(8, aggregateValue_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -47258,20 +47258,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.UninterpretedOption parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.UninterpretedOption parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.UninterpretedOption parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -47279,20 +47279,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.UninterpretedOption parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.UninterpretedOption parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -47312,7 +47312,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -47329,7 +47329,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.UninterpretedOption}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.UninterpretedOption)
         com.google.protobuf.DescriptorProtos.UninterpretedOptionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -47338,7 +47338,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_UninterpretedOption_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -47351,7 +47351,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
 
       }
@@ -47509,7 +47509,7 @@ public final class DescriptorProtos {
               name_ = other.name_;
               bitField0_ = (bitField0_ & ~0x00000001);
               nameBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getNameFieldBuilder() : null;
             } else {
               nameBuilder_.addAllMessages(other.name_);
@@ -47638,8 +47638,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder> nameBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                NamePart, NamePart.Builder, NamePartOrBuilder> nameBuilder_;
 
       /**
        * <code>repeated .google.protobuf.UninterpretedOption.NamePart name = 2;</code>
@@ -47770,7 +47770,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart> values) {
         if (nameBuilder_ == null) {
           ensureNameIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, name_);
           onChanged();
         } else {
@@ -47854,12 +47854,12 @@ public final class DescriptorProtos {
            getNameBuilderList() {
         return getNameFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                NamePart, NamePart.Builder, NamePartOrBuilder>
           getNameFieldBuilder() {
         if (nameBuilder_ == null) {
-          nameBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePart.Builder, com.google.protobuf.DescriptorProtos.UninterpretedOption.NamePartOrBuilder>(
+          nameBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        NamePart, NamePart.Builder, NamePartOrBuilder>(
                   name_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -48284,7 +48284,7 @@ public final class DescriptorProtos {
 
   public interface FeatureSetOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.FeatureSet)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<FeatureSet> {
 
     /**
@@ -48366,13 +48366,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FeatureSet}
    */
   public static final class FeatureSet extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         FeatureSet> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FeatureSet)
       FeatureSetOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FeatureSet.newBuilder() to construct.
-    private FeatureSet(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FeatureSet, ?> builder) {
+    private FeatureSet(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.FeatureSet, ?> builder) {
       super(builder);
     }
     private FeatureSet() {
@@ -48397,7 +48397,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FeatureSet_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -49170,7 +49170,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.FeatureSet>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -49342,20 +49342,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSet parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSet parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FeatureSet parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -49363,20 +49363,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSet parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSet parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -49396,7 +49396,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -49413,7 +49413,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FeatureSet}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.FeatureSet, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FeatureSet)
         com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder {
@@ -49423,7 +49423,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FeatureSet_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -49436,7 +49436,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
 
       }
@@ -49543,33 +49543,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FeatureSet, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FeatureSet, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FeatureSet, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.FeatureSet, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FeatureSet, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FeatureSet, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FeatureSet, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.FeatureSet, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.FeatureSet) {
@@ -50115,12 +50115,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.FeatureSetDefaults}
    */
   public static final class FeatureSetDefaults extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.FeatureSetDefaults)
       FeatureSetDefaultsOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FeatureSetDefaults.newBuilder() to construct.
-    private FeatureSetDefaults(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private FeatureSetDefaults(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private FeatureSetDefaults() {
@@ -50142,7 +50142,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FeatureSetDefaults_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -50229,12 +50229,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault}
      */
     public static final class FeatureSetEditionDefault extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault)
         FeatureSetEditionDefaultOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use FeatureSetEditionDefault.newBuilder() to construct.
-      private FeatureSetEditionDefault(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private FeatureSetEditionDefault(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private FeatureSetEditionDefault() {
@@ -50254,7 +50254,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -50503,20 +50503,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -50524,20 +50524,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -50557,7 +50557,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -50572,7 +50572,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault)
           com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -50581,7 +50581,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -50594,12 +50594,12 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
         private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
+          if (com.google.protobuf.GeneratedMessageV3Internal
                   .alwaysUseFieldBuilders) {
             getOverridableFeaturesFieldBuilder();
             getFixedFeaturesFieldBuilder();
@@ -50848,8 +50848,8 @@ public final class DescriptorProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.FeatureSet overridableFeatures_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> overridableFeaturesBuilder_;
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> overridableFeaturesBuilder_;
         /**
          * <pre>
          * Defaults of features that can be overridden in this edition.
@@ -50990,12 +50990,12 @@ public final class DescriptorProtos {
          *
          * <code>optional .google.protobuf.FeatureSet overridable_features = 4;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
             getOverridableFeaturesFieldBuilder() {
           if (overridableFeaturesBuilder_ == null) {
-            overridableFeaturesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+            overridableFeaturesBuilder_ = new SingleFieldBuilderV3Internal<
+                            FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                     getOverridableFeatures(),
                     getParentForChildren(),
                     isClean());
@@ -51005,8 +51005,8 @@ public final class DescriptorProtos {
         }
 
         private com.google.protobuf.DescriptorProtos.FeatureSet fixedFeatures_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> fixedFeaturesBuilder_;
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder> fixedFeaturesBuilder_;
         /**
          * <pre>
          * Defaults of features that can't be overridden in this edition.
@@ -51147,12 +51147,12 @@ public final class DescriptorProtos {
          *
          * <code>optional .google.protobuf.FeatureSet fixed_features = 5;</code>
          */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder> 
+        private SingleFieldBuilderV3Internal<
+                    FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>
             getFixedFeaturesFieldBuilder() {
           if (fixedFeaturesBuilder_ == null) {
-            fixedFeaturesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.DescriptorProtos.FeatureSet, com.google.protobuf.DescriptorProtos.FeatureSet.Builder, com.google.protobuf.DescriptorProtos.FeatureSetOrBuilder>(
+            fixedFeaturesBuilder_ = new SingleFieldBuilderV3Internal<
+                            FeatureSet, FeatureSet.Builder, FeatureSetOrBuilder>(
                     getFixedFeatures(),
                     getParentForChildren(),
                     isClean());
@@ -51459,20 +51459,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -51480,20 +51480,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.FeatureSetDefaults parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -51513,7 +51513,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -51528,7 +51528,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.FeatureSetDefaults}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.FeatureSetDefaults)
         com.google.protobuf.DescriptorProtos.FeatureSetDefaultsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -51537,7 +51537,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_FeatureSetDefaults_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -51550,7 +51550,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
 
       }
@@ -51688,7 +51688,7 @@ public final class DescriptorProtos {
               defaults_ = other.defaults_;
               bitField0_ = (bitField0_ & ~0x00000001);
               defaultsBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getDefaultsFieldBuilder() : null;
             } else {
               defaultsBuilder_.addAllMessages(other.defaults_);
@@ -51795,8 +51795,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder> defaultsBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                FeatureSetEditionDefault, FeatureSetEditionDefault.Builder, FeatureSetEditionDefaultOrBuilder> defaultsBuilder_;
 
       /**
        * <code>repeated .google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault defaults = 1;</code>
@@ -51927,7 +51927,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault> values) {
         if (defaultsBuilder_ == null) {
           ensureDefaultsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, defaults_);
           onChanged();
         } else {
@@ -52011,12 +52011,12 @@ public final class DescriptorProtos {
            getDefaultsBuilderList() {
         return getDefaultsFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                FeatureSetEditionDefault, FeatureSetEditionDefault.Builder, FeatureSetEditionDefaultOrBuilder>
           getDefaultsFieldBuilder() {
         if (defaultsBuilder_ == null) {
-          defaultsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder, com.google.protobuf.DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefaultOrBuilder>(
+          defaultsBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        FeatureSetEditionDefault, FeatureSetEditionDefault.Builder, FeatureSetEditionDefaultOrBuilder>(
                   defaults_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -52215,7 +52215,7 @@ public final class DescriptorProtos {
 
   public interface SourceCodeInfoOrBuilder extends
       // @@protoc_insertion_point(interface_extends:google.protobuf.SourceCodeInfo)
-      com.google.protobuf.GeneratedMessageV3.
+      com.google.protobuf.GeneratedMessageV3Internal.
           ExtendableMessageOrBuilder<SourceCodeInfo> {
 
     /**
@@ -52481,13 +52481,13 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.SourceCodeInfo}
    */
   public static final class SourceCodeInfo extends
-      com.google.protobuf.GeneratedMessageV3.ExtendableMessage<
+      com.google.protobuf.GeneratedMessageV3Internal.ExtendableMessage<
         SourceCodeInfo> implements
       // @@protoc_insertion_point(message_implements:google.protobuf.SourceCodeInfo)
       SourceCodeInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use SourceCodeInfo.newBuilder() to construct.
-    private SourceCodeInfo(com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<com.google.protobuf.DescriptorProtos.SourceCodeInfo, ?> builder) {
+    private SourceCodeInfo(com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<com.google.protobuf.DescriptorProtos.SourceCodeInfo, ?> builder) {
       super(builder);
     }
     private SourceCodeInfo() {
@@ -52507,7 +52507,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_SourceCodeInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -52867,12 +52867,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.SourceCodeInfo.Location}
      */
     public static final class Location extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.SourceCodeInfo.Location)
         LocationOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Location.newBuilder() to construct.
-      private Location(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private Location(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private Location() {
@@ -52897,7 +52897,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_SourceCodeInfo_Location_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -53382,13 +53382,13 @@ public final class DescriptorProtos {
           output.writeInt32NoTag(span_.getInt(i));
         }
         if (((bitField0_ & 0x00000001) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 3, leadingComments_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 3, leadingComments_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 4, trailingComments_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 4, trailingComments_);
         }
         for (int i = 0; i < leadingDetachedComments_.size(); i++) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 6, leadingDetachedComments_.getRaw(i));
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 6, leadingDetachedComments_.getRaw(i));
         }
         getUnknownFields().writeTo(output);
       }
@@ -53428,10 +53428,10 @@ public final class DescriptorProtos {
           spanMemoizedSerializedSize = dataSize;
         }
         if (((bitField0_ & 0x00000001) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, leadingComments_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(3, leadingComments_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, trailingComments_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(4, trailingComments_);
         }
         {
           int dataSize = 0;
@@ -53542,20 +53542,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -53563,20 +53563,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -53596,7 +53596,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -53604,7 +53604,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.SourceCodeInfo.Location}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.SourceCodeInfo.Location)
           com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -53613,7 +53613,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_SourceCodeInfo_Location_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -53626,7 +53626,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -54097,7 +54097,7 @@ public final class DescriptorProtos {
         public Builder addAllPath(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensurePathIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, path_);
           bitField0_ |= 0x00000001;
           onChanged();
@@ -54255,7 +54255,7 @@ public final class DescriptorProtos {
         public Builder addAllSpan(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensureSpanIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, span_);
           bitField0_ |= 0x00000002;
           onChanged();
@@ -54818,7 +54818,7 @@ public final class DescriptorProtos {
         public Builder addAllLeadingDetachedComments(
             java.lang.Iterable<java.lang.String> values) {
           ensureLeadingDetachedCommentsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, leadingDetachedComments_);
           bitField0_ |= 0x00000010;
           onChanged();
@@ -55202,7 +55202,7 @@ public final class DescriptorProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
+      com.google.protobuf.GeneratedMessageV3Internal
         .ExtendableMessage<com.google.protobuf.DescriptorProtos.SourceCodeInfo>.ExtensionWriter
           extensionWriter = newExtensionWriter();
       for (int i = 0; i < location_.size(); i++) {
@@ -55297,20 +55297,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.SourceCodeInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.SourceCodeInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.SourceCodeInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -55318,20 +55318,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.SourceCodeInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.SourceCodeInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -55351,7 +55351,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -55364,7 +55364,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.SourceCodeInfo}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.ExtendableBuilder<
+        com.google.protobuf.GeneratedMessageV3Internal.ExtendableBuilder<
           com.google.protobuf.DescriptorProtos.SourceCodeInfo, Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.SourceCodeInfo)
         com.google.protobuf.DescriptorProtos.SourceCodeInfoOrBuilder {
@@ -55374,7 +55374,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_SourceCodeInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -55387,7 +55387,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
 
       }
@@ -55482,33 +55482,33 @@ public final class DescriptorProtos {
           java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo, Type> extension,
-          Type value) {
-        return super.setExtension(extension, value);
-      }
-      @java.lang.Override
-      public <Type> Builder setExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo, java.util.List<Type>> extension,
-          int index, Type value) {
-        return super.setExtension(extension, index, value);
-      }
-      @java.lang.Override
-      public <Type> Builder addExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo, java.util.List<Type>> extension,
-          Type value) {
-        return super.addExtension(extension, value);
-      }
-      @java.lang.Override
-      public <T> Builder clearExtension(
-          com.google.protobuf.GeneratedMessage.GeneratedExtension<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo, T> extension) {
-        return super.clearExtension(extension);
-      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.SourceCodeInfo, Type> extension,
+//          Type value) {
+//        return super.setExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder setExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.SourceCodeInfo, java.util.List<Type>> extension,
+//          int index, Type value) {
+//        return super.setExtension(extension, index, value);
+//      }
+//      @java.lang.Override
+//      public <Type> Builder addExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.SourceCodeInfo, java.util.List<Type>> extension,
+//          Type value) {
+//        return super.addExtension(extension, value);
+//      }
+//      @java.lang.Override
+//      public <T> Builder clearExtension(
+//          com.google.protobuf.GeneratedMessage.GeneratedExtension<
+//              com.google.protobuf.DescriptorProtos.SourceCodeInfo, T> extension) {
+//        return super.clearExtension(extension);
+//      }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.google.protobuf.DescriptorProtos.SourceCodeInfo) {
@@ -55540,7 +55540,7 @@ public final class DescriptorProtos {
               location_ = other.location_;
               bitField0_ = (bitField0_ & ~0x00000001);
               locationBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getLocationFieldBuilder() : null;
             } else {
               locationBuilder_.addAllMessages(other.location_);
@@ -55616,8 +55616,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder> locationBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                Location, Location.Builder, LocationOrBuilder> locationBuilder_;
 
       /**
        * <pre>
@@ -56208,7 +56208,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location> values) {
         if (locationBuilder_ == null) {
           ensureLocationIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, location_);
           onChanged();
         } else {
@@ -56660,12 +56660,12 @@ public final class DescriptorProtos {
            getLocationBuilderList() {
         return getLocationFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                Location, Location.Builder, LocationOrBuilder>
           getLocationFieldBuilder() {
         if (locationBuilder_ == null) {
-          locationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location, com.google.protobuf.DescriptorProtos.SourceCodeInfo.Location.Builder, com.google.protobuf.DescriptorProtos.SourceCodeInfo.LocationOrBuilder>(
+          locationBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        Location, Location.Builder, LocationOrBuilder>(
                   location_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -56801,12 +56801,12 @@ public final class DescriptorProtos {
    * Protobuf type {@code google.protobuf.GeneratedCodeInfo}
    */
   public static final class GeneratedCodeInfo extends
-      com.google.protobuf.GeneratedMessageV3 implements
+      com.google.protobuf.GeneratedMessageV3Internal implements
       // @@protoc_insertion_point(message_implements:google.protobuf.GeneratedCodeInfo)
       GeneratedCodeInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use GeneratedCodeInfo.newBuilder() to construct.
-    private GeneratedCodeInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    private GeneratedCodeInfo(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
       super(builder);
     }
     private GeneratedCodeInfo() {
@@ -56826,7 +56826,7 @@ public final class DescriptorProtos {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_GeneratedCodeInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -56957,12 +56957,12 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.GeneratedCodeInfo.Annotation}
      */
     public static final class Annotation extends
-        com.google.protobuf.GeneratedMessageV3 implements
+        com.google.protobuf.GeneratedMessageV3Internal implements
         // @@protoc_insertion_point(message_implements:google.protobuf.GeneratedCodeInfo.Annotation)
         AnnotationOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Annotation.newBuilder() to construct.
-      private Annotation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      private Annotation(com.google.protobuf.GeneratedMessageV3Internal.Builder<?> builder) {
         super(builder);
       }
       private Annotation() {
@@ -56984,7 +56984,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_GeneratedCodeInfo_Annotation_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -57333,7 +57333,7 @@ public final class DescriptorProtos {
           output.writeInt32NoTag(path_.getInt(i));
         }
         if (((bitField0_ & 0x00000001) != 0)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, sourceFile_);
+          com.google.protobuf.GeneratedMessageV3Internal.writeString(output, 2, sourceFile_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           output.writeInt32(3, begin_);
@@ -57368,7 +57368,7 @@ public final class DescriptorProtos {
           pathMemoizedSerializedSize = dataSize;
         }
         if (((bitField0_ & 0x00000001) != 0)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, sourceFile_);
+          size += com.google.protobuf.GeneratedMessageV3Internal.computeStringSize(2, sourceFile_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -57488,20 +57488,20 @@ public final class DescriptorProtos {
       }
       public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation parseFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
       public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input);
       }
 
@@ -57509,20 +57509,20 @@ public final class DescriptorProtos {
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
       public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input);
       }
       public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
+        return com.google.protobuf.GeneratedMessageV3Internal
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
@@ -57542,7 +57542,7 @@ public final class DescriptorProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -57550,7 +57550,7 @@ public final class DescriptorProtos {
        * Protobuf type {@code google.protobuf.GeneratedCodeInfo.Annotation}
        */
       public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.GeneratedCodeInfo.Annotation)
           com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -57559,7 +57559,7 @@ public final class DescriptorProtos {
         }
 
         @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_GeneratedCodeInfo_Annotation_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -57572,7 +57572,7 @@ public final class DescriptorProtos {
         }
 
         private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
           super(parent);
 
         }
@@ -57894,7 +57894,7 @@ public final class DescriptorProtos {
         public Builder addAllPath(
             java.lang.Iterable<? extends java.lang.Integer> values) {
           ensurePathIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, path_);
           bitField0_ |= 0x00000001;
           onChanged();
@@ -58416,20 +58416,20 @@ public final class DescriptorProtos {
     }
     public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input);
     }
 
@@ -58437,20 +58437,20 @@ public final class DescriptorProtos {
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
     public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input);
     }
     public static com.google.protobuf.DescriptorProtos.GeneratedCodeInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
+      return com.google.protobuf.GeneratedMessageV3Internal
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
@@ -58470,7 +58470,7 @@ public final class DescriptorProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -58484,7 +58484,7 @@ public final class DescriptorProtos {
      * Protobuf type {@code google.protobuf.GeneratedCodeInfo}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV3Internal.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.GeneratedCodeInfo)
         com.google.protobuf.DescriptorProtos.GeneratedCodeInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -58493,7 +58493,7 @@ public final class DescriptorProtos {
       }
 
       @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.DescriptorProtos.internal_static_google_protobuf_GeneratedCodeInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -58506,7 +58506,7 @@ public final class DescriptorProtos {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3Internal.BuilderParent parent) {
         super(parent);
 
       }
@@ -58632,7 +58632,7 @@ public final class DescriptorProtos {
               annotation_ = other.annotation_;
               bitField0_ = (bitField0_ & ~0x00000001);
               annotationBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV3Internal.alwaysUseFieldBuilders ?
                    getAnnotationFieldBuilder() : null;
             } else {
               annotationBuilder_.addAllMessages(other.annotation_);
@@ -58704,8 +58704,8 @@ public final class DescriptorProtos {
          }
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder> annotationBuilder_;
+      private RepeatedFieldBuilderV3Internal<
+                Annotation, Annotation.Builder, AnnotationOrBuilder> annotationBuilder_;
 
       /**
        * <pre>
@@ -58886,7 +58886,7 @@ public final class DescriptorProtos {
           java.lang.Iterable<? extends com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation> values) {
         if (annotationBuilder_ == null) {
           ensureAnnotationIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          com.google.protobuf.GeneratedMessageV3Internal.Builder.addAll(
               values, annotation_);
           onChanged();
         } else {
@@ -59010,12 +59010,12 @@ public final class DescriptorProtos {
            getAnnotationBuilderList() {
         return getAnnotationFieldBuilder().getBuilderList();
       }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder> 
+      private RepeatedFieldBuilderV3Internal<
+                Annotation, Annotation.Builder, AnnotationOrBuilder>
           getAnnotationFieldBuilder() {
         if (annotationBuilder_ == null) {
-          annotationBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.Annotation.Builder, com.google.protobuf.DescriptorProtos.GeneratedCodeInfo.AnnotationOrBuilder>(
+          annotationBuilder_ = new RepeatedFieldBuilderV3Internal<
+                        Annotation, Annotation.Builder, AnnotationOrBuilder>(
                   annotation_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -59091,167 +59091,167 @@ public final class DescriptorProtos {
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FileDescriptorSet_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FileDescriptorSet_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FileDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FileDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_DescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_DescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_DescriptorProto_ExtensionRange_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_DescriptorProto_ExtensionRange_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_DescriptorProto_ReservedRange_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_DescriptorProto_ReservedRange_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_ExtensionRangeOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_ExtensionRangeOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_ExtensionRangeOptions_Declaration_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_ExtensionRangeOptions_Declaration_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FieldDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FieldDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_OneofDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_OneofDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_EnumDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_EnumDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_EnumValueDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_EnumValueDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_ServiceDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_ServiceDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_MethodDescriptorProto_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_MethodDescriptorProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FileOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FileOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_MessageOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_MessageOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FieldOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FieldOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FieldOptions_EditionDefault_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FieldOptions_EditionDefault_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FieldOptions_FeatureSupport_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FieldOptions_FeatureSupport_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_OneofOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_OneofOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_EnumOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_EnumOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_EnumValueOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_EnumValueOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_ServiceOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_ServiceOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_MethodOptions_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_MethodOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_UninterpretedOption_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_UninterpretedOption_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_UninterpretedOption_NamePart_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_UninterpretedOption_NamePart_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FeatureSet_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FeatureSet_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FeatureSetDefaults_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FeatureSetDefaults_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_SourceCodeInfo_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_SourceCodeInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_SourceCodeInfo_Location_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_SourceCodeInfo_Location_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_GeneratedCodeInfo_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_GeneratedCodeInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_GeneratedCodeInfo_Annotation_descriptor;
   private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable
       internal_static_google_protobuf_GeneratedCodeInfo_Annotation_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -59523,199 +59523,199 @@ public final class DescriptorProtos {
     internal_static_google_protobuf_FileDescriptorSet_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_FileDescriptorSet_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FileDescriptorSet_descriptor,
         new java.lang.String[] { "File", });
     internal_static_google_protobuf_FileDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_google_protobuf_FileDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FileDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Package", "Dependency", "PublicDependency", "WeakDependency", "MessageType", "EnumType", "Service", "Extension", "Options", "SourceCodeInfo", "Syntax", "Edition", });
     internal_static_google_protobuf_DescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_google_protobuf_DescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_DescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Field", "Extension", "NestedType", "EnumType", "ExtensionRange", "OneofDecl", "Options", "ReservedRange", "ReservedName", });
     internal_static_google_protobuf_DescriptorProto_ExtensionRange_descriptor =
       internal_static_google_protobuf_DescriptorProto_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_DescriptorProto_ExtensionRange_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_DescriptorProto_ExtensionRange_descriptor,
         new java.lang.String[] { "Start", "End", "Options", });
     internal_static_google_protobuf_DescriptorProto_ReservedRange_descriptor =
       internal_static_google_protobuf_DescriptorProto_descriptor.getNestedTypes().get(1);
     internal_static_google_protobuf_DescriptorProto_ReservedRange_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_DescriptorProto_ReservedRange_descriptor,
         new java.lang.String[] { "Start", "End", });
     internal_static_google_protobuf_ExtensionRangeOptions_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_google_protobuf_ExtensionRangeOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_ExtensionRangeOptions_descriptor,
         new java.lang.String[] { "UninterpretedOption", "Declaration", "Features", "Verification", });
     internal_static_google_protobuf_ExtensionRangeOptions_Declaration_descriptor =
       internal_static_google_protobuf_ExtensionRangeOptions_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_ExtensionRangeOptions_Declaration_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_ExtensionRangeOptions_Declaration_descriptor,
         new java.lang.String[] { "Number", "FullName", "Type", "Reserved", "Repeated", });
     internal_static_google_protobuf_FieldDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_google_protobuf_FieldDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FieldDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Number", "Label", "Type", "TypeName", "Extendee", "DefaultValue", "OneofIndex", "JsonName", "Options", "Proto3Optional", });
     internal_static_google_protobuf_OneofDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_google_protobuf_OneofDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_OneofDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Options", });
     internal_static_google_protobuf_EnumDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_google_protobuf_EnumDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_EnumDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Value", "Options", "ReservedRange", "ReservedName", });
     internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_descriptor =
       internal_static_google_protobuf_EnumDescriptorProto_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_EnumDescriptorProto_EnumReservedRange_descriptor,
         new java.lang.String[] { "Start", "End", });
     internal_static_google_protobuf_EnumValueDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_google_protobuf_EnumValueDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_EnumValueDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Number", "Options", });
     internal_static_google_protobuf_ServiceDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_google_protobuf_ServiceDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_ServiceDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "Method", "Options", });
     internal_static_google_protobuf_MethodDescriptorProto_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_google_protobuf_MethodDescriptorProto_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_MethodDescriptorProto_descriptor,
         new java.lang.String[] { "Name", "InputType", "OutputType", "Options", "ClientStreaming", "ServerStreaming", });
     internal_static_google_protobuf_FileOptions_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_google_protobuf_FileOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FileOptions_descriptor,
         new java.lang.String[] { "JavaPackage", "JavaOuterClassname", "JavaMultipleFiles", "JavaGenerateEqualsAndHash", "JavaStringCheckUtf8", "OptimizeFor", "GoPackage", "CcGenericServices", "JavaGenericServices", "PyGenericServices", "Deprecated", "CcEnableArenas", "ObjcClassPrefix", "CsharpNamespace", "SwiftPrefix", "PhpClassPrefix", "PhpNamespace", "PhpMetadataNamespace", "RubyPackage", "Features", "UninterpretedOption", });
     internal_static_google_protobuf_MessageOptions_descriptor =
       getDescriptor().getMessageTypes().get(11);
     internal_static_google_protobuf_MessageOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_MessageOptions_descriptor,
         new java.lang.String[] { "MessageSetWireFormat", "NoStandardDescriptorAccessor", "Deprecated", "MapEntry", "DeprecatedLegacyJsonFieldConflicts", "Features", "UninterpretedOption", });
     internal_static_google_protobuf_FieldOptions_descriptor =
       getDescriptor().getMessageTypes().get(12);
     internal_static_google_protobuf_FieldOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FieldOptions_descriptor,
         new java.lang.String[] { "Ctype", "Packed", "Jstype", "Lazy", "UnverifiedLazy", "Deprecated", "Weak", "DebugRedact", "Retention", "Targets", "EditionDefaults", "Features", "FeatureSupport", "UninterpretedOption", });
     internal_static_google_protobuf_FieldOptions_EditionDefault_descriptor =
       internal_static_google_protobuf_FieldOptions_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_FieldOptions_EditionDefault_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FieldOptions_EditionDefault_descriptor,
         new java.lang.String[] { "Edition", "Value", });
     internal_static_google_protobuf_FieldOptions_FeatureSupport_descriptor =
       internal_static_google_protobuf_FieldOptions_descriptor.getNestedTypes().get(1);
     internal_static_google_protobuf_FieldOptions_FeatureSupport_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FieldOptions_FeatureSupport_descriptor,
         new java.lang.String[] { "EditionIntroduced", "EditionDeprecated", "DeprecationWarning", "EditionRemoved", });
     internal_static_google_protobuf_OneofOptions_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_google_protobuf_OneofOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_OneofOptions_descriptor,
         new java.lang.String[] { "Features", "UninterpretedOption", });
     internal_static_google_protobuf_EnumOptions_descriptor =
       getDescriptor().getMessageTypes().get(14);
     internal_static_google_protobuf_EnumOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_EnumOptions_descriptor,
         new java.lang.String[] { "AllowAlias", "Deprecated", "DeprecatedLegacyJsonFieldConflicts", "Features", "UninterpretedOption", });
     internal_static_google_protobuf_EnumValueOptions_descriptor =
       getDescriptor().getMessageTypes().get(15);
     internal_static_google_protobuf_EnumValueOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_EnumValueOptions_descriptor,
         new java.lang.String[] { "Deprecated", "Features", "DebugRedact", "FeatureSupport", "UninterpretedOption", });
     internal_static_google_protobuf_ServiceOptions_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_google_protobuf_ServiceOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_ServiceOptions_descriptor,
         new java.lang.String[] { "Features", "Deprecated", "UninterpretedOption", });
     internal_static_google_protobuf_MethodOptions_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_google_protobuf_MethodOptions_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_MethodOptions_descriptor,
         new java.lang.String[] { "Deprecated", "IdempotencyLevel", "Features", "UninterpretedOption", });
     internal_static_google_protobuf_UninterpretedOption_descriptor =
       getDescriptor().getMessageTypes().get(18);
     internal_static_google_protobuf_UninterpretedOption_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_UninterpretedOption_descriptor,
         new java.lang.String[] { "Name", "IdentifierValue", "PositiveIntValue", "NegativeIntValue", "DoubleValue", "StringValue", "AggregateValue", });
     internal_static_google_protobuf_UninterpretedOption_NamePart_descriptor =
       internal_static_google_protobuf_UninterpretedOption_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_UninterpretedOption_NamePart_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_UninterpretedOption_NamePart_descriptor,
         new java.lang.String[] { "NamePart", "IsExtension", });
     internal_static_google_protobuf_FeatureSet_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_google_protobuf_FeatureSet_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FeatureSet_descriptor,
         new java.lang.String[] { "FieldPresence", "EnumType", "RepeatedFieldEncoding", "Utf8Validation", "MessageEncoding", "JsonFormat", });
     internal_static_google_protobuf_FeatureSetDefaults_descriptor =
       getDescriptor().getMessageTypes().get(20);
     internal_static_google_protobuf_FeatureSetDefaults_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FeatureSetDefaults_descriptor,
         new java.lang.String[] { "Defaults", "MinimumEdition", "MaximumEdition", });
     internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_descriptor =
       internal_static_google_protobuf_FeatureSetDefaults_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_FeatureSetDefaults_FeatureSetEditionDefault_descriptor,
         new java.lang.String[] { "Edition", "OverridableFeatures", "FixedFeatures", });
     internal_static_google_protobuf_SourceCodeInfo_descriptor =
       getDescriptor().getMessageTypes().get(21);
     internal_static_google_protobuf_SourceCodeInfo_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_SourceCodeInfo_descriptor,
         new java.lang.String[] { "Location", });
     internal_static_google_protobuf_SourceCodeInfo_Location_descriptor =
       internal_static_google_protobuf_SourceCodeInfo_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_SourceCodeInfo_Location_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_SourceCodeInfo_Location_descriptor,
         new java.lang.String[] { "Path", "Span", "LeadingComments", "TrailingComments", "LeadingDetachedComments", });
     internal_static_google_protobuf_GeneratedCodeInfo_descriptor =
       getDescriptor().getMessageTypes().get(22);
     internal_static_google_protobuf_GeneratedCodeInfo_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_GeneratedCodeInfo_descriptor,
         new java.lang.String[] { "Annotation", });
     internal_static_google_protobuf_GeneratedCodeInfo_Annotation_descriptor =
       internal_static_google_protobuf_GeneratedCodeInfo_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_GeneratedCodeInfo_Annotation_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3Internal.FieldAccessorTable(
         internal_static_google_protobuf_GeneratedCodeInfo_Annotation_descriptor,
         new java.lang.String[] { "Path", "SourceFile", "Begin", "End", "Semantic", });
   }

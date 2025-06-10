@@ -20,7 +20,7 @@ import java.util.Map.Entry;
  *
  * @author xiangl@google.com (Xiang Li)
  */
-public class LazyField extends LazyFieldLite {
+class LazyField extends LazyFieldLite {
 
   /**
    * Carry a message's default instance which is used by {@code hashCode()}, {@code equals()}, and
