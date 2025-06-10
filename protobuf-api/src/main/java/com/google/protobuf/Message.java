@@ -98,6 +98,7 @@ public interface Message extends MessageLite, MessageOrBuilder {
   default Message.Builder newBuilderForType(BuilderParent parent) {
     throw new UnsupportedOperationException("Nested builder is not supported for this type.");
   }
+
   @Override
   Builder toBuilder();
 

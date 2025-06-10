@@ -331,7 +331,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
   protected abstract Message.Builder newBuilderForType(BuilderParent parent);
 
   @Override
-  public Message.Builder newBuilderForType(final AbstractMessage.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final Message.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
