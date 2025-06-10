@@ -544,7 +544,7 @@ public abstract class GeneratedMessageV4 extends AbstractMessage implements Seri
 
   /** TODO: generated class should implement this directly */
   @Override
-  public Message.Builder newBuilderForType(final AbstractMessage.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final Message.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
