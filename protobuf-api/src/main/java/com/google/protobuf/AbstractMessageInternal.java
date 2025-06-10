@@ -56,11 +56,6 @@ abstract class AbstractMessageInternal
     void markDirty();
   }
 
-  /** Create a nested builder. */
-  protected Message.Builder newBuilderForType(BuilderParent parent) {
-    throw new UnsupportedOperationException("Nested builder is not supported for this type.");
-  }
-
   @Override
   public List<String> findInitializationErrors() {
     return MessageReflection.findMissingFields(this);

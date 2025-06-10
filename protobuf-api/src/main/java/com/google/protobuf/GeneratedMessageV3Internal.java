@@ -532,8 +532,7 @@ abstract class GeneratedMessageV3Internal extends AbstractMessageInternal implem
   protected abstract Message.Builder newBuilderForType(BuilderParent parent);
 
   /** TODO: generated class should implement this directly */
-  @Override
-  protected Message.Builder newBuilderForType(final AbstractMessageInternal.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final Message.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
