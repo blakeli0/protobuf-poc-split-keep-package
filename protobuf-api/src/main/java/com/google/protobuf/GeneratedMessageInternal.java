@@ -331,8 +331,7 @@ abstract class GeneratedMessageInternal extends AbstractMessageInternal implemen
   /** TODO: remove this together with GeneratedMessageInternal.BuilderParent. */
   protected abstract Message.Builder newBuilderForType(BuilderParent parent);
 
-  @Override
-  protected Message.Builder newBuilderForType(final AbstractMessageInternal.BuilderParent parent) {
+  public Message.Builder newBuilderForType(final Message.BuilderParent parent) {
     return newBuilderForType(
         new BuilderParent() {
           @Override
