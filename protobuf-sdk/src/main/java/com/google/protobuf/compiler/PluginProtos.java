@@ -99,7 +99,7 @@ public final class PluginProtos {
       VersionOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Version.newBuilder() to construct.
-    private Version(GeneratedMessageV4.Builder<?> builder) {
+    private Version(com.google.protobuf.GeneratedMessageV4.Builder<?> builder) {
       super(builder);
     }
     private Version() {
@@ -119,7 +119,7 @@ public final class PluginProtos {
     }
 
     @java.lang.Override
-    protected GeneratedMessageV4.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_Version_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -272,7 +272,7 @@ public final class PluginProtos {
         output.writeInt32(3, patch_);
       }
       if (((bitField0_ & 0x00000008) != 0)) {
-        GeneratedMessageV4.writeString(output, 4, suffix_);
+        com.google.protobuf.GeneratedMessageV4.writeString(output, 4, suffix_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -296,7 +296,7 @@ public final class PluginProtos {
           .computeInt32Size(3, patch_);
       }
       if (((bitField0_ & 0x00000008) != 0)) {
-        size += GeneratedMessageV4.computeStringSize(4, suffix_);
+        size += com.google.protobuf.GeneratedMessageV4.computeStringSize(4, suffix_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -453,7 +453,7 @@ public final class PluginProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        GeneratedMessageV4.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -465,7 +465,7 @@ public final class PluginProtos {
      * Protobuf type {@code google.protobuf.compiler.Version}
      */
     public static final class Builder extends
-        GeneratedMessageV4.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV4.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.compiler.Version)
         com.google.protobuf.compiler.PluginProtos.VersionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -474,7 +474,7 @@ public final class PluginProtos {
       }
 
       @java.lang.Override
-      protected GeneratedMessageV4.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_Version_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -487,7 +487,7 @@ public final class PluginProtos {
       }
 
       private Builder(
-          GeneratedMessageV4.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
         super(parent);
 
       }
@@ -1276,7 +1276,7 @@ public final class PluginProtos {
       CodeGeneratorRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use CodeGeneratorRequest.newBuilder() to construct.
-    private CodeGeneratorRequest(GeneratedMessageV4.Builder<?> builder) {
+    private CodeGeneratorRequest(com.google.protobuf.GeneratedMessageV4.Builder<?> builder) {
       super(builder);
     }
     private CodeGeneratorRequest() {
@@ -1300,7 +1300,7 @@ public final class PluginProtos {
     }
 
     @java.lang.Override
-    protected GeneratedMessageV4.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_CodeGeneratorRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -1717,10 +1717,10 @@ public final class PluginProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < fileToGenerate_.size(); i++) {
-        GeneratedMessageV4.writeString(output, 1, fileToGenerate_.getRaw(i));
+        com.google.protobuf.GeneratedMessageV4.writeString(output, 1, fileToGenerate_.getRaw(i));
       }
       if (((bitField0_ & 0x00000001) != 0)) {
-        GeneratedMessageV4.writeString(output, 2, parameter_);
+        com.google.protobuf.GeneratedMessageV4.writeString(output, 2, parameter_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeMessage(3, getCompilerVersion());
@@ -1749,7 +1749,7 @@ public final class PluginProtos {
         size += 1 * getFileToGenerateList().size();
       }
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += GeneratedMessageV4.computeStringSize(2, parameter_);
+        size += com.google.protobuf.GeneratedMessageV4.computeStringSize(2, parameter_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1918,7 +1918,7 @@ public final class PluginProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        GeneratedMessageV4.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1930,7 +1930,7 @@ public final class PluginProtos {
      * Protobuf type {@code google.protobuf.compiler.CodeGeneratorRequest}
      */
     public static final class Builder extends
-        GeneratedMessageV4.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV4.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.compiler.CodeGeneratorRequest)
         com.google.protobuf.compiler.PluginProtos.CodeGeneratorRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -1939,7 +1939,7 @@ public final class PluginProtos {
       }
 
       @java.lang.Override
-      protected GeneratedMessageV4.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_CodeGeneratorRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -1952,7 +1952,7 @@ public final class PluginProtos {
       }
 
       private Builder(
-          GeneratedMessageV4.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2141,7 +2141,7 @@ public final class PluginProtos {
               protoFile_ = other.protoFile_;
               bitField0_ = (bitField0_ & ~0x00000004);
               protoFileBuilder_ = 
-                GeneratedMessageV4.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV4.alwaysUseFieldBuilders ?
                    getProtoFileFieldBuilder() : null;
             } else {
               protoFileBuilder_.addAllMessages(other.protoFile_);
@@ -2167,7 +2167,7 @@ public final class PluginProtos {
               sourceFileDescriptors_ = other.sourceFileDescriptors_;
               bitField0_ = (bitField0_ & ~0x00000008);
               sourceFileDescriptorsBuilder_ = 
-                GeneratedMessageV4.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV4.alwaysUseFieldBuilders ?
                    getSourceFileDescriptorsFieldBuilder() : null;
             } else {
               sourceFileDescriptorsBuilder_.addAllMessages(other.sourceFileDescriptors_);
@@ -3908,7 +3908,7 @@ public final class PluginProtos {
       CodeGeneratorResponseOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use CodeGeneratorResponse.newBuilder() to construct.
-    private CodeGeneratorResponse(GeneratedMessageV4.Builder<?> builder) {
+    private CodeGeneratorResponse(com.google.protobuf.GeneratedMessageV4.Builder<?> builder) {
       super(builder);
     }
     private CodeGeneratorResponse() {
@@ -3929,7 +3929,7 @@ public final class PluginProtos {
     }
 
     @java.lang.Override
-    protected GeneratedMessageV4.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_CodeGeneratorResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -4320,7 +4320,7 @@ public final class PluginProtos {
         FileOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use File.newBuilder() to construct.
-      private File(GeneratedMessageV4.Builder<?> builder) {
+      private File(com.google.protobuf.GeneratedMessageV4.Builder<?> builder) {
         super(builder);
       }
       private File() {
@@ -4342,7 +4342,7 @@ public final class PluginProtos {
       }
 
       @java.lang.Override
-      protected GeneratedMessageV4.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -4730,13 +4730,13 @@ public final class PluginProtos {
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (((bitField0_ & 0x00000001) != 0)) {
-          GeneratedMessageV4.writeString(output, 1, name_);
+          com.google.protobuf.GeneratedMessageV4.writeString(output, 1, name_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          GeneratedMessageV4.writeString(output, 2, insertionPoint_);
+          com.google.protobuf.GeneratedMessageV4.writeString(output, 2, insertionPoint_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          GeneratedMessageV4.writeString(output, 15, content_);
+          com.google.protobuf.GeneratedMessageV4.writeString(output, 15, content_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
           output.writeMessage(16, getGeneratedCodeInfo());
@@ -4751,13 +4751,13 @@ public final class PluginProtos {
 
         size = 0;
         if (((bitField0_ & 0x00000001) != 0)) {
-          size += GeneratedMessageV4.computeStringSize(1, name_);
+          size += com.google.protobuf.GeneratedMessageV4.computeStringSize(1, name_);
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          size += GeneratedMessageV4.computeStringSize(2, insertionPoint_);
+          size += com.google.protobuf.GeneratedMessageV4.computeStringSize(2, insertionPoint_);
         }
         if (((bitField0_ & 0x00000004) != 0)) {
-          size += GeneratedMessageV4.computeStringSize(15, content_);
+          size += com.google.protobuf.GeneratedMessageV4.computeStringSize(15, content_);
         }
         if (((bitField0_ & 0x00000008) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -4918,7 +4918,7 @@ public final class PluginProtos {
 
       @java.lang.Override
       protected Builder newBuilderForType(
-          GeneratedMessageV4.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -4930,7 +4930,7 @@ public final class PluginProtos {
        * Protobuf type {@code google.protobuf.compiler.CodeGeneratorResponse.File}
        */
       public static final class Builder extends
-          GeneratedMessageV4.Builder<Builder> implements
+          com.google.protobuf.GeneratedMessageV4.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:google.protobuf.compiler.CodeGeneratorResponse.File)
           com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.FileOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
@@ -4939,7 +4939,7 @@ public final class PluginProtos {
         }
 
         @java.lang.Override
-        protected GeneratedMessageV4.FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
             internalGetFieldAccessorTable() {
           return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
@@ -4952,7 +4952,7 @@ public final class PluginProtos {
         }
 
         private Builder(
-            GeneratedMessageV4.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -6216,7 +6216,7 @@ public final class PluginProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
-        GeneratedMessageV4.writeString(output, 1, error_);
+        com.google.protobuf.GeneratedMessageV4.writeString(output, 1, error_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeUInt64(2, supportedFeatures_);
@@ -6240,7 +6240,7 @@ public final class PluginProtos {
 
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
-        size += GeneratedMessageV4.computeStringSize(1, error_);
+        size += com.google.protobuf.GeneratedMessageV4.computeStringSize(1, error_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
@@ -6420,7 +6420,7 @@ public final class PluginProtos {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        GeneratedMessageV4.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6432,7 +6432,7 @@ public final class PluginProtos {
      * Protobuf type {@code google.protobuf.compiler.CodeGeneratorResponse}
      */
     public static final class Builder extends
-        GeneratedMessageV4.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV4.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:google.protobuf.compiler.CodeGeneratorResponse)
         com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -6441,7 +6441,7 @@ public final class PluginProtos {
       }
 
       @java.lang.Override
-      protected GeneratedMessageV4.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.compiler.PluginProtos.internal_static_google_protobuf_compiler_CodeGeneratorResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -6454,7 +6454,7 @@ public final class PluginProtos {
       }
 
       private Builder(
-          GeneratedMessageV4.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
         super(parent);
 
       }
@@ -6616,7 +6616,7 @@ public final class PluginProtos {
               file_ = other.file_;
               bitField0_ = (bitField0_ & ~0x00000010);
               fileBuilder_ = 
-                GeneratedMessageV4.alwaysUseFieldBuilders ?
+                com.google.protobuf.GeneratedMessageV4.alwaysUseFieldBuilders ?
                    getFileFieldBuilder() : null;
             } else {
               fileBuilder_.addAllMessages(other.file_);
@@ -7347,22 +7347,22 @@ public final class PluginProtos {
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_compiler_Version_descriptor;
   private static final 
-    GeneratedMessageV4.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
       internal_static_google_protobuf_compiler_Version_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_compiler_CodeGeneratorRequest_descriptor;
   private static final 
-    GeneratedMessageV4.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
       internal_static_google_protobuf_compiler_CodeGeneratorRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_compiler_CodeGeneratorResponse_descriptor;
   private static final 
-    GeneratedMessageV4.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
       internal_static_google_protobuf_compiler_CodeGeneratorResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_descriptor;
   private static final 
-    GeneratedMessageV4.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
       internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -7406,25 +7406,25 @@ public final class PluginProtos {
     internal_static_google_protobuf_compiler_Version_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_google_protobuf_compiler_Version_fieldAccessorTable = new
-      GeneratedMessageV4.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV4.FieldAccessorTable(
         internal_static_google_protobuf_compiler_Version_descriptor,
         new java.lang.String[] { "Major", "Minor", "Patch", "Suffix", });
     internal_static_google_protobuf_compiler_CodeGeneratorRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_google_protobuf_compiler_CodeGeneratorRequest_fieldAccessorTable = new
-      GeneratedMessageV4.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV4.FieldAccessorTable(
         internal_static_google_protobuf_compiler_CodeGeneratorRequest_descriptor,
         new java.lang.String[] { "FileToGenerate", "Parameter", "ProtoFile", "SourceFileDescriptors", "CompilerVersion", });
     internal_static_google_protobuf_compiler_CodeGeneratorResponse_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_google_protobuf_compiler_CodeGeneratorResponse_fieldAccessorTable = new
-      GeneratedMessageV4.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV4.FieldAccessorTable(
         internal_static_google_protobuf_compiler_CodeGeneratorResponse_descriptor,
         new java.lang.String[] { "Error", "SupportedFeatures", "MinimumEdition", "MaximumEdition", "File", });
     internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_descriptor =
       internal_static_google_protobuf_compiler_CodeGeneratorResponse_descriptor.getNestedTypes().get(0);
     internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_fieldAccessorTable = new
-      GeneratedMessageV4.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV4.FieldAccessorTable(
         internal_static_google_protobuf_compiler_CodeGeneratorResponse_File_descriptor,
         new java.lang.String[] { "Name", "InsertionPoint", "Content", "GeneratedCodeInfo", });
     com.google.protobuf.DescriptorProtos.getDescriptor();

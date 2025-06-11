@@ -94,7 +94,7 @@ public final class JavaFeaturesProto {
       JavaFeaturesOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use JavaFeatures.newBuilder() to construct.
-    private JavaFeatures(GeneratedMessageV4.Builder<?> builder) {
+    private JavaFeatures(com.google.protobuf.GeneratedMessageV4.Builder<?> builder) {
       super(builder);
     }
     private JavaFeatures() {
@@ -114,7 +114,7 @@ public final class JavaFeaturesProto {
     }
 
     @java.lang.Override
-    protected GeneratedMessageV4.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.google.protobuf.JavaFeaturesProto.internal_static_pb_JavaFeatures_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -533,7 +533,7 @@ public final class JavaFeaturesProto {
 
     @java.lang.Override
     protected Builder newBuilderForType(
-        GeneratedMessageV4.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -541,7 +541,7 @@ public final class JavaFeaturesProto {
      * Protobuf type {@code pb.JavaFeatures}
      */
     public static final class Builder extends
-        GeneratedMessageV4.Builder<Builder> implements
+        com.google.protobuf.GeneratedMessageV4.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:pb.JavaFeatures)
         com.google.protobuf.JavaFeaturesProto.JavaFeaturesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
@@ -550,7 +550,7 @@ public final class JavaFeaturesProto {
       }
 
       @java.lang.Override
-      protected GeneratedMessageV4.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return com.google.protobuf.JavaFeaturesProto.internal_static_pb_JavaFeatures_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -563,7 +563,7 @@ public final class JavaFeaturesProto {
       }
 
       private Builder(
-          GeneratedMessageV4.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV4.BuilderParent parent) {
         super(parent);
 
       }
@@ -1004,7 +1004,7 @@ public final class JavaFeaturesProto {
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_pb_JavaFeatures_descriptor;
   private static final 
-    GeneratedMessageV4.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV4.FieldAccessorTable
       internal_static_pb_JavaFeatures_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -1047,7 +1047,7 @@ public final class JavaFeaturesProto {
     internal_static_pb_JavaFeatures_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_pb_JavaFeatures_fieldAccessorTable = new
-      GeneratedMessageV4.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV4.FieldAccessorTable(
         internal_static_pb_JavaFeatures_descriptor,
         new java.lang.String[] { "LegacyClosedEnum", "Utf8Validation", "UseOldOuterClassnameDefault", });
     java.internalInit(descriptor.getExtensions().get(0));
