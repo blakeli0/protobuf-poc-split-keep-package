@@ -71,7 +71,7 @@ public final class DynamicMessage extends FlattenedAbstractMessage {
 
   /** Parse a message of the given type from the given input stream. */
   public static DynamicMessage parseFrom(
-      Descriptor type, CodedInputStream input, ExtensionRegistry extensionRegistry)
+      Descriptor type, CodedInputStream input, ExtensionRegistryLite extensionRegistry)
       throws IOException {
     return newBuilder(type).mergeFrom(input, extensionRegistry).buildParsed();
   }
@@ -84,7 +84,7 @@ public final class DynamicMessage extends FlattenedAbstractMessage {
 
   /** Parse {@code data} as a message of the given type and return it. */
   public static DynamicMessage parseFrom(
-      Descriptor type, ByteString data, ExtensionRegistry extensionRegistry)
+      Descriptor type, ByteString data, ExtensionRegistryLite extensionRegistry)
       throws InvalidProtocolBufferException {
     return newBuilder(type).mergeFrom(data, extensionRegistry).buildParsed();
   }
@@ -97,7 +97,7 @@ public final class DynamicMessage extends FlattenedAbstractMessage {
 
   /** Parse {@code data} as a message of the given type and return it. */
   public static DynamicMessage parseFrom(
-      Descriptor type, byte[] data, ExtensionRegistry extensionRegistry)
+      Descriptor type, byte[] data, ExtensionRegistryLite extensionRegistry)
       throws InvalidProtocolBufferException {
     return newBuilder(type).mergeFrom(data, extensionRegistry).buildParsed();
   }
@@ -109,7 +109,7 @@ public final class DynamicMessage extends FlattenedAbstractMessage {
 
   /** Parse a message of the given type from {@code input} and return it. */
   public static DynamicMessage parseFrom(
-      Descriptor type, InputStream input, ExtensionRegistry extensionRegistry) throws IOException {
+      Descriptor type, InputStream input, ExtensionRegistryLite extensionRegistry) throws IOException {
     return newBuilder(type).mergeFrom(input, extensionRegistry).buildParsed();
   }
 

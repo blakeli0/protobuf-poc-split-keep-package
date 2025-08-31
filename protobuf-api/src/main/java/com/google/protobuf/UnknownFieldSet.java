@@ -490,7 +490,7 @@ public final class UnknownFieldSet implements MessageLite {
           return true;
         case WireFormat.WIRETYPE_START_GROUP:
           Builder subBuilder = newBuilder();
-          input.readGroup(number, subBuilder, ExtensionRegistry.getEmptyRegistry());
+          input.readGroup(number, subBuilder, ExtensionRegistryLite.getEmptyRegistry());
           getFieldBuilder(number).addGroup(subBuilder.build());
           return true;
         case WireFormat.WIRETYPE_END_GROUP:

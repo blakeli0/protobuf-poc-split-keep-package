@@ -640,7 +640,7 @@ public abstract class FlattenedAbstractMessage
 
     @Override
     public BuilderType mergeFrom(final CodedInputStream input) throws IOException {
-      return mergeFrom(input, ExtensionRegistry.getEmptyRegistry());
+      return mergeFrom(input, ExtensionRegistryLite.getEmptyRegistry());
     }
 
     @Override
